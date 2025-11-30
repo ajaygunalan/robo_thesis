@@ -1,0 +1,99 @@
+/* Distinct row/column layout for each property */
+.metadata-container,
+.frontmatter-container,
+pre.frontmatter,
+.frontmatter {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.125rem !important;
+  padding: 1rem;
+  background: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-l);
+  font-family: var(--font-monospace);
+  font-size: var(--font-smaller);
+  white-space: pre-wrap;
+  margin-bottom: 1.5rem;
+}
+
+.metadata-container .metadata-property,
+.frontmatter-container .metadata-property,
+pre.frontmatter .metadata-property,
+.frontmatter .metadata-property {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  align-items: center;
+  padding: 0.2em 0;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+.metadata-container .metadata-property:last-child,
+.frontmatter-container .metadata-property:last-child,
+pre.frontmatter .metadata-property:last-child,
+.frontmatter .metadata-property:last-child {
+  border-bottom: none;
+}
+
+.metadata-property-key {
+  font-weight: bold;
+  min-width: 8ch;
+  color: var(--text-muted);
+}
+.metadata-property-value {
+  flex: 1;
+}
+
+/* Make tags display as clickable clickable badges */
+.metadata-property-value .tag,
+.tag {
+  display: inline-block;
+  background: var(--tag-background, #e2ecf7);
+  border: 1px solid var(--tag-border-color, #8ca6c9);
+  color: var(--tag-color, #1e293b);
+  border-radius: 7px;
+  padding: 0.1em 0.6em;
+  font-size: 0.9em;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 0.25em;
+  transition: background 0.2s;
+}
+.metadata-property-value .tag:hover,
+.tag:hover {
+  background: var(--tag-background-hover, #dbeafe);
+}
+
+/* Automatically linkify DOI fields and any http(s):// URLs */
+.metadata-property-value a,
+a.doi,
+a.url {
+  color: var(--link-color, #2b6cb0);
+  text-decoration: underline dotted;
+  word-break: break-all;
+}
+
+/* Make mouse-hover effect for clickable fields */
+.metadata-property-value a:hover,
+a.doi:hover,
+a.url:hover {
+  color: var(--link-color-hover, #1a437b);
+  text-decoration: underline solid;
+}
+
+/* Optional: Add icon for links/DOIs */
+.metadata-property-value a.doi::before {
+  content: "🔗 ";
+}
+
+.metadata-container::before,
+.frontmatter-container::before,
+pre.frontmatter::before,
+.frontmatter::before {
+  content: "Properties";
+  display: block;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-size: 0.75em;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.09em;
+}

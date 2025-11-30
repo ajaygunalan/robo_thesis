@@ -1,3 +1,13 @@
+---
+tags: research_paper_notes
+title: Bias Estimation and Gravity Compensation for Wrist-Mounted Force/Torque Sensor
+institute: Harbin Institute of Technology
+year: Sep 2022
+keywords: force_sensor, robotics, calibration, gravity_compensation
+doi: https://doi.org/10.1109/JSEN.2021.3056943
+video: 
+---
+
 ## Force & Torque Sensor Calibration
 
 ### Problem Statement
@@ -37,7 +47,31 @@ Where:
 - $^g_s\mathbf{P} \in \mathbb{R}^3$: Tool's center of gravity in the sensor frame.
 - $mg$: Mass of the tool.
 
----
+### Method
+```
+┌─────────────────────┐
+│ Step 1: Gravity     │
+│ Force Estimation    │──────► Fb (gravity in base frame)
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│ Step 2: Rotation &  │──────► sRE (sensor rotation)
+│ Force Bias          │──────► sF0 (force bias)
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│ Step 3: Torque      │──────► spg (center of mass)
+│ Parameters          │──────► sT0 (torque bias)
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│ Step 4: Tool Mass & │──────► m (tool mass)
+│ Installation Angle  │──────► bRg (robot orientation)
+└─────────────────────┘
+```
 
 ### 1. LROM - Estimate Gravitational Force Vector ($\mathbf{F}^b$)
 
@@ -63,6 +97,7 @@ $$\mathbf{A} = \begin{bmatrix} \mathbf{A}_1 \\ \vdots \\ \mathbf{A}_n \end{bmatr
 
 $$\mathbf{A}_{i,R} = \begin{bmatrix} (^s\mathbf{F}_i)^T & 0 & 0 \\ 0 & (^s\mathbf{F}_i)^T & 0 \\ 0 & 0 & (^s\mathbf{F}_i)^T \end{bmatrix}, \quad \mathbf{A}_{i,F} = -^b_e\mathbf{R}_i, \quad \mathbf{A}_{i,0} = -\mathbf{I}_3$$
 
+
 #### 1.4 Define Orthogonality Constraint
 
 The columns of a rotation matrix are orthogonal and have unit length, meaning $\|^e_s\mathbf{R}^T\|_F^2 = 3$. This is reformulated as a unit-norm constraint on the rotational part of $\mathbf{x}$:
@@ -71,11 +106,42 @@ $$\min \|\mathbf{A}\mathbf{x}\|_F^2 \quad \text{s.t.} \quad \|\mathbf{B}\mathbf{
 
 Where $\mathbf{B} = [\frac{1}{\sqrt{3}}\mathbf{I}_9 \quad \mathbf{0}_{9 \times 6}]$ isolates and normalizes $\mathbf{x}_9$.
 
+
+#### 1.5 Null‑Space Projection (decouple rotation from forces)
+From the stacked linear system
+$$
+A_9 \mathbf{x}_9 + A_6 \mathbf{x}_6 = \mathbf{0},
+$$
+build the orthogonal projector onto the null space of $A_6^\top$:
+$$
+P_\perp = I - A_6 (A_6^\top A_6)^{-1}A_6^\top.
+$$
+Left‑multiplying by $P_\perp$ kills the dependence on the force/bias block $\mathbf{x}_6$ while preserving information about the rotation block $\mathbf{x}_9$:
+$$
+P_\perp A_6 = 0 \quad \Rightarrow \quad P_\perp A_9\,\mathbf{x}_9 = \mathbf{0}.
+$$
+
+Define a new variable $\mathbf{y} = \frac{1}{\sqrt{3}}\mathbf{x}_9$ so the constraint becomes $\|\mathbf{y}\|_2 = 1$.
+
+
+> Intuition: $A_6$ maps $[\mathbf{F}_b;\,^s\!F_0]$ into the measurement space. Projecting onto $\mathcal{N}(A_6^\top)$ removes any directions that forces/biases can explain, leaving a residual that depends only on the (relaxed) rotation parameters. [[orthogonal_projections#Projecting onto a null space]]
+
+#### 1.6 Minimum‑Eigenvalue Solution
+With $H := P_\perp A_9 \sqrt{3}$, solve
+$$
+\min_{\|\mathbf{y}\|_2=1}\, \|H\mathbf{y}\|_2^2.
+$$
+The optimal $\mathbf{y}^*$ is the eigenvector corresponding to the minimum eigenvalue of $\mathbf{H}^T\mathbf{H}$  (why? see  [[rayleigh_quotient]]) recover $\mathbf{x}_6$ via
+$$
+\mathbf{x}_6 = -(A_6^\top A_6)^{-1}A_6^\top A_9\,(\sqrt{3}\,\mathbf{y}^*),
+$$
+and then reconstruct the full $\mathbf{x}^*$.
+
 #### 1.5 Solve for $\mathbf{x}$ via Eigenvalue Decomposition
 
 This constrained problem can be simplified by substituting out the unconstrained part ($\mathbf{x}_6$) and solving for the rest.
 
-1. **Variable Transformation:** Define a new variable $\mathbf{y} = \frac{1}{\sqrt{3}}\mathbf{x}_9$ so the constraint becomes $\|\mathbf{y}\|_2 = 1$.
+1. **Variable Transformation:** 
 
 2. **Substitution:** Solve for $\mathbf{x}_6$ in terms of $\mathbf{y}$. This gives
    $$\mathbf{x}_6 = -(\mathbf{A}_6^T \mathbf{A}_6)^{-1} \mathbf{A}_6^T \mathbf{A}_9 (\sqrt{3}\mathbf{y})$$
@@ -83,7 +149,7 @@ This constrained problem can be simplified by substituting out the unconstrained
 3. **Simplify:** Substitute $\mathbf{x}_6$ back into the cost function to get the form $\min \|\mathbf{H}\mathbf{y}\|_F^2$ s.t. $\|\mathbf{y}\|_F^2 = 1$, where
    $$\mathbf{H} = (\mathbf{I} - \mathbf{A}_6(\mathbf{A}_6^T \mathbf{A}_6)^{-1}\mathbf{A}_6^T)\mathbf{A}_9 \sqrt{3}$$
 
-4. **Solve:** The optimal $\mathbf{y}^*$ is the eigenvector corresponding to the minimum eigenvalue of $\mathbf{H}^T\mathbf{H}$  [[rayleigh_quotient]]
+4. **Solve:** 
 
 5. **Recover:** Back-substitute $\mathbf{y}^*$ to find the full solution vector $\mathbf{x}^*$.
 
@@ -154,7 +220,7 @@ $$\mathbf{C} = \begin{bmatrix} -(^s\mathbf{F}_1 - \hat{^s\mathbf{F}_0})^\wedge &
 $$\mathbf{y} = \begin{bmatrix} ^g_s\mathbf{P} \\ ^s\mathbf{T}_0 \end{bmatrix} \in \mathbb{R}^{6 \times 1}$$
 
 
-The solution that minimizes the squared error $\|\mathbf{b} - \mathbf{C}\mathbf{y}\|_2$ is given by the normal equations:
+The solution that minimizes the [[least_squares]] error $\|\mathbf{b} - \mathbf{C}\mathbf{y}\|_2$ is given by the normal equations:
 
 $$\hat{\mathbf{y}} = (\mathbf{C}^T\mathbf{C})^{-1}\mathbf{C}^T\mathbf{b}$$
 
