@@ -5,6 +5,8 @@ lecture: "7"
 
 ## Deterministic Optimal Control
 
+![[control.png]]
+
 ### Continuous Time
 
 - **Objective**: $$\min_{X(t), U(t)} J(X(t), U(t)) = \int_{t_0}^{t_f} \ell(X(t), U(t)) dt + \ell_F(X(t_f))$$ where:
@@ -37,6 +39,7 @@ lecture: "7"
     
 
 ## Pontryagin's Minimum Principle
+![[shooting_method.png]]
 
 - Also called "Maximum Principle" if maximizing a reward
 - First-order necessary conditions for a deterministic optimal control problem
