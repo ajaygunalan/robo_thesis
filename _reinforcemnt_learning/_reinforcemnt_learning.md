@@ -3,5 +3,8 @@ Based on the CS 285 lectures [slides](https://rail.eecs.berkeley.edu/deeprlcours
 - [[reinforcement_learning_mathematical_foundations]]
 - [[value function]]
 - [[reinforcement_learning_paradigms]]
+- [[maximum_likelihood]]
+- [[imitation_learning]]
 - [[policy_gradients]]
 - [[actor_critic]]
+- [[_knknskx]]

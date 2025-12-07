@@ -1,6 +1,6 @@
 ---
 tags: optimal_control
-lecture: 3, 4, 5
+lecture: 3, 4
 ---
 
 # Root Finding and Minimization
@@ -9,8 +9,8 @@ lecture: 3, 4, 5
 
 - Given $f(x) : \mathbb{R}^n \rightarrow \mathbb{R}$
 - $\frac{\partial f}{\partial x} \in \mathbb{R}^{1 \times n}$ is a row vector $\implies [a_1 \; a_2 ... \; a_n] \implies$ chain rule works 
-- That's because $\frac{\partial f}{\partial x}$ is the linear operator mapping $\Delta x$ into $\Delta f$: 
-$$f(x + \Delta x) \approx f(x) + \frac{\partial f}{\partial x} \Delta x$$
+- It acts as a linear operator because it maps the input vector $\Delta x$ to the output scalar $\Delta f$ via matrix multiplication:
+$$ \underbrace{\Delta f}_{\mathbb{R}} \approx \underbrace{\frac{\partial f}{\partial x}}_{\mathbb{R}^{1 \times n}} \underbrace{\Delta x}_{\mathbb{R}^{n \times 1}} $$
 - Similarly $g(y) : \mathbb{R}^m \rightarrow \mathbb{R}^n$ 
 $$\frac{\partial g}{\partial y} \in \mathbb{R}^{n \times m}$$ because: $$g(y + \Delta y) \approx g(y) + \frac{\partial g}{\partial y} \Delta y$$
 - These conventions make the chain rule work: $f(g(y + \Delta y)) \approx f(g(y)) + \frac{\partial f}{\partial x}|_{g(y)} \frac{\partial g}{\partial y}|_y \Delta y$
@@ -81,8 +81,10 @@ $$x \leftarrow x + \Delta x$$
 
 ## Take-away Messages
 
-- Newton is a local root-finding method
-- Will converge to the closest fixed point to the initial guess (min, max, saddle)
+- **Newton's Method Contexts:**
+  1. **Optimization:** Minimizes $f(x)$ by finding the root of the gradient map: $\nabla f(x) = 0$. It is a **Second-Order Method** because it uses the derivative of the gradient (Hessian $\nabla^2 f$).
+  2. **Root Finding:** Solves generic roots $g(x) = 0$ (e.g., implicit dynamics). It is a **First-Order Method** relative to $g$ because it uses the Jacobian $\nabla g$.
+- **Locality:** In both cases, it blindly follows local curvature. It converges only if the initial guess $x_0$ is within the **basin of attraction** of a specific root (min, max, or saddle).
 
 ### Sufficient Conditions
 
@@ -206,17 +208,16 @@ $$
 
 ## Gauss-Newton Method
 
-$$\frac{\partial^2 L}{\partial x^2} = \nabla^2 f +  \underbrace{\frac{\partial}{\partial x}\left[\left(\frac{\partial C}{\partial x}\right)^T\lambda\right]}_{\text{computationally expensive}}$$
+$$\frac{\partial^2 L}{\partial x^2} = \underbrace{\nabla^2 f}_{\text{Cost Curvature}} +  \underbrace{\frac{\partial}{\partial x}\left[\left(\frac{\partial C}{\partial x}\right)^T\lambda\right]}_{\text{Constraint Curvature}}$$
 
-
-- We often drop the 2nd **constraint curvature** term
-- Slightly slower convergence than full Newton (more iterations) but iterations are cheaper. Often wins in wall-clock time
-- check this [code](https://github.com/Optimal-Control-16-745/lecture-notebooks/blob/main/Lecture%204/equality-constraints.ipynb), if you don't understand.
-
+- **Gauss-Newton Approximation:** Drop the 2nd term ($\nabla^2 L \approx \nabla^2 f$).
+  1. **Computational Win:** Calculating the 2nd term involves a **Rank-3 Tensor** (derivative of the Jacobian matrix), which is expensive.
+  2. **Stability Win:** The 2nd term can introduce negative eigenvalues (if constraints are non-convex), making the Hessian **Indefinite**. Dropping it ensures the Hessian remains Positive Definite (assuming convex cost $f$), guaranteeing a descent direction.
 
 ### Key Takeaways
 
-Excellent [Example](https://youtu.be/lIuPIlDxLNU?list=PLZnJoM76RM6IAJfMXd1PgGNXn3dxhkVgI&t=3084) of Why Full Newton gets stuck Gauss-Newton doesn't.  Basically $\frac{\partial^2 L}{\partial x^2}$ might become in-definite due to  constraint curvature,  even if $\nabla^2 f > 0$. Hence we need to **regularize**. Thus second-term won't help that's why  Gauss-Newton is often used in practice
+- **Failure Mode:** [Example Video](https://youtu.be/lIuPIlDxLNU?list=PLZnJoM76RM6IAJfMXd1PgGNXn3dxhkVgI&t=3084). Full Newton gets stuck because the constraint curvature makes the Hessian **Indefinite**. The solver then generates bad steps towards saddle points or infeasible regions.
+- **Why it works:** In Control/Robotics, we usually design $f(x)$ to be convex (e.g., quadratic). By ignoring the messy non-convex constraints, Gauss-Newton relies on the "good" curvature of $f(x)$ to guide the solver safely to the minimum.
 
 ## Inequality Constraints
 

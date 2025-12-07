@@ -13,7 +13,7 @@ $$\theta_{\text{new}} \leftarrow \theta_{\text{prev}} + \alpha \nabla_\theta J(\
 So the whole game is: **compute $\nabla_\theta J(\theta)$**.
 
 
-## Objective: Expected Return over Trajectories
+## Objective: Expected Reward over Trajectories
 
 Consider an episode (trajectory):
 
@@ -127,11 +127,11 @@ $$\nabla_\theta J(\theta) = \mathbb{E}_\tau \left[ \left(\sum_{t=1}^{T} \nabla_\
 
 That's the **classic full-trajectory policy gradient** (REINFORCE form).
 
-In words: for each trajectory, we sum up the log-prob gradients of all actions, multiply by the total return of the trajectory, and take the expectation.
+In words: for each trajectory, we sum up the log-prob gradients of all actions, multiply by the total reward of the trajectory, and take the expectation.
 
 
 
-## From Full Return to Reward-to-Go
+### Reward-to-Go
 
 It's correct, but it's also noisy as hell. Every action gradient at time $t$ gets multiplied by the **entire** episode reward, including rewards that happened _before_ that action. That doesn't make much sense intuitively and it inflates variance. This is where **reward-to-go** comes in.
 

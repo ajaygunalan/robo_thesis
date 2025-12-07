@@ -4,22 +4,13 @@ lecture: 1, 2
 ---
 
 
-## Continuous-Time Dynamics
+##  Dynamics
 
-## General Smooth System Dynamics
 
-The most general smooth system is
+
+
 $$\dot{X} = f(X, u)$$
-with
-- $X \in \mathbb{R}^n$ (state),
-- $\dot{X}$ (time derivative of state),
-- $u \in \mathbb{R}^m$ (input),
-- $f$ (dynamics map),
-- “configuration/pose” need not be a Euclidean vector.
 
-For mechanical systems,
-$$X = \begin{bmatrix} q \\ v \end{bmatrix},$$
-where $q$ is configuration/pose and $v$ is velocity.
 
 ### Example: Pendulum
 
