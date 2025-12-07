@@ -32,6 +32,8 @@ Where:
 
 ### Example: Double Integrator
 
+![[double_integrator.png]]
+
 Consider a system representing a brick sliding on ice (no friction):
 
 $$\dot{X} = \begin{bmatrix} \dot{q} \\ \ddot{q} \end{bmatrix} = \begin{bmatrix} 0 & 1 \\ 0 & 0 \end{bmatrix} \begin{bmatrix} q \\ \dot{q} \end{bmatrix} + \begin{bmatrix} 0 \\ 1 \end{bmatrix} u$$
@@ -93,6 +95,8 @@ The KKT system for LQR is very sparse (lots of zeros) and has lots of structure:
 
 ## Riccati Recursion
 
+![[riccati_recursion.png]]
+
 From our analysis, we have a recursion for $K$ and $P$:
 
 $$P_N = Q_N$$ 
@@ -119,6 +123,8 @@ We can solve the QP by doing a backward Riccati pass (k, p, u) followed by a for
     - Reject noise/disturbances
 
 ## Infinite-Horizon LQR
+
+![[infinite_lqr.png]]
 
 For time-invariant LQR systems converge to constants: 
 

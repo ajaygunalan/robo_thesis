@@ -16,6 +16,8 @@ lecture: "9"
 
 ## Controllability
 
+![[underactuate_vs_fully_acutuated.jpg]]
+![[underactuate_vs_fully_acutuated_math.jpg]]
 ### How do we know if LQR will work?
 
 - We already know Q ≥ 0, R > 0
@@ -72,6 +74,7 @@ A fully actuated system has as many independent actuators as degrees of freedom,
 Bellman's principle of optimality states that an optimal solution to a problem is made up of optimal solutions to its subproblems. To test this, you can shorten the time horizon from the start ("head")—if the trajectory remains optimal, the principle holds. However, shortening from the end ("tail") may remove important terminal conditions, potentially breaking optimality.
 
 ## Dynamic Programming
+![[dp.jpg]]
 
 - Bellman's Principle suggests starting from the end of the trajectory and working backwards
 - We've already seen this with Riccati & Pontryagin
@@ -143,6 +146,7 @@ $$S_k(X,U) = l(X,U) + V_{k+1}(f(X,U))$$
 - DP generalizes to stochastic problems (just wrap everything in expectations). Pontryagin does not.
 
 ## Connection: Lagrange Multipliers ≈ Gradient of the Value Function
+![[largarnage_multipler.jpg]]
 
 This connects trajectory optimization and DP.
 
