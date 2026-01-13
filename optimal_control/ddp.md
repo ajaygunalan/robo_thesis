@@ -1,6 +1,6 @@
 ---
 tags: optimal_control
-lecture: "10"
+lecture: "11"
 ---
 # Lecture 11
 
@@ -49,7 +49,7 @@ V_n(x + \delta x) \approx V_n(x) + p_n^T \delta x + \frac{1}{2} \delta x^T P_n \
 $$
 
 $$
-p_n = \nabla_x \ell_N(x) \qquad P_n = \nabla_{xx}^2 \ell_N(x)
+p_N = \nabla_x \ell_N(x) \qquad P_N = \nabla_{xx}^2 \ell_N(x)
 $$
 
 ### Action-Value Function Expansion:

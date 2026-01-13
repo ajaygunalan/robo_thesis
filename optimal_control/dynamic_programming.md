@@ -15,6 +15,7 @@ lecture: "9"
 ## Duality & Regularization
 
 ## Controllability
+![[controllability.jpg]]
 
 ![[underactuate_vs_fully_acutuated.jpg]]
 ![[underactuate_vs_fully_acutuated_math.jpg]]
@@ -139,7 +140,11 @@ $$S_k(X,U) = l(X,U) + V_{k+1}(f(X,U))$$
 - Even if we could, $\min_U S(x,u)$ will be non-convex and possibly hard to solve
 - Cost of DP blows up with state dimension due to cost of representing $V(X)$
 
+
+
+
 ## Why Do We Care?
+
 
 - Approximate DP with a function approximator for $V(X)$ or $S(X,U)$ (model free vs model based) is very powerful
 - Forms basis for modern RL

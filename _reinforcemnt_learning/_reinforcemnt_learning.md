@@ -5,6 +5,16 @@ Based on the CS 285 lectures [slides](https://rail.eecs.berkeley.edu/deeprlcours
 - [[reinforcement_learning_paradigms]]
 - [[maximum_likelihood]]
 - [[imitation_learning]]
+
+- Model Free RL
 - [[policy_gradients]]
 - [[actor_critic]]
-- [[_knknskx]]
+- [[value_learning]]
+- [[deep_q]]
+- [[apporx_policy_itera]]
+
+
+- Model Based RL
+- [[model_rl]]
+- [[model_rl_2]]
+- [[neural_simulator]]

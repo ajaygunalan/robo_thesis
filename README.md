@@ -17,6 +17,7 @@ Hi, I'm [Ajay Gunalan](https://ajaygunalan.com/), this is my personal second bra
 - [[_optimization]]
 - [[_reinforcemnt_learning]]
 - [[_optimal_control]]
+- [[_gemoteric_algebra]]
 
 
 
