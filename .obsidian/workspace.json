@@ -4,20 +4,81 @@
     "type": "split",
     "children": [
       {
-        "id": "d084a1c5bad9f750",
-        "type": "tabs",
+        "id": "eac96ff87dde450f",
+        "type": "split",
         "children": [
           {
-            "id": "3af7830f12de3a9b",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
+            "id": "84af432bb90665e7",
+            "type": "tabs",
+            "dimension": 47.44897959183674,
+            "children": [
+              {
+                "id": "22d1854fef60653f",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "_geometric_algebra/chapter_3/_metric products of subspaces.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "_metric products of subspaces"
+                }
+              }
+            ]
+          },
+          {
+            "id": "ee0cd002af4c4162",
+            "type": "tabs",
+            "dimension": 52.55102040816326,
+            "children": [
+              {
+                "id": "666e98918f95c200",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "terminal:terminal",
+                  "state": {
+                    "terminal:terminal": {
+                      "cwd": "/media/ajay/gdrive/_robo_thesis",
+                      "focus": false,
+                      "profile": {
+                        "args": [
+                          "--login"
+                        ],
+                        "executable": "/bin/bash",
+                        "followTheme": true,
+                        "name": "",
+                        "platforms": {
+                          "linux": true
+                        },
+                        "pythonExecutable": "python3",
+                        "restoreHistory": false,
+                        "rightClickAction": "copyPaste",
+                        "successExitCodes": [
+                          "0",
+                          "SIGINT",
+                          "SIGTERM"
+                        ],
+                        "terminalOptions": {
+                          "documentOverride": null
+                        },
+                        "type": "integrated",
+                        "useWin32Conhost": true
+                      },
+                      "serial": null
+                    }
+                  },
+                  "pinned": true,
+                  "icon": "terminal",
+                  "title": "Terminal: ajay@asus-rog-streak: /media/ajay/gdrive/_robo_thesis"
+                }
+              }
+            ]
           }
-        ]
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -75,7 +136,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 324.5
+    "width": 342.5
   },
   "right": {
     "id": "323905e149718fcc",
@@ -91,6 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "_geometric_algebra/chapter_4/_Linear Transformations of Subspaces.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +162,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for _Linear Transformations of Subspaces"
             }
           },
           {
@@ -109,12 +171,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "optimal_control/dynamic_programming.md",
+                "file": "_geometric_algebra/chapter_4/_Linear Transformations of Subspaces.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from dynamic_programming"
+              "title": "Outgoing links from _Linear Transformations of Subspaces"
             }
           },
           {
@@ -146,12 +208,23 @@
               "icon": "lucide-list",
               "title": "Outline of dynamic_programming"
             }
+          },
+          {
+            "id": "4eeb29ac9d64e66c",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "copilot-chat-view"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 368.5,
+    "width": 303.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -163,56 +236,63 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "publish:Publish changes...": false
+      "publish:Publish changes...": false,
+      "copilot:Open Copilot Chat": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "terminal:Open terminal": false
     }
   },
-  "active": "3af7830f12de3a9b",
+  "active": "666e98918f95c200",
   "lastOpenFiles": [
-    "_geometric_algebra/chapter_2/Chapter 2 - Spanning Oriented Subspaces.md",
-    "_geometric_algebra/chapter_4/Chapter 4 - Linear Transformations of Subspaces.md",
-    "_geometric_algebra/chapter_3/Chapter 3 - Metric Products of Subspaces.md",
-    "_geometric_algebra/obsidian_chapter_prompt.md",
-    "_geometric_algebra/chapter_3/Contraction (⌋).md",
-    "_geometric_algebra/chapter_3/Scalar Product.md",
-    "_geometric_algebra/chapter_3/Geometric Operations.md",
-    "_geometric_algebra/Metric Products of Subspaces.md",
-    "_geometric_algebra/chapter_3/The 3-D Cross Product.md",
-    "_geometric_algebra/chapter_3/Duality and Orthogonality.md",
-    "_geometric_algebra/_gemoteric_algebra.md",
-    "README.md",
-    "_geometric_algebra/Linear Transformations.md",
-    "_geometric_algebra/Intersection and Union.md",
-    "_geometric_algebra/Geometric Differentiation.md",
-    "_geometric_algebra/ch2_exercises.md",
-    "_geometric_algebra/ch3_exercises.md",
-    "_geometric_algebra/ch4_exercises.md",
-    "_geometric_algebra/The Fundamental Product.md",
-    "_geometric_algebra/Spanning Oriented Subspaces.md",
-    "_geometric_algebra/Orthogonal Transformations.md",
-    "_geometric_algebra/chapter_4/Examples.md",
-    "_geometric_algebra/chapter_4/Determinant.md",
-    "_geometric_algebra/chapter_4/Metric Products.md",
-    "_geometric_algebra/chapter_4/Matrix Representations.md",
-    "_geometric_algebra/chapter_4/Outermorphisms.md",
-    "_geometric_algebra/chapter_3",
-    "_geometric_algebra/Unconfirmed 59851.crdownload",
-    "_geometric_algebra/Unconfirmed 718383.crdownload",
-    "_geometric_algebra/chapter_3.zip",
-    "_geometric_algebra/Unconfirmed 455401.crdownload",
+    "_geometric_algebra/chapter_3/_metric products of subspaces.md",
+    "_geometric_algebra/chapter_4/_linear transformations of subspaces.md",
+    "_geometric_algebra/chapter_3/scalar product.md",
+    "_geometric_algebra/__geometric_algebra.md",
+    "_geometric_algebra/08_Geometric Differentiation.md",
+    "_geometric_algebra/chapter_3/study.md",
+    "_geometric_algebra/chapter_4/Ch04_Linear_Transformations_of_Subspaces.pdf",
+    "_geometric_algebra/chapter_4/Ch04_Linear_Transformations_of_Subspaces.md",
+    "_geometric_algebra/chapter_4/AGENTS.md",
+    "_geometric_algebra/chapter_3/study.md.tmp.20410.1769089331043",
+    "_geometric_algebra/chapter_3/ch03 metric products of subspaces.md",
+    "_geometric_algebra/chapter_3/token_comparison.py",
+    "_geometric_algebra/chapter_3/token_comparison.py.tmp.9258.1769045275434",
+    "_geometric_algebra/chapter_3/Ch03_Metric_Products_of_Subspaces.pdf",
+    "_geometric_algebra/chapter_5/Ch05_Intersection_and_Union_of_Subspaces.md",
+    "_geometric_algebra/chapter_11/Ch11_The_Homogeneous_Model.pdf",
+    "_geometric_algebra/chapter_11/Ch11_The_Homogeneous_Model_part2.pdf",
+    "_geometric_algebra/chapter_11/Ch11_The_Homogeneous_Model_part1.pdf",
+    "_geometric_algebra/chapter_10/Ch10_The_Vector_Space_Model.md",
+    "_geometric_algebra/chapter_7/Ch07_Orthogonal_Transformations_as_Versors.md",
+    "_geometric_algebra/chapter_6/Ch06_The_Fundamental_Product_of_Geometric_Algebra.md",
+    "_geometric_algebra/chapter_3/null and nonnull blades.md",
+    "_geometric_algebra/blade inverse.md",
+    "_geometric_algebra/reversion.md",
+    "_geometric_algebra/chapter_3/the 3-d cross product.md",
+    "_geometric_algebra/chapter_3/__tmp_the 3-d cross product.md",
+    "_geometric_algebra/chapter_3/geometric operations.md",
+    "_geometric_algebra/chapter_3/__tmp_geometric operations.md",
+    "_geometric_algebra/chapter_3/duality and orthogonality.md",
+    "_geometric_algebra/chapter_3/__tmp_duality and orthogonality.md",
+    "_geometric_algebra/chapter_3/contraction (⌋).md",
+    "_geometric_algebra/chapter_3/__tmp_contraction (⌋).md",
+    "_geometric_algebra/chapter_3/__tmp_scalar product.md",
+    "_geometric_algebra/chapter_3/Ch03_Metric_Products_of_Subspaces.md",
+    "_geometric_algebra/chapter_13/Ch13_The_Conformal_Model.pdf",
+    "Unconfirmed 621697.crdownload",
+    "_geometric_algebra/NotebookLM Mind Map.png",
     "_geometric_algebra/assets/ch_2.png",
-    "_geometric_algebra/chapter_4",
-    "_geometric_algebra/chapter_2",
-    "_geometric_algebra/Unconfirmed 567521.crdownload",
-    "_geometric_algebra/Unconfirmed 284436.crdownload",
     "_geometric_algebra/assets/exercise3_geometric.png",
-    "_geometric_algebra/assets",
     "_geometric_algebra/assets/fig_2_8_line_intersection_final.png",
     "_geometric_algebra/2_7.png",
     "_geometric_algebra/assets/fig_2_3_bivector_reshapeability.png",
     "optimal_control/assets/collocation_pts.png",
     "optimal_control/assets/largarnage_multipler.jpg",
     "optimal_control/assets/dp.jpg",
-    "optimal_control/assets/underactuate_vs_fully_acutuated_math.jpg",
-    "optimal_control/assets/underactuate_vs_fully_acutuated.jpg"
+    "optimal_control/assets/underactuate_vs_fully_acutuated_math.jpg"
   ]
 }

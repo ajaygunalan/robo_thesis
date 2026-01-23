@@ -1,0 +1,13 @@
+# _basis blades and operations
+
+Implementing geometric algebra as "multivectors = weighted sums of basis blades" eventually hits a hard, unavoidable wall: you must multiply basis blades quickly and correctly, because every multivector product is just "all pairs of blades, accumulate." Chapter 19's story is how to make that multiplication feel like bit-twiddling rather than symbolic algebra, without losing the algebra's meaning.
+
+It starts by refusing to store a basis blade as a literal ordered wedge and instead encoding it as a compact *set membership object*—a bitmap that says which basis vectors are present, plus a scalar weight that carries sign and scale. That move, detailed in [[bitmap basis blades]], is the hinge: once blades are "bitsets," dependence, overlap, and combination become cheap boolean operations.
+
+But bitsets alone only track *which* basis vectors are in the result, not whether the result should be $+e_{i_1}\wedge\cdots\wedge e_{i_k}$ or its negative. The moment you multiply two blades you implicitly concatenate basis vectors and then reorder into canonical order; the sign is the parity of that permutation. The chapter isolates this as a standalone primitive—the canonical reordering sign—so all products can reuse it cleanly (see [[canonical reordering sign]]).
+
+With those two ingredients, the "core case" becomes almost shockingly simple: in an orthogonal basis, both the outer product and the geometric product reduce to "combine the bit patterns + correct the sign," and, for non-Euclidean diagonal metrics, also fold in the diagonal metric factors for any basis vectors that cancel. This is the fast path you'll use constantly, captured in [[orthogonal blade products]].
+
+Real geometric algebra models don't always hand you an orthogonal basis, though; conformal constructions in particular love nonorthonormal vectors. Rather than inventing a new multiplication algorithm for every messy metric, the chapter takes a linear-algebra detour: diagonalize the metric once, compute products in the orthogonal eigenbasis, then map results back. That pipeline—and the important warning that products can stop being single blades when you transform bases—is the point of [[nonorthogonal metrics via eigenbasis]].
+
+Finally, once geometric products are available, the rest of the product zoo becomes *views* of $AB$: grade selection gives contractions and scalar products; antisymmetrization gives commutators; grade-only sign rules implement reversion and involutions. Those are packaged in [[grade-derived operations]] so your implementation can treat "geometric product" as the one indispensable engine and everything else as post-processing.
