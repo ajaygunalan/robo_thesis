@@ -1,0 +1,35 @@
+
+Based on the 16-745 CMU  lectures [notes](https://github.com/Optimal-Control-16-745/lecture-notebooks?tab=readme-ov-file) , [video]([Optimal Control (CMU 16-745) 2025 Lecture 1: Intro and Dynamics Review](https://www.youtube.com/watch?v=SvAYJC7jug8&list=PLZnJoM76RM6IAJfMXd1PgGNXn3dxhkVgI))  
+
+- [[dynamics_stability]]
+- [[optimization_intro]]
+- [[solution_methods]]
+- [[regularization_merit_functions]]
+- [[hw1]]
+- [[pontryagin_shooting_methods]]
+- [[lqr_in_3_ways]]
+- [[hw2]]
+- [[dynamic_programming]]
+- [[mpc]]
+- [[ddp]]
+- [[ddp_extra]]
+- [[direct_method]]
+- [[lec_14]]
+- [[mpc_qp]]
+- [[from_lqr_to_modern_trajectory_optimization_a_jour]]
+- [[why_mpc_s_receding_horizon_genius_matters_the_dee]]
+- [[null_space_control_for_redundant_robots_a_deep_di]]
+- [[intro_to_nonlinear_trajectory_optimization]]
+- [[differential_dynamic_programming]]
+- [[ilqr]]
+- [[hw3]]
+- [[double_pendulum_dynamics_and_energy]]
+- [[direct_trajectory_optimization]]
+- [[collocation]]
+- [[sqp]]
+- [[attitude_Intro_so3_and_quaternions]]
+- [[optimizing_with_attitude]]
+- [[hw4]]
+
+
+6 , 7 , 8,  9, 10, 11, 12, 13
