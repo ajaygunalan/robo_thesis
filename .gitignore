@@ -1,2 +1,11 @@
 # PDF files
 *.pdf
+
+# Obsidian plugins, themes, and generated indexes
+.obsidian/plugins/
+.obsidian/themes/
+.obsidian/copilot-*.json
+
+# Copilot
+.copilot/
+copilot/

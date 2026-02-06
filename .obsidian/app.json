@@ -7,7 +7,7 @@
     "margin": "0",
     "downscalePercent": 75
   },
-  "livePreview": true,
+  "livePreview": false,
   "alwaysUpdateLinks": true,
   "defaultViewMode": "preview"
 }

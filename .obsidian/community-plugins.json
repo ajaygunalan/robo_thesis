@@ -1,7 +1,9 @@
 [
-  "copilot",
   "obsidian-excalidraw-plugin",
   "pdf-plus",
   "table-editor-obsidian",
-  "terminal"
+  "terminal",
+  "show-hidden-files",
+  "obsidian42-brat",
+  "agent-client"
 ]
