@@ -1,5 +1,17 @@
 # Zettelkasten++ (Vegapunk)
 
+## Install
+
+From your Obsidian vault root (the folder that contains your `.obsidian/`):
+
+```bash
+git clone https://github.com/ajaygunalan/vegapunk /tmp/vegapunk && mkdir -p .claude/skills/vp .claude/scripts && cp -r /tmp/vegapunk/skills/* .claude/skills/vp/ && cp /tmp/vegapunk/scripts/* .claude/scripts/ && cp /tmp/vegapunk/settings.local.json .claude/settings.local.json && rm -rf /tmp/vegapunk && echo "Vegapunk installed."
+```
+
+Then open Claude Code in your vault and the `/vp-*` commands are ready.
+
+---
+
 Building a "second brain" in Obsidian breaks at scale. The maintenance is manual and fragile: you keep splitting notes, rewriting for clarity, deciding what belongs where, maintaining cross-links, and preventing the same idea from being rewritten in multiple places and diverging over time.
 
 Vegapunk fixes this by using AI to distill sources into atoms (one concept per file) and generate higher-level structure — molecules that group and connect related atoms, plus index notes that map collections of molecules — all linked via `[[wikilinks]]` under a single-source-of-truth rule: each idea lives exactly once, everything else links to it. The test is simple: after months away from a topic, reading a molecule should restore your understanding without returning to the original source. If you have to re-read the textbook, the molecule failed.
