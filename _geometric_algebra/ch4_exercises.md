@@ -1,1031 +1,279 @@
-- Trivial changes (typo fixes)
-- Well-understood tasks with clear path
-- Emergency hotfixes (but document learnings after)
+# Structural
+
+1. In 3D, point inversion reverses the orientation of 3-blades. Show that a mirror reflection in a plane through the origin does the same.
+
+Let the mirror plane be spanned by independent vectors $u, v$, with $a$ perpendicular to the plane.
+
+The reflection $r$ keeps in-plane components fixed and flips the normal:
+
+$r[u] = u$, $r[v] = v$, $r[a] = -a$
+
+Apply to the volume element $I = u \wedge v \wedge a$:
+
+$r[I] = r[u] \wedge r[v] \wedge r[a] = u \wedge v \wedge (-a) = -(u \wedge v \wedge a)$
+
+$$r[I] = -I$$
+
+Since the space of 3-blades is 1-dimensional, any 3-blade $A_3 = \alpha I$ transforms as $r[A_3] = -A_3$.
 
 ---
 
-### **Hallucination Detection: 94% Accuracy**
+2. In 2D with basis $\{b_1, b_2\}$, let $f[b_1] = x = x_1 b_1 + x_2 b_2$ and $f[b_2] = y = y_1 b_1 + y_2 b_2$. Compute $\det(f)$ and verify it matches the classical matrix determinant.
 
-**Finding**: The Four Questions catch most AI hallucinations.
+Let $I_2 = b_1 \wedge b_2$. By outermorphism:
 
-**The Four Questions**:
-1. Are all tests passing? → REQUIRE actual output
-2. Are all requirements met? → LIST each requirement
-3. No assumptions without verification? → SHOW documentation
-4. Is there evidence? → PROVIDE test results, code changes, validation
+$f[I_2] = f[b_1] \wedge f[b_2] = x \wedge y$
 
-**Red flags that indicate hallucination**:
-- "Tests pass" (without showing output) 🚩
-- "Everything works" (without evidence) 🚩
-- "Implementation complete" (with failing tests) 🚩
-- Skipping error messages 🚩
-- Ignoring warnings 🚩
-- "Probably works" language 🚩
+$x \wedge y = (x_1 b_1 + x_2 b_2) \wedge (y_1 b_1 + y_2 b_2)$
 
-**Real example**:
-```
-❌ BAD: "The API integration is complete and working correctly."
-✅ GOOD: "The API integration is complete. Test output:
-         ✅ test_api_connection: PASSED
-         ✅ test_api_authentication: PASSED
-         ✅ test_api_data_fetch: PASSED
-         All 3 tests passed in 1.2s"
-```
+$= x_1 y_2 (b_1 \wedge b_2) + x_2 y_1 (b_2 \wedge b_1)$
+
+$= (x_1 y_2 - x_2 y_1)(b_1 \wedge b_2)$
+
+The matrix of $f$ has columns as coordinates of images:
+
+$[f] = \begin{pmatrix} x_1 & y_1 \\ x_2 & y_2 \end{pmatrix}$
+
+Classical determinant: $x_1 y_2 - x_2 y_1$
+
+$$\det(f) = x_1 y_2 - x_2 y_1$$
 
 ---
 
-### **Parallel Execution: 3.5x Speedup**
+3. Why can't you define a determinant on a $k$-dimensional subspace by replacing $I_n$ with $I_k$ in $f[I_n] = \det(f) I_n$?
 
-**Finding**: Wave → Checkpoint → Wave pattern dramatically improves performance.
+The formula works for $n$ because $\Lambda^n(\mathbb{R}^n)$ is 1-dimensional—every $n$-blade is proportional to $I_n$.
 
-**Pattern**:
-```python
-# Wave 1: Independent reads (parallel)
-files = [Read(f1), Read(f2), Read(f3)]
+For $k < n$, the space $\Lambda^k(\mathbb{R}^n)$ has dimension $\binom{n}{k} > 1$. A generic map sends $I_k$ to a $k$-blade not parallel to $I_k$.
 
-# Checkpoint: Analyze together (sequential)
-analysis = analyze_files(files)
+Example: A 2D rotation has no real eigenvectors, so $f[u]$ is not proportional to $u$ for any vector $u$.
 
-# Wave 2: Independent edits (parallel)
-edits = [Edit(f1), Edit(f2), Edit(f3)]
-```
-
-**When to use**:
-- ✅ Reading multiple independent files
-- ✅ Editing multiple unrelated files
-- ✅ Running multiple independent searches
-- ✅ Parallel test execution
-
-**When NOT to use**:
-- ❌ Operations with dependencies (file2 needs data from file1)
-- ❌ Sequential analysis (building context step-by-step)
-- ❌ Operations that modify shared state
-
-**Performance data**:
-- Sequential: 10 file reads = 10 API calls = ~30 seconds
-- Parallel: 10 file reads = 1 API call = ~3 seconds
-- Speedup: 3.5x average, up to 10x for large batches
+$$f[I_k] \neq \delta \, I_k \text{ in general}$$
 
 ---
 
-## 🛠️ **Common Pitfalls and Solutions**
+4. In the plane $a \wedge b$, a linear map satisfies $f[a] = 5a - 3b$ and $f[b] = 3a - 5b$. Find eigenvectors, eigenvalues, the determinant, and an eigen-2-blade.
 
-### **Pitfall 1: Implementing Before Checking for Duplicates**
+Part 1 - Eigenanalysis:
 
-**Problem**: Spent hours implementing feature that already exists in codebase.
+Matrix in basis $\{a, b\}$: $A = \begin{pmatrix} 5 & 3 \\ -3 & -5 \end{pmatrix}$
 
-**Solution**: ALWAYS use Glob/Grep before implementing:
-```bash
-# Search for similar functions
-uv run python -c "from pathlib import Path; print([f for f in Path('src').rglob('*.py') if 'feature_name' in f.read_text()])"
+Characteristic polynomial: $\det(A - \lambda I) = \lambda^2 - 16$
 
-# Or use grep
-grep -r "def feature_name" src/
-```
+Eigenvalues: $\lambda = 4$ and $\lambda = -4$
 
-**Prevention**: Run confidence check, ensure duplicate_check_complete=True
+Eigenvectors: $v_+ = -3a + b$ (for $\lambda = 4$), $v_- = a - 3b$ (for $\lambda = -4$)
 
----
+Part 2 - Determinant and eigen-2-blade:
 
-### **Pitfall 2: Assuming Architecture Without Verification**
+$f[a \wedge b] = f[a] \wedge f[b] = (5a - 3b) \wedge (3a - 5b)$
 
-**Problem**: Implemented custom API when project uses Supabase.
+$= (5 \cdot (-5) - (-3) \cdot 3)(a \wedge b) = -16(a \wedge b)$
 
-**Solution**: READ CLAUDE.md and PLANNING.md before implementing:
-```python
-# Check project tech stack
-with open('CLAUDE.md') as f:
-    claude_md = f.read()
+$$\det(f) = -16, \quad \text{eigen-2-blade } a \wedge b \text{ with eigenvalue } -16$$
 
-if 'Supabase' in claude_md:
-    # Use Supabase APIs, not custom implementation
-```
+Part 3 - Geometry:
 
-**Prevention**: Run confidence check, ensure architecture_check_complete=True
+Scaling by 4 in both eigen-directions, combined with a reflection (one negative eigenvalue). Area scales by $4 \times 4 = 16$ with orientation flip.
 
 ---
 
-### **Pitfall 3: Skipping Test Output**
+5. Construct a non-identity linear map in 2D with an eigenvector of eigenvalue 1 and an eigen-2-blade of eigenvalue 1.
 
-**Problem**: Claimed tests passed but they were actually failing.
+A shear with $s \neq 0$:
 
-**Solution**: ALWAYS show actual test output:
-```bash
-# Run tests and capture output
-uv run pytest -v > test_output.txt
+$f[e_1] = e_1$, $f[e_2] = e_2 + s e_1$
 
-# Show in validation
-echo "Test Results:"
-cat test_output.txt
-```
+$e_1$ is an eigenvector with eigenvalue 1.
 
-**Prevention**: Use SelfCheckProtocol, require evidence
+$f[e_1 \wedge e_2] = e_1 \wedge (e_2 + s e_1) = e_1 \wedge e_2$
+
+$$e_1 \wedge e_2 \text{ is an eigen-2-blade with eigenvalue 1}$$
 
 ---
 
-### **Pitfall 4: Version Inconsistency**
+6. Since $A * B$ is a scalar, $f[A * B] = A * B$. Show this does not imply norms are preserved.
 
-**Problem**: VERSION file says 4.1.9, but package.json says 4.1.5, pyproject.toml says 0.4.0.
+The squared norm after transforming is:
 
-**Solution**: Understand versioning strategy:
-- **Framework version** (VERSION file): User-facing version (4.1.9)
-- **Python package** (pyproject.toml): Library semantic version (0.4.0)
-- **NPM package** (package.json): Should match framework version (4.1.9)
+$|f[A]|^2 = f[A] * \widetilde{f[A]}$
 
-**When updating versions**:
-1. Update VERSION file first
-2. Update package.json to match
-3. Update README badges
-4. Consider if pyproject.toml needs bump (breaking changes?)
-5. Update CHANGELOG.md
+This is not the same as $f[A * \tilde{A}]$.
 
-**Prevention**: Create release checklist
+Counterexample: Scaling $S[x] = \alpha x$ with $\alpha \neq \pm 1$:
+
+$|S[a]|^2 = (\alpha a) \cdot (\alpha a) = \alpha^2 (a \cdot a) \neq a \cdot a$
+
+The error: $f[\text{scalar}] = \text{scalar}$ is true, but $f[A] * f[B] = A * B$ is generally false.
 
 ---
 
-### **Pitfall 5: UV Not Installed**
+7. Express $|f[A]|^2$ in the form $A * g[\tilde{A}]$ and find $g$ in terms of $f$.
 
-**Problem**: Makefile requires `uv` but users don't have it.
+$|f[A]|^2 = f[A] * \widetilde{f[A]} = f[A] * f[\tilde{A}]$
 
-**Solution**: Install UV:
-```bash
-# macOS/Linux
-curl -LsSf https://astral.sh/uv/install.sh | sh
+Using the adjoint identity $f[A] * B = A * \bar{f}[B]$ with $B = f[\tilde{A}]$:
 
-# Windows
-powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
+$f[A] * f[\tilde{A}] = A * \bar{f}[f[\tilde{A}]] = A * (\bar{f} \circ f)[\tilde{A}]$
 
-# With pip
-pip install uv
-```
+$$g = \bar{f} \circ f$$
 
-**Alternative**: Provide fallback commands:
-```bash
-# With UV (preferred)
-uv run pytest
-
-# Without UV (fallback)
-python -m pytest
-```
-
-**Prevention**: Document UV requirement in README
+In matrix terms: $g = f^T f$.
 
 ---
 
-## 📚 **Best Practices**
+8. Show that for an orthogonal transformation, the metric mapping $g = \bar{f} \circ f$ is the identity.
 
-### **Testing Best Practices**
+For orthogonal $f$: $\bar{f} = f^{-1}$
 
-**1. Use pytest markers for organization**:
-```python
-@pytest.mark.unit
-def test_individual_function():
-    pass
+$g = f^{-1} \circ f = \text{id}$
 
-@pytest.mark.integration
-def test_component_interaction():
-    pass
+Therefore:
 
-@pytest.mark.confidence_check
-def test_with_pre_check(confidence_checker):
-    pass
-```
+$|f[A]|^2 = A * g[\tilde{A}] = A * \tilde{A} = |A|^2$
 
-**2. Use fixtures for shared setup**:
-```python
-# conftest.py
-@pytest.fixture
-def sample_context():
-    return {...}
-
-# test_file.py
-def test_feature(sample_context):
-    # Use sample_context
-```
-
-**3. Test both happy path and edge cases**:
-```python
-def test_feature_success():
-    # Normal operation
-
-def test_feature_with_empty_input():
-    # Edge case
-
-def test_feature_with_invalid_data():
-    # Error handling
-```
+$$\text{Norms and angles are preserved.}$$
 
 ---
 
-### **Git Workflow Best Practices**
+9. In a nondegenerate metric space with basis $\{b_i\}$ and reciprocal basis $\{b^i\}$, write an explicit formula for the adjoint $\bar{f}$.
 
-**1. Conventional commits**:
-```bash
-git commit -m "feat: add confidence checking to PM Agent"
-git commit -m "fix: resolve version inconsistency"
-git commit -m "docs: update CLAUDE.md with plugin warnings"
-git commit -m "test: add unit tests for reflexion pattern"
-```
+$$\bar{f}[x] = \sum_{i=1}^n (x \cdot f[b_i]) b^i$$
 
-**2. Small, focused commits**:
-- Each commit should do ONE thing
-- Commit message should explain WHY, not WHAT
-- Code changes should be reviewable in <500 lines
+Verification: For any $x, y$:
 
-**3. Branch naming**:
-```bash
-feature/add-confidence-check
-fix/version-inconsistency
-docs/update-readme
-refactor/simplify-cli
-test/add-unit-tests
-```
+$\bar{f}[x] \cdot y = \sum_i (x \cdot f[b_i])(b^i \cdot y)$
+
+Since $y = \sum_i (b^i \cdot y) b_i$:
+
+$x \cdot f[y] = \sum_i (b^i \cdot y)(x \cdot f[b_i])$
+
+These match, confirming $\bar{f}[x] \cdot y = x \cdot f[y]$.
 
 ---
 
-### **Documentation Best Practices**
+10. Prove that if $f$ is orthogonal then $\det(f) = \pm 1$.
 
-**1. Code documentation**:
-```python
-def assess(self, context: Dict[str, Any]) -> float:
-    """
-    Assess confidence level (0.0 - 1.0)
+For orthogonal $f$, norms are preserved: $|f[I_n]|^2 = |I_n|^2$
 
-    Investigation Phase Checks:
-    1. No duplicate implementations? (25%)
-    2. Architecture compliance? (25%)
-    3. Official documentation verified? (20%)
-    4. Working OSS implementations referenced? (15%)
-    5. Root cause identified? (15%)
+But $f[I_n] = \det(f) \, I_n$, so:
 
-    Args:
-        context: Context dict with task details
+$|f[I_n]|^2 = (\det f)^2 (I_n * \tilde{I}_n)$
 
-    Returns:
-        float: Confidence score (0.0 = no confidence, 1.0 = absolute certainty)
+Setting equal: $(\det f)^2 (I_n * \tilde{I}_n) = I_n * \tilde{I}_n$
 
-    Example:
-        >>> checker = ConfidenceChecker()
-        >>> confidence = checker.assess(context)
-        >>> if confidence >= 0.9:
-        ...     proceed_with_implementation()
-    """
-```
+Since the metric is nondegenerate, $I_n * \tilde{I}_n \neq 0$:
 
-**2. README structure**:
-- Start with clear value proposition
-- Quick installation instructions
-- Usage examples
-- Link to detailed docs
-- Contribution guidelines
-- License
-
-**3. Keep docs synchronized with code**:
-- Update docs in same PR as code changes
-- Review docs during code review
-- Use automated doc generation where possible
+$$(\det f)^2 = 1 \implies \det f = \pm 1$$
 
 ---
 
-## 🔧 **Troubleshooting Guide**
+11. Give a formula for how the adjoint map acts on a contraction.
 
-### **Issue: Tests Not Found**
+The contraction transforms as: $f[A \lrcorner B] = \bar{f}^{-1}[A] \lrcorner f[B]$
 
-**Symptoms**:
-```
-$ uv run pytest
-ERROR: file or directory not found: tests/
-```
+Replacing $f$ with $\bar{f}$ and using $\overline{\bar{f}} = f$:
 
-**Cause**: tests/ directory doesn't exist
-
-**Solution**:
-```bash
-# Create tests structure
-mkdir -p tests/unit tests/integration
-
-# Add __init__.py files
-touch tests/__init__.py
-touch tests/unit/__init__.py
-touch tests/integration/__init__.py
-
-# Add conftest.py
-touch tests/conftest.py
-```
+$$\bar{f}[A \lrcorner B] = f^{-1}[A] \lrcorner \bar{f}[B]$$
 
 ---
 
-### **Issue: Plugin Not Loaded**
+12. Give a linear map $f$ and vectors $a, b$ such that $f[a \times b]$ is not parallel to $f[a] \times f[b]$.
 
-**Symptoms**:
-```
-$ uv run pytest --trace-config
-# superclaude not listed in plugins
-```
+Define a shear in 3D: $f[e_1] = e_1 + e_2$, $f[e_2] = e_2$, $f[e_3] = e_3$
 
-**Cause**: Package not installed or entry point not configured
+Take $a = e_1$, $b = e_3$:
 
-**Solution**:
-```bash
-# Reinstall in editable mode
-uv pip install -e ".[dev]"
+$a \times b = e_1 \times e_3 = -e_2$
 
-# Verify entry point in pyproject.toml
-# Should have:
-# [project.entry-points.pytest11]
-# superclaude = "superclaude.pytest_plugin"
+$f[a \times b] = f[-e_2] = -e_2$
 
-# Test plugin loaded
-uv run pytest --trace-config 2>&1 | grep superclaude
-```
+$f[a] \times f[b] = (e_1 + e_2) \times e_3 = -e_2 + e_1 = e_1 - e_2$
+
+$$-e_2 \text{ is not parallel to } e_1 - e_2$$
 
 ---
 
-### **Issue: ImportError in Tests**
+13. For the shear $f_s[x] = x + s(x \cdot e_1)e_2$, compute the matrix on vectors and the matrix for the dual map. Verify geometrically.
 
-**Symptoms**:
-```python
-ImportError: No module named 'superclaude'
-```
+Matrix on vectors:
 
-**Cause**: Package not installed in test environment
+$f_s[e_1] = e_1 + s e_2$, $f_s[e_2] = e_2$, $f_s[e_k] = e_k$ for $k \geq 3$
 
-**Solution**:
-```bash
-# Install package in editable mode
-uv pip install -e .
+$[[f_s]] = \begin{pmatrix} 1 & 0 \\ s & 1 \end{pmatrix}$
 
-# Or use uv run (creates venv automatically)
-uv run pytest
-```
+Matrix for dual map ($f^* = \det(f) f^{-T}$ with $\det(f_s) = 1$):
 
----
+$[[f_s]]^{-1} = \begin{pmatrix} 1 & 0 \\ -s & 1 \end{pmatrix}$, so $[[f_s^*]] = \begin{pmatrix} 1 & -s \\ 0 & 1 \end{pmatrix}$
 
-### **Issue: Fixtures Not Available**
+Geometric check: Line direction $d = e_1$ transforms to $d' = e_1 + s e_2$. Normal $n = e_2$ should transform to stay perpendicular.
 
-**Symptoms**:
-```python
-fixture 'confidence_checker' not found
-```
+$n' = f_s^*[e_2] = -s e_1 + e_2$
 
-**Cause**: pytest plugin not loaded or fixture not defined
+$n' \cdot d' = (-s e_1 + e_2) \cdot (e_1 + s e_2) = -s + s = 0$ ✓
 
-**Solution**:
-```bash
-# Check plugin loaded
-uv run pytest --fixtures | grep confidence_checker
-
-# Verify pytest_plugin.py has fixture
-# Should have:
-# @pytest.fixture
-# def confidence_checker():
-#     return ConfidenceChecker()
-
-# Reinstall package
-uv pip install -e .
-```
+Using $f_s[e_2] = e_2$ wrongly gives $e_2 \cdot (e_1 + s e_2) = s \neq 0$.
 
 ---
 
-### **Issue: .gitignore Not Working**
+14. Verify that formula (4.18) produces the identity matrix when $f$ is the identity.
 
-**Symptoms**: Files listed in .gitignore still tracked by git
+Formula (4.18): $[[f]]^j{}_i = (b_1 \wedge \cdots \wedge b_{j-1} \wedge f[b_i] \wedge b_{j+1} \wedge \cdots \wedge b_n) \lrcorner I_n^{-1}$
 
-**Cause**: Files were tracked before adding to .gitignore
+If $f = \text{id}$, then $f[b_i] = b_i$:
 
-**Solution**:
-```bash
-# Remove from git but keep in filesystem
-git rm --cached <file>
+If $i = j$: wedge is $b_1 \wedge \cdots \wedge b_n = I_n$, so $[[f]]^j{}_j = I_n \lrcorner I_n^{-1} = 1$
 
-# OR remove entire directory
-git rm -r --cached <directory>
+If $i \neq j$: wedge contains repeated $b_i$ (appears twice, $b_j$ missing), so equals 0
 
-# Commit the change
-git commit -m "fix: remove tracked files from gitignore"
-```
+$$[[f]] = I$$
 
 ---
 
-## 💡 **Advanced Techniques**
+15. Show that $A^{-1} = \text{adj}(A)/\det(A)$ matches the coordinate-free inverse formula (4.16).
 
-### **Technique 1: Dynamic Fixture Configuration**
+Formula (4.16) for vectors: $f^{-1}[x] = \dfrac{f[x \lrcorner I_n^{-1}] \lrcorner I_n}{\det(f)}$
 
-```python
-@pytest.fixture
-def token_budget(request):
-    """Fixture that adapts based on test markers"""
-    marker = request.node.get_closest_marker("complexity")
-    complexity = marker.args[0] if marker else "medium"
-    return TokenBudgetManager(complexity=complexity)
+Apply to $x = b_j$:
 
-# Usage
-@pytest.mark.complexity("simple")
-def test_simple_feature(token_budget):
-    assert token_budget.limit == 200
-```
+$b_j \lrcorner I_n^{-1}$ is the $(n-1)$-blade from wedging all basis vectors except $b_j$
+
+Applying $f$ wedges together images of all basis vectors except $b_j$
+
+Contracting with $I_n$ extracts cofactors $(-1)^{i+j} \det(A_{ji})$
+
+$f^{-1}[b_j] = \dfrac{1}{\det(A)} \sum_{i=1}^n (-1)^{i+j} \det(A_{ji}) b_i$
+
+$$(A^{-1})^i{}_j = \dfrac{(-1)^{i+j} \det(A_{ji})}{\det(A)} = \dfrac{\text{adj}(A)^i{}_j}{\det(A)}$$
 
 ---
 
-### **Technique 2: Confidence-Driven Test Execution**
+16. Give the matrix expression for $f^* = \det(f) \bar{f}^{-1}$ and explain the geometric meaning of the cofactor matrix.
 
-```python
-def pytest_runtest_setup(item):
-    """Skip tests if confidence is too low"""
-    marker = item.get_closest_marker("confidence_check")
-    if marker:
-        checker = ConfidenceChecker()
-        context = build_context(item)
-        confidence = checker.assess(context)
+In orthonormal Euclidean basis:
 
-        if confidence < 0.7:
-            pytest.skip(f"Confidence too low: {confidence:.0%}")
-```
+$[[f^*]] = \det(A) \, A^{-T} = \text{adj}(A)^T = \text{cofactor matrix}$
+
+Geometric meaning: The cofactor matrix transforms dual objects (normals, hyperplanes) correctly under the linear map.
 
 ---
 
-### **Technique 3: Reflexion-Powered Error Learning**
+17. Show the projection $P = B(B^T B)^{-1} B^T$ equals $(x \lrcorner \mathbf{B}) \lrcorner \mathbf{B}^{-1}$ with $\mathbf{B} = b_1 \wedge \cdots \wedge b_k$.
 
-```python
-def pytest_runtest_makereport(item, call):
-    """Record failed tests for future learning"""
-    if call.when == "call" and call.excinfo is not None:
-        reflexion = ReflexionPattern()
-        error_info = {
-            "test_name": item.name,
-            "error_type": type(call.excinfo.value).__name__,
-            "error_message": str(call.excinfo.value),
-        }
-        reflexion.record_error(error_info)
-```
+Let $\{b^i\}$ be reciprocal vectors within the subspace, with $G_{ij} = b_i \cdot b_j$.
 
----
+$P_{\mathbf{B}}[x] = \sum_{i=1}^k (x \cdot b^i) b_i$
 
-## 📊 **Performance Insights**
+The reciprocal vectors satisfy $b^i = \sum_j (G^{-1})^{ij} b_j$, so $x \cdot b^i = \sum_j (G^{-1})^{ij} (x \cdot b_j)$
 
-### **Token Usage Patterns**
+Let matrix $B$ have columns $b_i$. Then:
 
-Based on real usage data:
+$(x \cdot b_j) = B^T x$
 
-| Task Type | Typical Tokens | With PM Agent | Savings |
-|-----------|---------------|---------------|---------|
-| Typo fix | 200-500 | 200-300 | 40% |
-| Bug fix | 2,000-5,000 | 1,000-2,000 | 50% |
-| Feature | 10,000-50,000 | 5,000-15,000 | 60% |
-| Wrong direction | 50,000+ | 100-200 (prevented) | 99%+ |
+Coefficient vector: $c = (B^T B)^{-1} B^T x$
 
-**Key insight**: Prevention (confidence check) saves more tokens than optimization
+Reconstruction: $Bc = B(B^T B)^{-1} B^T x$
 
----
+$$P_{\mathbf{B}}[x] = B(B^T B)^{-1} B^T x$$
 
-### **Execution Time Patterns**
-
-| Operation | Sequential | Parallel | Speedup |
-|-----------|-----------|----------|---------|
-| 5 file reads | 15s | 3s | 5x |
-| 10 file reads | 30s | 3s | 10x |
-| 20 file edits | 60s | 15s | 4x |
-| Mixed ops | 45s | 12s | 3.75x |
-
-**Key insight**: Parallel execution has diminishing returns after ~10 operations per wave
-
----
-
-## 🎓 **Lessons Learned**
-
-### **Lesson 1: Documentation Drift is Real**
-
-**What happened**: README described v2.0 plugin system that didn't exist in v4.1.9
-
-**Impact**: Users spent hours trying to install non-existent features
-
-**Solution**:
-- Add warnings about planned vs implemented features
-- Review docs during every release
-- Link to tracking issues for planned features
-
-**Prevention**: Documentation review checklist in release process
-
----
-
-### **Lesson 2: Version Management is Hard**
-
-**What happened**: Three different version numbers across files
-
-**Impact**: Confusion about which version is installed
-
-**Solution**:
-- Define version sources of truth
-- Document versioning strategy
-- Automate version updates in release script
-
-**Prevention**: Single-source-of-truth for versions (maybe use bumpversion)
-
----
-
-### **Lesson 3: Tests Are Non-Negotiable**
-
-**What happened**: Framework provided testing tools but had no tests itself
-
-**Impact**: No confidence in code quality, regression bugs
-
-**Solution**:
-- Create comprehensive test suite
-- Require tests for all new code
-- Add CI/CD to run tests automatically
-
-**Prevention**: Make tests a requirement in PR template
-
----
-
-## 🔮 **Future Explorations**
-
-Ideas worth investigating:
-
-1. **Automated confidence checking** - AI analyzes context and suggests improvements
-2. **Visual reflexion patterns** - Graph view of error patterns over time
-3. **Predictive token budgeting** - ML model predicts token usage based on task
-4. **Collaborative learning** - Share reflexion patterns across projects (opt-in)
-5. **Real-time hallucination detection** - Streaming analysis during generation
-
----
-
-## 📞 **Getting Help**
-
-**When stuck**:
-1. Check this KNOWLEDGE.md for similar issues
-2. Read PLANNING.md for architecture context
-3. Check TASK.md for known issues
-4. Search GitHub issues for solutions
-5. Ask in GitHub discussions
-
-**When sharing knowledge**:
-1. Document solution in this file
-2. Update relevant section
-3. Add to troubleshooting guide if applicable
-4. Consider adding to FAQ
-
----
-
-*This document grows with the project. Everyone who encounters a problem and finds a solution should document it here.*
-
-**Contributors**: SuperClaude development team and community
-**Maintained by**: Project maintainers
-**Review frequency**: Quarterly or after major insights
-
-
-
-================================================
-FILE: LICENSE
-================================================
-MIT License
-
-Copyright (c) 2024 SuperClaude Framework Contributors
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-
-================================================
-FILE: Makefile
-================================================
-.PHONY: install test test-plugin doctor verify clean lint format build-plugin sync-plugin-repo uninstall-legacy help
-
-# Installation (local source, editable) - RECOMMENDED
-install:
-	@echo "🔧 Installing SuperClaude Framework (development mode)..."
-	uv pip install -e ".[dev]"
-	@echo ""
-	@echo "✅ Installation complete!"
-	@echo "   Run 'make verify' to check installation"
-
-# Run tests
-test:
-	@echo "Running tests..."
-	uv run pytest
-
-# Test pytest plugin loading
-test-plugin:
-	@echo "Testing pytest plugin auto-discovery..."
-	@uv run python -m pytest --trace-config 2>&1 | grep -A2 "registered third-party plugins:" | grep superclaude && echo "✅ Plugin loaded successfully" || echo "❌ Plugin not loaded"
-
-# Run doctor command
-doctor:
-	@echo "Running SuperClaude health check..."
-	@uv run superclaude doctor
-
-# Verify Phase 1 installation
-verify:
-	@echo "🔍 Phase 1 Installation Verification"
-	@echo "======================================"
-	@echo ""
-	@echo "1. Package location:"
-	@uv run python -c "import superclaude; print(f'   {superclaude.__file__}')"
-	@echo ""
-	@echo "2. Package version:"
-	@uv run superclaude --version | sed 's/^/   /'
-	@echo ""
-	@echo "3. Pytest plugin:"
-	@uv run python -m pytest --trace-config 2>&1 | grep "registered third-party plugins:" -A2 | grep superclaude | sed 's/^/   /' && echo "   ✅ Plugin loaded" || echo "   ❌ Plugin not loaded"
-	@echo ""
-	@echo "4. Health check:"
-	@uv run superclaude doctor | grep "SuperClaude is healthy" > /dev/null && echo "   ✅ All checks passed" || echo "   ❌ Some checks failed"
-	@echo ""
-	@echo "======================================"
-	@echo "✅ Phase 1 verification complete"
-
-# Linting
-lint:
-	@echo "Running linter..."
-	uv run ruff check .
-
-# Format code
-format:
-	@echo "Formatting code..."
-	uv run ruff format .
-
-# Clean build artifacts
-clean:
-	@echo "Cleaning build artifacts..."
-	rm -rf build/ dist/ *.egg-info
-	find . -type d -name __pycache__ -exec rm -rf {} +
-	find . -type d -name .pytest_cache -exec rm -rf {} +
-	find . -type d -name .ruff_cache -exec rm -rf {} +
-
-PLUGIN_DIST := dist/plugins/superclaude
-PLUGIN_REPO ?= ../SuperClaude_Plugin
-
-.PHONY: build-plugin
-build-plugin: ## Build SuperClaude plugin artefacts into dist/
-	@echo "🛠️  Building SuperClaude plugin from unified sources..."
-	@uv run python scripts/build_superclaude_plugin.py
-
-.PHONY: sync-plugin-repo
-sync-plugin-repo: build-plugin ## Sync built plugin artefacts into ../SuperClaude_Plugin
-	@if [ ! -d "$(PLUGIN_REPO)" ]; then \
-		echo "❌ Target plugin repository not found at $(PLUGIN_REPO)"; \
-		echo "   Set PLUGIN_REPO=/path/to/SuperClaude_Plugin when running make."; \
-		exit 1; \
-	fi
-	@echo "📦 Syncing artefacts to $(PLUGIN_REPO)..."
-	@rsync -a --delete $(PLUGIN_DIST)/agents/ $(PLUGIN_REPO)/agents/
-	@rsync -a --delete $(PLUGIN_DIST)/commands/ $(PLUGIN_REPO)/commands/
-	@rsync -a --delete $(PLUGIN_DIST)/hooks/ $(PLUGIN_REPO)/hooks/
-	@rsync -a --delete $(PLUGIN_DIST)/scripts/ $(PLUGIN_REPO)/scripts/
-	@rsync -a --delete $(PLUGIN_DIST)/skills/ $(PLUGIN_REPO)/skills/
-	@rsync -a --delete $(PLUGIN_DIST)/.claude-plugin/ $(PLUGIN_REPO)/.claude-plugin/
-	@echo "✅ Sync complete."
-
-# Translate README to multiple languages using Neural CLI
-translate:
-	@echo "🌐 Translating README using Neural CLI (Ollama + qwen2.5:3b)..."
-	@if [ ! -f ~/.local/bin/neural-cli ]; then \
-		echo "📦 Installing neural-cli..."; \
-		mkdir -p ~/.local/bin; \
-		ln -sf ~/github/neural/src-tauri/target/release/neural-cli ~/.local/bin/neural-cli; \
-		echo "✅ neural-cli installed to ~/.local/bin/"; \
-	fi
-	@echo ""
-	@echo "🇨🇳 Translating to Simplified Chinese..."
-	@~/.local/bin/neural-cli translate README.md --from English --to "Simplified Chinese" --output README-zh.md
-	@echo ""
-	@echo "🇯🇵 Translating to Japanese..."
-	@~/.local/bin/neural-cli translate README.md --from English --to Japanese --output README-ja.md
-	@echo ""
-	@echo "✅ Translation complete!"
-	@echo "📝 Files updated: README-zh.md, README-ja.md"
-
-# Show help
-help:
-	@echo "SuperClaude Framework - Available commands:"
-	@echo ""
-	@echo "🚀 Quick Start:"
-	@echo "  make install         - Install in development mode (RECOMMENDED)"
-	@echo "  make verify          - Verify installation is working"
-	@echo ""
-	@echo "🔧 Development:"
-	@echo "  make test            - Run test suite"
-	@echo "  make test-plugin     - Test pytest plugin auto-discovery"
-	@echo "  make doctor          - Run health check"
-	@echo "  make lint            - Run linter (ruff check)"
-	@echo "  make format          - Format code (ruff format)"
-	@echo "  make clean           - Clean build artifacts"
-	@echo ""
-	@echo "🔌 Plugin Packaging:"
-	@echo "  make build-plugin    - Build SuperClaude plugin artefacts into dist/"
-	@echo "  make sync-plugin-repo - Sync artefacts into ../SuperClaude_Plugin"
-	@echo ""
-	@echo "📚 Documentation:"
-	@echo "  make translate       - Translate README to Chinese and Japanese"
-	@echo ""
-	@echo "🧹 Cleanup:"
-	@echo "  make uninstall-legacy - Remove old SuperClaude files from ~/.claude"
-	@echo "  make help            - Show this help message"
-
-# Remove legacy SuperClaude files from ~/.claude directory
-uninstall-legacy:
-	@echo "🧹 Cleaning up legacy SuperClaude files..."
-	@bash scripts/uninstall_legacy.sh
-	@echo ""
-
-
-
-================================================
-FILE: MANIFEST.in
-================================================
-include VERSION
-include README.md
-include LICENSE
-include CHANGELOG.md
-include CONTRIBUTING.md
-include SECURITY.md
-include pyproject.toml
-recursive-include docs *.md *.json *.py
-recursive-include tests *.py
-recursive-include src/superclaude *.py *.md *.ts *.json *.sh
-recursive-include src/superclaude/commands *.md
-recursive-include src/superclaude/agents *.md
-recursive-include src/superclaude/modes *.md
-recursive-include src/superclaude/mcp *.md *.json
-recursive-include src/superclaude/core *.md
-recursive-include src/superclaude/examples *.md
-recursive-include src/superclaude/hooks *.json
-recursive-include src/superclaude/scripts *.py *.sh
-recursive-include src/superclaude/skills *.md *.ts *.json
-recursive-include plugins/superclaude *.py *.md *.ts *.json *.sh
-recursive-include plugins/superclaude/commands *.md
-recursive-include plugins/superclaude/agents *.md
-recursive-include plugins/superclaude/modes *.md
-recursive-include plugins/superclaude/mcp *.py *.md *.json
-recursive-include plugins/superclaude/mcp/configs *.json
-recursive-include plugins/superclaude/core *.md
-recursive-include plugins/superclaude/examples *.md
-recursive-include plugins/superclaude/hooks *.json
-recursive-include plugins/superclaude/scripts *.py *.sh
-recursive-include plugins/superclaude/skills *.py *.md *.ts *.json
-global-exclude __pycache__
-global-exclude *.py[co]
-global-exclude .DS_Store
-
-
-
-================================================
-FILE: package.json
-================================================
-{
-  "name": "@bifrost_inc/superclaude",
-  "version": "4.1.7",
-  "description": "SuperClaude Framework NPM wrapper - Official Node.js wrapper for the Python SuperClaude package. Enhances Claude Code with specialized commands and AI development tools.",
-  "scripts": {
-    "postinstall": "node ./bin/install.js",
-    "update": "node ./bin/update.js",
-    "lint": "eslint . --ext .js,.mjs,.cjs",
-    "test": "echo \"No tests defined yet\" && exit 0"
-  },
-  "files": [
-    "bin/",
-    "README.md",
-    "LICENSE"
-  ],
-  "author": {
-    "name": "SuperClaude Org",
-    "url": "https://github.com/SuperClaude-Org"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SuperClaude-Org/SuperClaude_Framework.git"
-  },
-  "bugs": {
-    "url": "https://github.com/SuperClaude-Org/SuperClaude_Framework/issues"
-  },
-  "homepage": "https://github.com/SuperClaude-Org/SuperClaude_Framework#readme",
-  "license": "MIT",
-  "keywords": [
-    "superclaude",
-    "ai",
-    "cli",
-    "pypi",
-    "python",
-    "wrapper",
-    "cross-platform",
-    "automation"
-  ],
-  "engines": {
-    "node": ">=16"
-  },
-  "funding": {
-    "type": "github",
-    "url": "https://github.com/sponsors/NomenAK"
-  },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
-  },
-  "preferGlobal": true,
-  "type": "commonjs"
-}
-
-
-
-================================================
-FILE: PARALLEL_INDEXING_PLAN.md
-================================================
-# Parallel Repository Indexing Execution Plan
-
-## Objective
-Create comprehensive repository index for: /Users/kazuki/github/SuperClaude_Framework
-
-## Execution Strategy
-
-Execute the following 5 tasks IN PARALLEL using Task tool.
-IMPORTANT: All 5 Task tool calls must be in a SINGLE message for parallel execution.
-
-## Tasks to Execute (Parallel)
-
-### Task 1: Analyze code structure
-- Agent: Explore
-- ID: code_structure
-
-**Prompt**:
-```
-Analyze the code structure of this repository: /Users/kazuki/github/SuperClaude_Framework
-
-Task: Find and analyze all source code directories (src/, lib/, superclaude/, setup/, apps/, packages/)
-
-For each directory found:
-1. List all Python/JavaScript/TypeScript files
-2. Identify the purpose/responsibility
-3. Note key files and entry points
-4. Detect any organizational issues
-
-Output format (JSON):
-{
-    "directories": [
-        {
-            "path": "relative/path",
-            "purpose": "description",
-            "file_count": 10,
-            "key_files": ["file1.py", "file2.py"],
-            "issues": ["redundant nesting", "orphaned files"]
-        }
-    ],
-    "total_files": 100
-}
-
-Use Glob and Grep tools to search efficiently.
-Be thorough: "very thorough" level.
-
-```
-
-### Task 2: Analyze documentation
-- Agent: Explore
-- ID: documentation
-
-**Prompt**:
-```
-Analyze the documentation of this repository: /Users/kazuki/github/SuperClaude_Framework
-
-Task: Find and analyze all documentation (docs/, README*, *.md files)
-
-For each documentation section:
-1. List all markdown/rst files
-2. Assess documentation coverage
-3. Identify missing documentation
-4. Detect redundant/duplicate docs
-
-Output format (JSON):
-{
-    "directories": [
-        {
-            "path": "docs/",
-            "purpose": "User/developer documentation",
-            "file_count": 50,
-            "coverage": "good|partial|poor",
-            "missing": ["API reference", "Architecture guide"],
-            "duplicates": ["README vs docs/README"]
-        }
-    ],
-    "root_docs": ["README.md", "CLAUDE.md"],
-    "total_files": 75
-}
-
-Use Glob to find all .md files.
-Check for duplicate content patterns.
-
-```
-
-### Task 3: Analyze configuration files
-- Agent: Explore
-- ID: configuration
-
-**Prompt**:
-```
-Analyze the configuration files of this repository: /Users/kazuki/github/SuperClaude_Framework
-
-Task: Find and analyze all configuration files (.toml, .yaml, .yml, .json, .ini, .cfg)
-
-For each config file:
-1. Identify purpose (build, deps, CI/CD, etc.)
-2. Note importance level
-3. Check for issues (deprecated, unused)
-
-Output format (JSON):
-{
-    "config_files": [
-        {
-            "path": "pyproject.toml",
-            "type": "python_project",
-            "importance": "critical",
-            "issues": []
-        }
-    ],
-    "total_files": 15
-}
-
-Use Glob with appropriate patterns.
-
-```
-
-### Task 4: Analyze test structure
-- Agent: Explore
-- ID: tests
-
-**Prompt**:
-```
-Analyze the test structure of this repository: /Users/kazuki/github/SuperClaude_Framework
-
-Task: Find and analyze all tests (tests/, __tests__/, *.test.*, *.spec.*)
-
-For each test directory/file:
-1. Count test files
-2. Identify test types (unit, integration, performance)
-3. Assess coverage (if pytest/coverage data available)
-
-Output format (JSON):
-{
-    "test_directories": [
-        {
-            "path": "tests/",
-            "test_count": 20,
-            "types": ["unit", "integration", "benchmark"],
-            "coverage": "unknown"
-        }
-    ],
-    "total_tests": 25
-}
-
-Use Glob to find test files.
-
-```
-
-### Task 5: Analyze scripts and utilities
-- Agent: Explore
-- ID: scripts
-
-**Prompt**:
-```
-Analyze the scripts and utilities of this repository: /Users/kazuki/github/SuperClaude_Framework
-
-Task: Find and analyze all scripts (scripts/, bin/, tools/, *.sh, *.bash)
-
-For each script:
-1. Identify purpose
-2. Note language (bash, python, etc.)
-3. Check if documented
-
-Output format (JSON):
-{
-    "script_directories": [
-        {
-            "path": "scripts/",
-            "script_count": 5,
-            "purposes": ["build", "deploy", "utility"],
-            "documented": true
-        }
-    ],
-    "total_scripts": 10
-}
-
-Use Glob to find script files.
-
-```
-
-## Expected Output
-
-Each task will return JSON with analysis results.
-After all tasks compl
+The outermorphism extension in standard linear algebra is the exterior power—compound matrices built from minors.

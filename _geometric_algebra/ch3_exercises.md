@@ -1,817 +1,357 @@
-ion decisions are immediately available
-   - Architectural patterns and code insights are preserved
-   - Project history and rationale are maintained
+# Drills
 
-3. **Intelligent Context Building**
-   - Serena MCP provides relevant memories based on current work
-   - Past solutions and patterns inform new implementations
-   - Project evolution is tracked and understood
+1. Given $a = e_1 + e_2$, $b = e_2 + e_3$ in $\mathbb{R}^{3,0}$ with orthonormal basis $\{e_1, e_2, e_3\}$. Compute each expression in the standard basis.
 
-### Memory Optimization
-
-**Effective Memory Usage**:
-- Use descriptive, searchable memory names
-- Include project phase and timestamp context
-- Reference specific features or architectural decisions
-- Make future retrieval intuitive
-
-**Memory Content Strategy**:
-- Store decisions and rationale, not just outcomes
-- Include alternative approaches considered
-- Document integration patterns and dependencies
-- Preserve learning and insights for future reference
-
-**Memory Lifecycle Management**:
-- Regular cleanup of outdated memories
-- Consolidation of related session memories
-- Archiving of completed project phases
-- Pruning of obsolete architectural decisions
-
-## Best Practices for Persistent Sessions
-
-### Session Start Protocol
-1. Always begin with `/sc:load` for existing projects
-2. Use `/sc:reflect` to understand current state from memory
-3. Plan work based on persistent context and stored patterns
-4. Build on previous decisions and architectural choices
-
-### Session End Protocol
-1. Use `/sc:reflect` to assess completeness against stored goals
-2. Save key decisions with `/sc:save` for future sessions
-3. Document next steps and open questions in memory
-4. Preserve context for seamless future continuation
-
-### Memory Quality Maintenance
-- Use clear, descriptive memory names for easy retrieval
-- Include context about decisions and alternative approaches
-- Reference specific code locations and patterns
-- Maintain consistency in memory structure across sessions
-
-## Integration with Other SuperClaude Features
-
-### MCP Server Coordination
-- **Serena MCP**: Provides the persistent memory infrastructure
-- **Sequential MCP**: Uses stored memories for enhanced complex analysis
-- **Context7 MCP**: References stored patterns and documentation approaches
-- **Morphllm MCP**: Applies stored refactoring patterns consistently
-
-### Agent Collaboration with Memory
-- Agents access persistent memories for enhanced context
-- Previous specialist decisions are preserved and referenced
-- Cross-session agent coordination through shared memory
-- Consistent specialist recommendations based on project history
-
-### Command Integration with Persistence
-- All `/sc:` commands can reference and build on persistent context
-- Previous command outputs and decisions are available across sessions
-- Workflow patterns are stored and reusable
-- Implementation history guides future command decisions
-
-## Troubleshooting Persistent Sessions
-
-### Common Issues
-
-**Memory Not Loading**:
-- Verify Serena MCP is configured and running properly
-- Check memory file permissions and accessibility
-- Ensure consistent project naming conventions
-- Validate memory file integrity and format
-
-**Context Loss Between Sessions**:  
-- Always use `/sc:save` before ending sessions
-- Use descriptive memory names for easy retrieval
-- Regular `/sc:reflect` to validate memory completeness
-- Backup important memory files periodically
-
-**Memory Conflicts**:
-- Use timestamped memory names for version control
-- Regular cleanup of obsolete memories
-- Clear separation between project and session memories
-- Consistent memory naming conventions across sessions
-
-### Quick Fixes
-
-**Reset Session State**:
-```bash
-/sc:load --fresh  # Start without previous context
-/sc:reflect       # Assess current state
-```
-
-**Memory Cleanup**:
-```bash
-/sc:reflect --cleanup  # Remove obsolete memories
-/sc:save --consolidate # Merge related memories
-```
-
-**Context Recovery**:
-```bash
-/sc:load --recent     # Load most recent memories
-/sc:reflect --repair  # Identify and fix context gaps
-```
-
-## Advanced Persistent Session Patterns
-
-### Multi-Phase Projects
-- Use phase-specific memory naming for organization
-- Maintain architectural decision continuity across phases
-- Cross-phase dependency tracking through persistent memory
-- Progressive complexity management with historical context
-
-### Team Collaboration
-- Shared memory conventions and naming standards
-- Decision rationale preservation for team context
-- Integration pattern documentation accessible to all team members
-- Consistent code style and architecture enforcement through memory
-
-### Long-Term Maintenance
-- Memory archiving strategies for completed projects
-- Pattern library development through accumulated memories
-- Reusable solution documentation built over time
-- Knowledge base building through persistent memory accumulation
-
-## Key Benefits of Persistent Session Management
-
-### Project Continuity
-- Seamless work continuation across multiple conversations
-- No context loss between Claude Code sessions
-- Preserved architectural decisions and technical rationale
-- Long-term project evolution tracking
-
-### Enhanced Productivity
-- Reduced need to re-explain project context
-- Faster startup time for continued work
-- Building on previous insights and patterns
-- Cumulative project knowledge growth
-
-### Quality Consistency
-- Consistent architectural patterns across sessions
-- Preserved code quality decisions and standards
-- Reusable solutions and best practices
-- Maintained technical debt awareness
+Preliminary: $a \wedge b = (e_1 + e_2) \wedge (e_2 + e_3) = e_1 \wedge e_2 + e_1 \wedge e_3 + e_2 \wedge e_3$
 
 ---
 
-**Key Takeaway**: Session management through Serena MCP transforms SuperClaude from single-conversation assistance to persistent project partnership, maintaining context, decisions, and learning across all development phases and Claude Code conversations.
+(a) Compute $e_1 \lrcorner a$
 
+For vectors, contraction reduces to the dot product:
 
-================================================
-FILE: docs/user-guide-jp/commands.md
-================================================
-# SuperClaude コマンドガイド
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#superclaude-commands-guide)
-
-`/sc:*`SuperClaude は、ワークフロー用コマンドと`@agent-*`スペシャリスト用コマンドの 21 個の Claude Code コマンドを提供します。
-
-## コマンドの種類
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#command-types)
-
-|タイプ|使用場所|形式|例|
-|---|---|---|---|
-|**スラッシュコマンド**|クロード・コード|`/sc:[command]`|`/sc:implement "feature"`|
-|**エージェント**|クロード・コード|`@agent-[name]`|`@agent-security "review"`|
-|**インストール**|ターミナル|`SuperClaude [command]`|`SuperClaude install`|
-
-## クイックテスト
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#quick-test)
-
-```shell
-# Terminal: Verify installation
-python3 -m SuperClaude --version
-# Claude Code CLI verification: claude --version
-
-# Claude Code: Test commands
-/sc:brainstorm "test project"    # Should ask discovery questions
-/sc:analyze README.md           # Should provide analysis
-```
-
-**ワークフロー**：`/sc:brainstorm "idea"`→→`/sc:implement "feature"`​`/sc:test`
-
-## 🎯 SuperClaude コマンドの理解
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#-understanding-superclaude-commands)
-
-## SuperClaudeの仕組み
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#how-superclaude-works)
-
-SuperClaude は、Claude Code が特殊な動作を実行するために読み込む動作コンテキストファイルを提供します。 と入力すると`/sc:implement`、Claude Code は`implement.md`コンテキストファイルを読み込み、その動作指示に従います。
-
-**SuperClaude コマンドはソフトウェアによって実行されるのではなく**、フレームワークから特殊な命令ファイルを読み取ることで Claude コードの動作を変更するコンテキスト トリガーです。
-
-### コマンドの種類:
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#command-types-1)
-
-- **スラッシュコマンド**（`/sc:*`）：ワークフローパターンと動作​​モードをトリガーする
-- **エージェントの呼び出し**（`@agent-*`）：特定のドメインスペシャリストを手動で起動する
-- **フラグ**（`--think`、`--safe-mode`）：コマンドの動作と深さを変更する
-
-### コンテキストメカニズム:
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#the-context-mechanism)
-
-1. **ユーザー入力**: 入力する`/sc:implement "auth system"`
-2. **コンテキスト読み込み**: クロードコード読み取り`~/.claude/superclaude/Commands/implement.md`
-3. **行動の採用**：クロードはドメインの専門知識、ツールの選択、検証パターンを適用します
-4. **強化された出力**: セキュリティ上の考慮事項とベストプラクティスを備えた構造化された実装
-
-**重要なポイント**: これにより、従来のソフトウェア実行ではなくコンテキスト管理を通じて洗練された開発ワークフローが作成されます。
-
-### インストールコマンドと使用コマンド
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#installation-vs-usage-commands)
-
-**🖥️ ターミナルコマンド**（実際の CLI ソフトウェア）：
-
-- `SuperClaude install`- フレームワークコンポーネントをインストールします
-- `SuperClaude update`- 既存のインストールを更新します
-- `SuperClaude uninstall`- フレームワークのインストールを削除します
-- `python3 -m SuperClaude --version`- インストール状態を確認する
-
-**💬 クロード コード コマンド**(コンテキスト トリガー):
-
-- `/sc:brainstorm`- 要件検出コンテキストをアクティブ化します
-- `/sc:implement`- 機能開発コンテキストをアクティブ化します
-- `@agent-security`- セキュリティスペシャリストのコンテキストをアクティブ化します
-- すべてのコマンドはClaude Codeチャットインターフェース内でのみ機能します
-
-> **クイック スタート**: `/sc:brainstorm "your project idea"`→ `/sc:implement "feature name"`→を試して`/sc:test`、コア ワークフローを体験してください。
-
-## 🧪 セットアップのテスト
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#-testing-your-setup)
-
-### 🖥️ ターミナル検証（ターミナル/CMDで実行）
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#%EF%B8%8F-terminal-verification-run-in-terminalcmd)
-
-```shell
-# Verify SuperClaude is working (primary method)
-python3 -m SuperClaude --version
-# Example output: SuperClaude 4.1.5
-
-# Claude Code CLI version check
-claude --version
-
-# Check installed components
-python3 -m SuperClaude install --list-components | grep mcp
-# Example output: Shows installed MCP components
-```
-
-### 💬 クロードコードテスト（クロードコードチャットに入力）
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#-claude-code-testing-type-in-claude-code-chat)
-
-```
-# Test basic /sc: command
-/sc:brainstorm "test project"
-# Example behavior: Interactive requirements discovery starts
-
-# Test command help
-/sc:help
-# Example behavior: List of available commands
-```
-
-**テストが失敗した場合**:[インストールガイド](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/getting-started/installation.md)または[トラブルシューティングを確認してください](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#troubleshooting)
-
-### 📝 コマンドクイックリファレンス
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#-command-quick-reference)
-
-|コマンドタイプ|走る場所|形式|目的|例|
-|---|---|---|---|---|
-|**🖥️ インストール**|ターミナル/CMD|`SuperClaude [command]`|セットアップとメンテナンス|`SuperClaude install`|
-|**🔧 構成**|ターミナル/CMD|`python3 -m SuperClaude [command]`|高度な設定|`python3 -m SuperClaude --version`|
-|**💬 スラッシュコマンド**|クロード・コード|`/sc:[command]`|ワークフロー自動化|`/sc:implement "feature"`|
-|**🤖 エージェントの呼び出し**|クロード・コード|`@agent-[name]`|手動スペシャリストの有効化|`@agent-security "review"`|
-|**⚡ 強化されたフラグ**|クロード・コード|`/sc:[command] --flags`|行動修正|`/sc:analyze --think-hard`|
-
-> **注意**：すべての`/sc:`コマンドと`@agent-`呼び出しは、ターミナルではなくClaude Codeチャット内で動作します。これらのコマンドと呼び出しは、Claude CodeがSuperClaudeフレームワークから特定のコンテキストファイルを読み取るようにトリガーします。
-
-## 目次
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#table-of-contents)
-
-- [必須コマンド](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#essential-commands)- ここから始めましょう（8つのコアコマンド）
-- [一般的なワークフロー](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#common-workflows)- 機能するコマンドの組み合わせ
-- [完全なコマンドリファレンス](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#full-command-reference)- カテゴリ別に整理された全21個のコマンド
-- [トラブルシューティング](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#troubleshooting)- よくある問題と解決策
-- [コマンドインデックス](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#command-index)- カテゴリ別にコマンドを検索
+$e_1 \lrcorner a = e_1 \cdot (e_1 + e_2) = 1 + 0 =1$
 
 ---
 
-## 必須コマンド
+(b) Compute $e_1 \lrcorner (a \wedge b)$
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#essential-commands)
+Apply the vector-on-bivector formula $x \lrcorner (u \wedge v) = (x \cdot u)v - (x \cdot v)u$ to each term:
 
-**即時の生産性向上のためのコアワークフロー コマンド:**
+$e_1 \lrcorner (e_1 \wedge e_2) = (1)e_2 - (0)e_1 = e_2$
 
-### `/sc:brainstorm`- プロジェクト発見
+$e_1 \lrcorner (e_1 \wedge e_3) = (1)e_3 - (0)e_1 = e_3$
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#scbrainstorm---project-discovery)
+$e_1 \lrcorner (e_2 \wedge e_3) = 0$ since $e_1$ is orthogonal to both $e_2$ and $e_3$
 
-**目的**: 対話型の要件検出とプロジェクト計画  
-**構文**:`/sc:brainstorm "your idea"` `[--strategy systematic|creative]`
-
-**ユースケース**:
-
-- 新しいプロジェクトの計画:`/sc:brainstorm "e-commerce platform"`
-- 機能の探索:`/sc:brainstorm "user authentication system"`
-- 問題解決:`/sc:brainstorm "slow database queries"`
-
-### `/sc:implement`- 機能開発
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#scimplement---feature-development)
-
-**目的**: インテリジェントなスペシャリストルーティングによるフルスタック機能の実装  
-**構文**:`/sc:implement "feature description"` `[--type frontend|backend|fullstack] [--focus security|performance]`
-
-**ユースケース**:
-
-- 認証:`/sc:implement "JWT login system"`
-- UI コンポーネント:`/sc:implement "responsive dashboard"`
-- API:`/sc:implement "REST user endpoints"`
-- データベース:`/sc:implement "user schema with relationships"`
-
-### `/sc:analyze`- コード評価
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#scanalyze---code-assessment)
-
-**目的**: 品質、セキュリティ、パフォーマンスにわたる包括的なコード分析  
-**構文**:`/sc:analyze [path]` `[--focus quality|security|performance|architecture]`
-
-**ユースケース**:
-
-- プロジェクトの健全性:`/sc:analyze .`
-- セキュリティ監査:`/sc:analyze --focus security`
-- パフォーマンスレビュー:`/sc:analyze --focus performance`
-
-### `/sc:troubleshoot`- 問題診断
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#sctroubleshoot---problem-diagnosis)
-
-**目的**: 根本原因分析による体系的な問題診断  
-**構文**:`/sc:troubleshoot "issue description"` `[--type build|runtime|performance]`
-
-**ユースケース**:
-
-- ランタイムエラー:`/sc:troubleshoot "500 error on login"`
-- ビルドの失敗:`/sc:troubleshoot --type build`
-- パフォーマンスの問題:`/sc:troubleshoot "slow page load"`
-
-### `/sc:test`- 品質保証
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#sctest---quality-assurance)
-
-**目的**: カバレッジ分析による包括的なテスト  
-**構文**:`/sc:test` `[--type unit|integration|e2e] [--coverage] [--fix]`
-
-**ユースケース**:
-
-- 完全なテストスイート:`/sc:test --coverage`
-- ユニットテスト:`/sc:test --type unit --watch`
-- E2E検証:`/sc:test --type e2e`
-
-### `/sc:improve`- コード強化
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#scimprove---code-enhancement)
-
-**目的**: 体系的なコードの改善と最適化を適用する  
-**構文**:`/sc:improve [path]` `[--type performance|quality|security] [--preview]`
-
-**ユースケース**:
-
-- 一般的な改善点:`/sc:improve src/`
-- パフォーマンスの最適化:`/sc:improve --type performance`
-- セキュリティ強化:`/sc:improve --type security`
-
-### `/sc:document`- ドキュメント生成
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#scdocument---documentation-generation)
-
-**目的**: コードとAPIの包括的なドキュメントを生成する  
-**構文**:`/sc:document [path]` `[--type api|user-guide|technical] [--format markdown|html]`
-
-**ユースケース**:
-
-- APIドキュメント:`/sc:document --type api`
-- ユーザーガイド:`/sc:document --type user-guide`
-- 技術ドキュメント:`/sc:document --type technical`
-
-### `/sc:workflow`- 実装計画
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#scworkflow---implementation-planning)
-
-**目的**: 要件から構造化された実装計画を生成する  
-**構文**:`/sc:workflow "feature description"` `[--strategy agile|waterfall] [--format markdown]`
-
-**ユースケース**:
-
-- 機能計画:`/sc:workflow "user authentication"`
-- スプリント計画:`/sc:workflow --strategy agile`
-- アーキテクチャ計画：`/sc:workflow "microservices migration"`
+$$e_1 \lrcorner (a \wedge b) = e_2 + e_3$$
 
 ---
 
-## 一般的なワークフロー
+(c) Compute $(a \wedge b) \lrcorner e_1$
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#common-workflows)
+The left contraction $A \lrcorner B$ is zero when $\text{grade}(A) > \text{grade}(B)$:
 
-**実証済みのコマンドの組み合わせ:**
+$\text{grade}(a \wedge b) = 2 > \text{grade}(e_1) = 1$
 
-### 新しいプロジェクトのセットアップ
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#new-project-setup)
-
-```shell
-/sc:brainstorm "project concept"      # Define requirements
-/sc:design "system architecture"      # Create technical design  
-/sc:workflow "implementation plan"    # Generate development roadmap
-```
-
-### 機能開発
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#feature-development)
-
-```shell
-/sc:implement "feature name"          # Build the feature
-/sc:test --coverage                   # Validate with tests
-/sc:document --type api               # Generate documentation  
-```
-
-### コード品質の改善
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#code-quality-improvement)
-
-```shell
-/sc:analyze --focus quality           # Assess current state
-/sc:improve --preview                 # Preview improvements
-/sc:test --coverage                   # Validate changes
-```
-
-### バグ調査
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#bug-investigation)
-
-```shell
-/sc:troubleshoot "issue description"  # Diagnose the problem
-/sc:analyze --focus problem-area      # Deep analysis
-/sc:improve --fix --safe-mode         # Apply targeted fixes
-```
-
-## 完全なコマンドリファレンス
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#full-command-reference)
-
-### 開発コマンド
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#development-commands)
-
-|指示|目的|最適な用途|
-|---|---|---|
-|**ワークフロー**|実施計画|プロジェクトロードマップ、スプリント計画|
-|**埋め込む**|機能開発|フルスタック機能、API開発|
-|**建てる**|プロジェクトのコンパイル|CI/CD、プロダクションビルド|
-|**デザイン**|システムアーキテクチャ|API仕様、データベーススキーマ|
-
-### 分析コマンド
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#analysis-commands)
-
-|指示|目的|最適な用途|
-|---|---|---|
-|**分析する**|コード評価|品質監査、セキュリティレビュー|
-|**トラブルシューティング**|問題診断|バグ調査、パフォーマンスの問題|
-|**説明する**|コードの説明|学習、コードレビュー|
-
-### 品質コマンド
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#quality-commands)
-
-|指示|目的|最適な用途|
-|---|---|---|
-|**改善する**|コード強化|パフォーマンスの最適化、リファクタリング|
-|**掃除**|技術的負債|デッドコードの削除、整理|
-|**テスト**|品質保証|テスト自動化、カバレッジ分析|
-|**書類**|ドキュメント|APIドキュメント、ユーザーガイド|
-
-### プロジェクト管理
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#project-management)
-
-|指示|目的|最適な用途|
-|---|---|---|
-|**見積もり**|プロジェクト見積もり|タイムライン計画、リソース割り当て|
-|**タスク**|タスク管理|複雑なワークフロー、タスク追跡|
-|**スポーン**|メタオーケストレーション|大規模プロジェクト、並列実行|
-
-### ユーティリティコマンド
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#utility-commands)
-
-|指示|目的|最適な用途|
-|---|---|---|
-|**ギット**|バージョン管理|コミット管理、ブランチ戦略|
-|**索引**|コマンド検出|機能の探索、コマンドの検索|
-
-### セッションコマンド
-
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#session-commands)
-
-|指示|目的|最適な用途|
-|---|---|---|
-|**負荷**|コンテキストの読み込み|セッションの初期化、プロジェクトのオンボーディング|
-|**保存**|セッションの永続性|チェックポイント、コンテキスト保存|
-|**反映する**|タスクの検証|進捗評価、完了検証|
-|**選択ツール**|ツールの最適化|パフォーマンスの最適化、ツールの選択|
+$$(a \wedge b) \lrcorner e_1 = 0$$
 
 ---
 
-## コマンドインデックス
+(d) Compute $(2a + b) \lrcorner (a + b)$
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#command-index)
+Both arguments are vectors, so this is just a dot product:
 
-**機能別:**
+$2a + b = 2e_1 + 3e_2 + e_3$
 
-- **計画**：ブレインストーミング、設計、ワークフロー、見積もり
-- **開発**：実装、ビルド、git
-- **分析**：分析、トラブルシューティング、説明
-- **品質**: 改善、クリーンアップ、テスト、ドキュメント化
-- **管理**: タスク、スポーン、ロード、保存、反映
-- **ユーティリティ**: インデックス、選択ツール
+$a + b = e_1 + 2e_2 + e_3$
 
-**複雑さ別:**
+$(2a + b) \cdot (a + b) = 2(1) + 3(2) + 1(1)$
 
-- **初心者**：ブレインストーミング、実装、分析、テスト
-- **中級**：ワークフロー、設計、改善、ドキュメント
-- **上級**：スポーン、タスク、選択ツール、リフレクト
+$$= 9$$
 
-## トラブルシューティング
+---
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#troubleshooting)
+(e) Compute $a \lrcorner (e_1 \wedge e_2 \wedge e_3)$
 
-**コマンドの問題:**
+Use the vector-on-trivector expansion:
 
-- **コマンドが見つかりません**: インストールを確認してください:`python3 -m SuperClaude --version`
-- **応答なし**: Claude Codeセッションを再開する
-- **処理遅延**: `--no-mcp`MCPサーバーなしでテストするために使用します
+$x \lrcorner (e_1 \wedge e_2 \wedge e_3) = (x \cdot e_1)(e_2 \wedge e_3) - (x \cdot e_2)(e_1 \wedge e_3) + (x \cdot e_3)(e_1 \wedge e_2)$
 
-**クイックフィックス:**
+For $a = e_1 + e_2$: $a \cdot e_1 = 1$, $a \cdot e_2 = 1$, $a \cdot e_3 = 0$
 
-- セッションをリセット:`/sc:load`再初期化する
-- ステータスを確認:`SuperClaude install --list-components`
-- ヘルプ:[トラブルシューティングガイド](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/reference/troubleshooting.md)
+$a \lrcorner I_3 = 1(e_2 \wedge e_3) - 1(e_1 \wedge e_3) + 0$
 
-## 次のステップ
+Converting $-e_1 \wedge e_3 = e_3 \wedge e_1$ to match the standard basis:
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/commands.md#next-steps)
+$$a \lrcorner I_3 = (e_2 \wedge e_3) + (e_3 \wedge e_1)$$
 
-- [フラグガイド](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/flags.md)- コマンドの動作を制御する
-- [エージェントガイド](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/agents.md)- スペシャリストのアクティベーション
-- [例のクックブック](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/reference/examples-cookbook.md)- 実際の使用パターン
+---
 
+(f) Compute $a^*$
 
-================================================
-FILE: docs/user-guide-jp/flags.md
-================================================
-# SuperClaude フラグガイド 🏁
+The dual in 3D is $a^* = a \lrcorner I_3^{-1}$ where $I_3^{-1} = -I_3$:
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/flags.md#superclaude-flags-guide-)
+$a^* = a \lrcorner (-I_3) = -(a \lrcorner I_3)$
 
-**ほとんどのフラグは自動的にアクティブになります**。Claude Code は、リクエスト内のキーワードとパターンに基づいて適切なコンテキストを実行するための動作指示を読み取ります。
+Using the result from part (e):
 
-## 必須の自動アクティベーションフラグ（ユースケースの90%）
+$$a^* = -(e_2 \wedge e_3) - (e_3 \wedge e_1)$$
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/flags.md#essential-auto-activation-flags-90-of-use-cases)
+---
 
-### コア分析フラグ
+(g) Compute $(a \wedge b)^*$
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/flags.md#core-analysis-flags)
+The duals of the basis bivectors in right-handed 3D are:
 
-|フラグ|起動時|何をするのか|
-|---|---|---|
-|`--think`|5つ以上のファイルまたは複雑な分析|標準的な構造化分析（約4Kトークン）|
-|`--think-hard`|アーキテクチャ分析、システム依存関係|強化されたツールによる詳細な分析（約1万トークン）|
-|`--ultrathink`|重要なシステムの再設計、レガシーシステムの近代化|すべてのツールで最大深度分析（約32Kトークン）|
+$(e_1 \wedge e_2)^* = e_3$, $(e_2 \wedge e_3)^* = e_1$, $(e_3 \wedge e_1)^* = e_2$
 
-### MCP サーバーフラグ
+Since $a \wedge b = (e_1 \wedge e_2) + (e_2 \wedge e_3) - (e_3 \wedge e_1)$:
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/flags.md#mcp-server-flags)
+$$(a \wedge b)^* = e_3 + e_1 - e_2 = e_1 - e_2 + e_3$$
 
-|フラグ|サーバ|目的|自動トリガー|
-|---|---|---|---|
-|`--c7`/`--context7`|コンテキスト7|公式ドキュメント、フレームワークパターン|ライブラリのインポート、フレームワークに関する質問|
-|`--seq`/`--sequential`|一連|多段階推論、デバッグ|複雑なデバッグ、システム設計|
-|`--magic`|魔法|UIコンポーネント生成|`/ui`コマンド、フロントエンドキーワード|
-|`--play`/`--playwright`|劇作家|ブラウザテスト、E2E検証|テスト要求、視覚的検証|
-|`--morph`/`--morphllm`|モルフィム|一括変換、パターン編集|一括操作、スタイルの強制|
-|`--serena`|セレナ|プロジェクトメモリ、シンボル操作|シンボル操作、大規模なコードベース|
+---
 
-### 動作モードフラグ
+(h) Compute $a \lrcorner b^*$
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/flags.md#behavioral-mode-flags)
+First find $b^*$ using the same method as part (f). For $b = e_2 + e_3$:
 
-|フラグ|起動時|何をするのか|
-|---|---|---|
-|`--brainstorm`|漠然とした要望、探索キーワード|共同発見のマインドセット|
-|`--introspect`|自己分析、エラー回復|推論プロセスを透明性を持って公開する|
-|`--task-manage`|>3ステップ、複雑なスコープ|委任を通じて調整する|
-|`--orchestrate`|マルチツール操作、パフォーマンスニーズ|ツールの選択と並列実行の最適化|
-|`--token-efficient`/`--uc`|コンテキスト >75%、効率性のニーズ|シンボル強化通信、30～50%削減|
+$b \lrcorner I_3 = 0(e_2 \wedge e_3) - 1(e_1 \wedge e_3) + 1(e_1 \wedge e_2) = (e_1 \wedge e_2) + (e_3 \wedge e_1)$
 
-### 実行制御フラグ
+$b^* = -b \lrcorner I_3 = -(e_1 \wedge e_2) - (e_3 \wedge e_1) = -e_1 \wedge e_2 + e_1 \wedge e_3$
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/flags.md#execution-control-flags)
+Now contract $a = e_1 + e_2$ onto $b^*$:
 
-|フラグ|起動時|何をするのか|
-|---|---|---|
-|`--loop`|「改善する」「磨く」「洗練する」というキーワード|反復的な強化サイクル|
-|`--safe-mode`|生産、リソース使用率85%以上|最大限の検証、慎重な実行|
-|`--validate`|リスク >0.7、本番環境|実行前のリスク評価|
-|`--delegate`|>7 ディレクトリまたは >50 ファイル|サブエージェント並列処理|
+$a \lrcorner (-e_1 \wedge e_2) = -[(a \cdot e_1)e_2 - (a \cdot e_2)e_1] = -[e_2 - e_1] = e_1 - e_2$
 
-## コマンド固有のフラグ
+$a \lrcorner (e_1 \wedge e_3) = (a \cdot e_1)e_3 - (a \cdot e_3)e_1 = e_3$
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/flags.md#command-specific-flags)
+$$a \lrcorner b^* = e_1 - e_2 + e_3$$
 
-### 分析コマンドフラグ（`/sc:analyze`）
+---
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/flags.md#analysis-command-flags-scanalyze)
+2. Compute the cosine of the angle between these subspaces using $\cos\theta = \dfrac{A * \tilde{B}}{|A||B|}$.
 
-|フラグ|目的|価値観|
-|---|---|---|
-|`--focus`|特定のドメインをターゲットとする|`security`、、、、`performance`​`quality`​`architecture`|
-|`--depth`|分析の徹底性|`quick`、`deep`|
-|`--format`|出力形式|`text`、、`json`​`report`|
+---
 
-### ビルドコマンドフラグ（`/sc:build`）
+(a) Between $e_1$ and $\alpha e_1$
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/flags.md#build-command-flags-scbuild)
+For vectors this is the familiar formula:
 
-|フラグ|目的|価値観|
-|---|---|---|
-|`--type`|ビルド構成|`dev`、、`prod`​`test`|
-|`--clean`|ビルド前にクリーンアップ|ブール値|
-|`--optimize`|最適化を有効にする|ブール値|
-|`--verbose`|詳細な出力|ブール値|
+$\cos\theta = \dfrac{e_1 \cdot (\alpha e_1)}{|e_1||\alpha e_1|} = \dfrac{\alpha}{1 \cdot |\alpha|}$
 
-### 設計コマンドフラグ（`/sc:design`）
+$$\cos\theta = \text{sgn}(\alpha)$$
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/flags.md#design-command-flags-scdesign)
+---
 
-|フラグ|目的|価値観|
-|---|---|---|
-|`--type`|設計目標|`architecture`、、、、`api`​`component`​`database`|
-|`--format`|出力形式|`diagram`、、`spec`​`code`|
+(b) Between $(e_1 + e_2) \wedge e_3$ and $e_1 \wedge e_3$
 
-### コマンドフラグの説明（`/sc:explain`）
+Let $A = e_1 \wedge e_3 + e_2 \wedge e_3$ and $B = e_1 \wedge e_3$, so $\tilde{B} = e_3 \wedge e_1$.
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/flags.md#explain-command-flags-scexplain)
+Only the $e_1 \wedge e_3$ component of $A$ contributes to the scalar product:
 
-|フラグ|目的|価値観|
-|---|---|---|
-|`--level`|複雑さのレベル|`basic`、、`intermediate`​`advanced`|
-|`--format`|説明スタイル|`text`、、`examples`​`interactive`|
-|`--context`|ドメインコンテキスト|任意のドメイン（例：`react`、`security`）|
+$A * \tilde{B} = (e_1 \wedge e_3) * (e_3 \wedge e_1) = 1$
 
-### コマンドフラグの改善（`/sc:improve`）
+$|A| = \sqrt{1 + 1} = \sqrt{2}$, $|B| = 1$
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/flags.md#improve-command-flags-scimprove)
+$$\cos\theta = \dfrac{1}{\sqrt{2}}$$
 
-|フラグ|目的|価値観|
-|---|---|---|
-|`--type`|改善の焦点|`quality`、、、、、`performance`​`maintainability`​`style`​`security`|
-|`--safe`|保守的なアプローチ|ブール値|
-|`--interactive`|ユーザーガイダンス|ブール値|
-|`--preview`|実行せずに表示する|ブール値|
+---
 
-### タスクコマンドフラグ（`/sc:task`）
+(c) Between $(\cos\varphi \, e_1 + \sin\varphi \, e_2) \wedge e_3$ and $e_2 \wedge e_3$
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/flags.md#task-command-flags-sctask)
+Let $A = \cos\varphi(e_1 \wedge e_3) + \sin\varphi(e_2 \wedge e_3)$ and $B = e_2 \wedge e_3$.
 
-|フラグ|目的|価値観|
-|---|---|---|
-|`--strategy`|タスクアプローチ|`systematic`、、`agile`​`enterprise`|
-|`--parallel`|並列実行|ブール値|
-|`--delegate`|サブエージェントの調整|ブール値|
+Only the $e_2 \wedge e_3$ part of $A$ survives in the scalar product:
 
-### ワークフローコマンドフラグ（`/sc:workflow`）
+$A * \tilde{B} = \sin\varphi \cdot (e_2 \wedge e_3) * (e_3 \wedge e_2) = \sin\varphi$
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/flags.md#workflow-command-flags-scworkflow)
+Both blades are unit: $|A| = \sqrt{\cos^2\varphi + \sin^2\varphi} = 1$, $|B| = 1$
 
-|フラグ|目的|価値観|
-|---|---|---|
-|`--strategy`|ワークフローアプローチ|`systematic`、、`agile`​`enterprise`|
-|`--depth`|分析の深さ|`shallow`、、`normal`​`deep`|
-|`--parallel`|並列調整|ブール値|
+$$\cos\theta = \sin\varphi$$
 
-### コマンドフラグのトラブルシューティング ( `/sc:troubleshoot`)
+---
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/flags.md#troubleshoot-command-flags-sctroubleshoot)
+(d) Between $e_1 \wedge e_2$ and $e_3 \wedge e_4$
 
-|フラグ|目的|価値観|
-|---|---|---|
-|`--type`|問題カテゴリ|`bug`、、、、`build`​`performance`​`deployment`|
-|`--trace`|トレース分析を含める|ブール値|
-|`--fix`|修正を適用する|ブール値|
+The two planes share no common directions—all cross dot products vanish.
 
-### クリーンアップコマンドフラグ（`/sc:cleanup`）
+$$\cos\theta = 0$$
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/flags.md#cleanup-command-flags-sccleanup)
+---
 
-|フラグ|目的|価値観|
-|---|---|---|
-|`--type`|クリーンアップ対象|`code`、、、、`imports`​`files`​`all`|
-|`--safe`/`--aggressive`|清掃強度|ブール値|
-|`--interactive`|ユーザーガイダンス|ブール値|
-|`--preview`|実行せずに表示する|ブール値|
+3. In 2D Euclidean space with orthonormal basis $\{e_1, e_2\}$, let $b_1 = e_1$ and $b_2 = e_1 + e_2$. Construct the reciprocal frame $\{b^1, b^2\}$ and find the coordinates of $x = 3e_1 + e_2$.
 
-### コマンドフラグの推定（`/sc:estimate`）
+The pseudoscalar for the frame:
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/flags.md#estimate-command-flags-scestimate)
+$I_2 = b_1 \wedge b_2 = e_1 \wedge (e_1 + e_2) = e_1 \wedge e_2$
 
-|フラグ|目的|価値観|
-|---|---|---|
-|`--type`|焦点を推定する|`time`、、`effort`​`complexity`|
-|`--unit`|時間単位|`hours`、、`days`​`weeks`|
-|`--breakdown`|詳細な内訳|ブール値|
+$I_2^{-1} = \tilde{I_2} = e_2 \wedge e_1$
 
-### インデックスコマンドフラグ（`/sc:index`）
+Using formula $b^i = (-1)^{i-1}(b_1 \wedge \cdots \wedge \widehat{b_i} \wedge \cdots \wedge b_n) \lrcorner I_n^{-1}$:
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/flags.md#index-command-flags-scindex)
+$b^1 = b_2 \lrcorner I_2^{-1} = (e_1 + e_2) \lrcorner (e_2 \wedge e_1) = (1)e_1 - (1)e_2 = e_1 - e_2$
 
-|フラグ|目的|価値観|
-|---|---|---|
-|`--type`|インデックスターゲット|`docs`、、、、`api`​`structure`​`readme`|
-|`--format`|出力形式|`md`、、`json`​`yaml`|
+$b^2 = -b_1 \lrcorner I_2^{-1} = -e_1 \lrcorner (e_2 \wedge e_1) = -(-e_2) = e_2$
 
-### コマンドフラグを反映する ( `/sc:reflect`)
+The coordinates are $x^i = x \cdot b^i$:
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/flags.md#reflect-command-flags-screflect)
+$x^1 = (3e_1 + e_2) \cdot (e_1 - e_2) = 3 - 1 = 2$
 
-|フラグ|目的|価値観|
-|---|---|---|
-|`--type`|反射スコープ|`task`、、`session`​`completion`|
-|`--analyze`|分析を含める|ブール値|
-|`--validate`|完全性を検証する|ブール値|
+$x^2 = (3e_1 + e_2) \cdot e_2 = 1$
 
-### スポーンコマンドフラグ（`/sc:spawn`）
+$$x = 2b_1 + b_2$$
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/flags.md#spawn-command-flags-scspawn)
+---
 
-|フラグ|目的|価値観|
-|---|---|---|
-|`--strategy`|調整アプローチ|`sequential`、、`parallel`​`adaptive`|
-|`--depth`|分析の深さ|`normal`、`deep`|
+# Structural
 
-### Gitコマンドフラグ（`/sc:git`）
+1. In $\mathbb{R}^{2,0}$ with orthonormal $\{e_1, e_2\}$, determine $e_1 \lrcorner (e_1 \wedge e_2)$ using the implicit definition (3.6), letting $X$ range over $\{1, e_1, e_2, e_1 \wedge e_2\}$.
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/flags.md#git-command-flags-scgit)
+The implicit definition says $(X \wedge A) * B = X * (A \lrcorner B)$. Write the unknown as:
 
-|フラグ|目的|価値観|
-|---|---|---|
-|`--smart-commit`|コミットメッセージを生成する|ブール値|
-|`--interactive`|ガイド付き操作|ブール値|
+$R = e_1 \lrcorner (e_1 \wedge e_2) = \alpha + \beta e_1 + \gamma e_2 + \delta(e_1 \wedge e_2)$
 
-### 選択ツールコマンドフラグ ( `/sc:select-tool`)
+Each choice of $X$ determines one coefficient:
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/flags.md#select-tool-command-flags-scselect-tool)
+$X = 1$: LHS $= e_1 * (e_1 \wedge e_2) = 0$ (grade mismatch), so $\alpha = 0$
 
-|フラグ|目的|価値観|
-|---|---|---|
-|`--analyze`|ツール分析|ブール値|
-|`--explain`|選択の説明|ブール値|
+$X = e_1$: LHS $= (e_1 \wedge e_1) * (e_1 \wedge e_2) = 0$, so $\beta = 0$
 
-### テストコマンドフラグ（`/sc:test`）
+$X = e_2$: LHS $= (e_2 \wedge e_1) * (e_1 \wedge e_2) = \det\begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = 1$, so $\gamma = 1$
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/flags.md#test-command-flags-sctest)
+$X = e_1 \wedge e_2$: LHS $= 0$ since $(e_1 \wedge e_2) \wedge e_1 = 0$, giving $-\delta = 0$
 
-|フラグ|目的|価値観|
-|---|---|---|
-|`--coverage`|カバー範囲を含める|ブール値|
-|`--type`|テストの種類|`unit`、、`integration`​`e2e`|
-|`--watch`|ウォッチモード|ブール値|
+$$e_1 \lrcorner (e_1 \wedge e_2) = e_2$$
 
-## 高度な制御フラグ
+---
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/flags.md#advanced-control-flags)
+2. Change the metric so that $e_2 \cdot e_2 = 0$ (making $e_2$ a null vector). Show the implicit method fails to determine the $e_2$-coefficient, but the explicit definition still works.
 
-### 範囲と焦点
+Why implicit fails for $X = e_2$:
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/flags.md#scope-and-focus)
+$(e_2 \wedge e_1) * (e_1 \wedge e_2) = \det\begin{pmatrix} e_2 \cdot e_2 & e_2 \cdot e_1 \\ e_1 \cdot e_2 & e_1 \cdot e_1 \end{pmatrix} = \det\begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix} = 0$
 
-|フラグ|目的|価値観|
-|---|---|---|
-|`--scope`|分析境界|`file`、、、、`module`​`project`​`system`|
-|`--focus`|ドメインターゲティング|`performance`、、、、、、`security`​`quality`​`architecture`​`accessibility`​`testing`|
+Meanwhile $e_2 * R = \gamma(e_2 \cdot e_2) = 0$ for any value of $\gamma$. The equation $0 = 0$ is satisfied regardless of $\gamma$.
 
-### 実行制御
+The explicit definition still works using (3.10):
 
-[](https://github.com/khayashi4337/SuperClaude_Framework/blob/master/docs/user-guide/flags.md#execution-control)
+$e_1 \lrcorner (e_1 \wedge e_2) = (e_1 \cdot e_1)e_2 - (e_1 \cdot e_2)e_1 = 1 \cdot e_2 - 0$
 
-|フラグ|目的|価値観|
-|---|---|---|
-|`--concurren
+$$e_1 \lrcorner (e_1 \wedge e_2) = e_2$$
+
+---
+
+3. Derive the right-contraction dualities corresponding to (3.20) and (3.21), and give the counterpart of (3.24).
+
+The right contraction relates to left contraction by $B \llcorner A = (\tilde{A} \lrcorner \tilde{B})^{\sim}$.
+
+(i) Universal identity: Starting from $((\tilde{A} \wedge \tilde{B}) \lrcorner \tilde{C})^{\sim}$ and applying (3.20):
+
+$$C \llcorner (B \wedge A) = (C \llcorner B) \llcorner A$$
+
+(ii) Conditional identity (when $A \subseteq C$): Using (3.21):
+
+$$C \llcorner (B \llcorner A) = (C \llcorner B) \wedge A$$
+
+(iii) Counterpart of $(A \wedge B)^* = A \lrcorner (B^*)$:
+
+$$(A \wedge B)^* = (A^*) \llcorner B$$
+
+---
+
+4. Interpret the inner product $x \cdot a$ geometrically as a contraction.
+
+For vectors, $x \lrcorner a = x \cdot a$ has grade $1 - 1 = 0$, producing a scalar.
+
+A scalar (0-blade) is trivially contained in any blade and has no direction, so it can be considered perpendicular to everything. The contraction extracts the 0-dimensional "overlap" of $a$ with $x$.
+
+---
+
+5. Explain why $x \lrcorner \alpha = 0$ for a vector $x$ and scalar $\alpha$.
+
+$\text{grade}(x \lrcorner \alpha) = \text{grade}(\alpha) - \text{grade}(x) = 0 - 1 = -1$
+
+Negative grade blades do not exist. There is no subspace of a point that you can extract by removing a direction.
+
+$$x \lrcorner \alpha = 0$$
+
+---
+
+6. Justify the identity $\alpha \lrcorner B = \alpha B$ geometrically.
+
+$\text{grade}(\alpha \lrcorner B) = \text{grade}(B) - 0 = \text{grade}(B)$
+
+Contracting by a scalar (a 0-dimensional object) removes nothing from $B$. It simply scales the weight.
+
+$$\alpha \lrcorner B = \alpha B$$
+
+---
+
+7. Show explicitly that in 1D Euclidean space, double duality introduces no minus sign.
+
+In 1D with basis $\{e_1\}$: $I_1 = e_1$ and $I_1^{-1} = e_1$ (since $e_1 \cdot e_1 = 1$).
+
+Let $a = \alpha e_1$. First dual:
+
+$a^* = (\alpha e_1) \lrcorner e_1 = \alpha(e_1 \cdot e_1) = \alpha$
+
+Second dual:
+
+$(a^*)^* = \alpha \lrcorner e_1 = \alpha e_1 = a$
+
+$$(a^*)^* = a$$
+
+---
+
+8. Express $\det([[abc]])$ purely in terms of the subspace algebra, given $a \wedge b \wedge c = \det([[abc]]) \, I_3$.
+
+Contract both sides with $I_3^{-1}$:
+
+$(a \wedge b \wedge c) \lrcorner I_3^{-1} = \det([[abc]]) \cdot (I_3 \lrcorner I_3^{-1}) = \det([[abc]]) \cdot 1$
+
+$$\det([[abc]]) = (a \wedge b \wedge c) \lrcorner I_3^{-1}$$
+
+---
+
+9. In a plane with unit pseudoscalar $I_2$, give a coordinate-free formula for rotating a vector $x$ by angle $\theta$.
+
+Since $x \lrcorner I_2$ is perpendicular to $x$ within the plane (rotated by $\pi/2$ in the orientation of $I_2$), the pair $\{x, x \lrcorner I_2\}$ forms an orthogonal basis.
+
+$$R_{I_2,\theta}(x) = x\cos\theta + (x \lrcorner I_2)\sin\theta$$
+
+---
+
+10. Using $a \times b = (a \wedge b)^*$, verify that $a \cdot (b \times c)$ gives the volume spanned by $a, b, c$. What is the formula using $\wedge$ and $\lrcorner$?
+
+From the cross product definition: $b \times c = (b \wedge c) \lrcorner I_3^{-1}$
+
+$a \cdot (b \times c) = a \lrcorner ((b \wedge c) \lrcorner I_3^{-1})$
+
+Using associativity $(A \wedge B) \lrcorner C = A \lrcorner (B \lrcorner C)$ in reverse:
+
+$$a \cdot (b \times c) = (a \wedge b \wedge c) \lrcorner I_3^{-1}$$
+
+---
+
+11. Derive the bac-cab identity $a \times (b \times c) = b(a \cdot c) - c(a \cdot b)$ from the cross product definition. Give the corresponding $\wedge, \lrcorner$ formula.
+
+Since $b \times c = (b \wedge c)^*$ and double duality in 3D gives $(b \wedge c)^{**} = -(b \wedge c)$:
+
+$(b \times c)^* = -(b \wedge c)$
+
+So $a \times (b \times c) = a \lrcorner (-(b \wedge c)) = -a \lrcorner (b \wedge c)$
+
+Applying (3.17): $a \lrcorner (b \wedge c) = (a \cdot b)c - (a \cdot c)b$
+
+$$a \times (b \times c) = -[(a \cdot b)c - (a \cdot c)b] = b(a \cdot c) - c(a \cdot b)$$
+
+---
+
+12. Derive $(a \times b) \cdot (c \times d) = (a \cdot c)(b \cdot d) - (a \cdot d)(b \cdot c)$ from the cross product definition.
+
+$(a \times b) \cdot (c \times d) = (a \wedge b)^* \cdot (c \wedge d)^*$
+
+In 3D, the dot product of dual vectors equals the scalar product of the original bivectors:
+
+$= (a \wedge b) * \widetilde{(c \wedge d)} = (a \wedge b) * (d \wedge c)$
+
+This is the $2 \times 2$ determinant of dot products:
+
+$$= \det\begin{pmatrix} a \cdot c & a \cdot d \\ b \cdot c & b \cdot d \end{pmatrix} = (a \cdot c)(b \cdot d) - (a \cdot d)(b \cdot c)$$
+
+---
+
+13. In a nonorthonormal basis $\{b_i\}$ with reciprocal basis $\{b^i\}$, show that $\sum_i b_i \wedge b^i = 0$.
+
+Expand reciprocal vectors: $b^i = \sum_j g^{ij} b_j$ where $g^{ij}$ are entries of the inverse Gram matrix.
+
+Since $G$ is symmetric, $g^{ij} = g^{ji}$.
+
+$\sum_i b_i \wedge b^i = \sum_i b_i \wedge \left(\sum_j g^{ij} b_j\right) = \sum_{i,j} g^{ij} (b_i \wedge b_j)$
+
+Pair up terms $(i,j)$ and $(j,i)$:
+
+$g^{ij}(b_i \wedge b_j) + g^{ji}(b_j \wedge b_i) = g^{ij}(b_i \wedge b_j) + g^{ij}(-b_i \wedge b_j) = 0$
+
+$$\sum_i b_i \wedge b^i = 0$$

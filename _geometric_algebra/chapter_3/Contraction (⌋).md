@@ -1,56 +1,40 @@
 ---
-title: "Contraction (⌋)"
+title: "contraction (⌋)"
 tags: [geometric-algebra, inner-product, blades]
 ---
 
-The scalar product answers "how aligned are two same-grade subspaces?" Contraction exists because geometry also asks: What remains of $B$ once we enforce orthogonality to $A$? That question only makes sense when grades can differ, so the product must reduce grade.
+Left contraction $A\lrcorner B$ (written $A⌋B$ in the book) is the grade-lowering product adjoint to $\wedge$ under the [[scalar product]]. Conceptually, it is the bilinear operation that lets you remove shared factors inside a scalar product.
 
-## Intuition
-Think "take from $B$ the biggest subspace that lives in $B$ but is most unlike $A$."
-In 3-D, if $B$ is a plane (a bivector) and $x$ is a vector, $x \lrcorner B$ is a vector in the plane and perpendicular to $x$ (Figure 3.3 idea).
+In a nondegenerate metric it is characterized by
+$$
+(X\wedge A)\ast B = X\ast(A\lrcorner B),
+$$
+whenever the grades match. It follows that
+$$
+\operatorname{grade}(A\lrcorner B)=\operatorname{grade}(B)-\operatorname{grade}(A)
+$$
+(and $A\lrcorner B=0$ if the right-hand side is negative), and that for equal grades $A\lrcorner B=A\ast B$.
 
-So the output is still a blade (an oriented subspace), not just a number.
-
-## The implicit definition
-If $Y = X \wedge A$ shares a factor $A$ with $B$, we demand that removing $A$ from $Y$ inside a scalar product is equivalent to removing $A$ from $B$:
+A computational definition that works directly on blades is given by the axioms
 $$
-(X \wedge A) * B = X * (A \lrcorner B)
+\alpha\lrcorner B=\alpha B,\qquad B\lrcorner\alpha=0\ \text{if }\operatorname{grade}(B)>0,\qquad a\lrcorner b=a\cdot b,
 $$
-That pins down $A \lrcorner B$ (fully in nondegenerate metrics), so contraction is a real product, not notation.
-
-The grade must satisfy
+the Leibniz rule
 $$
-\operatorname{grade}(A \lrcorner B) = \operatorname{grade}(B) - \operatorname{grade}(A)
+a\lrcorner(B\wedge C)=(a\lrcorner B)\wedge C+(-1)^{\operatorname{grade}(B)}B\wedge(a\lrcorner C),
 $$
-(negative grades collapse to 0).
-
-When grades match, $A \lrcorner B$ is just the scalar product: contraction is the "one inner product to rule them all."
-
-## Computation rules
-You can compute everything from a small rule set:
-- Scalars: $\alpha \lrcorner B = \alpha B$; but $B \lrcorner \alpha = 0$ if $\operatorname{grade}(B) > 0$
-- Vectors: $a \lrcorner b = a \cdot b$
-- Leibniz-style rule over wedges:
-  $$
-  a \lrcorner (B \wedge C) = (a \lrcorner B) \wedge C + (-1)^{\operatorname{grade}(B)} B \wedge (a \lrcorner C)
-  $$
-- Key associativity-like identity:
-  $$
-  (A \wedge B) \lrcorner C = A \lrcorner (B \lrcorner C)
-  $$
-
-A workhorse expansion for a vector $x$ on a factored blade:
+and the recursion rule
 $$
-x \lrcorner (a_1 \wedge \dots \wedge a_k) = \sum_{i=1}^k (-1)^{i-1}(x \cdot a_i) \; a_1 \wedge \dots \wedge \widehat{a_i} \wedge \dots \wedge a_k
-$$
-For a bivector:
-$$
-x \lrcorner (a_1 \wedge a_2) = (x \cdot a_1)a_2 - (x \cdot a_2)a_1
+(A\wedge B)\lrcorner C=A\lrcorner(B\lrcorner C).
 $$
 
-## Geometric facts
-For blades $A, B$:
-- $A \lrcorner B$ is contained in $B$.
-- $A \lrcorner B$ is perpendicular to $A$.
-- If $x \lrcorner A = 0$, then $x$ is perpendicular to every vector in the subspace of $A$.
+For computation, a vector $x$ acting on a factored blade expands as
+$$
+x\lrcorner(a_1\wedge\cdots\wedge a_k)=\sum_{i=1}^k(-1)^{i-1}(x\cdot a_i)\,a_1\wedge\cdots\wedge\widehat{a_i}\wedge\cdots\wedge a_k,
+$$
+with the bivector case
+$$
+x\lrcorner(a_1\wedge a_2)=(x\cdot a_1)a_2-(x\cdot a_2)a_1.
+$$
 
+Geometrically, $A\lrcorner B$ is a (possibly zero) subblade of $B$ that is perpendicular to $A$. In particular, $x\lrcorner A=0$ iff $x\perp A$.

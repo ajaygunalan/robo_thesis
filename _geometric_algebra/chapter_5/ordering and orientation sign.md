@@ -12,4 +12,4 @@ This parity rule matches common cases:
 - Two lines in a plane: $a=b=1$, $j=2$, so $(j-a)(j-b)=1$ and the meet is antisymmetric, matching the sign flip of $\sin(-\theta)=-\sin(\theta)$ when you reverse the oriented angle.
 - A line and a plane in 3D: $a=1$, $b=2$, $j=3$, so $(j-a)(j-b)=2$ and the meet is symmetric; the sign still records which side the line pierces relative to the oriented plane, but swapping argument order does not introduce an extra minus sign.
 
-Table 5.1 in the chapter is an instantiation of the same rule across many incidence types and geometric models; only $(j-a)$ and $(j-b)$ matter, not the particular embedding model.
+This rule generalizes across all incidence types and geometric models; only $(j-a)$ and $(j-b)$ matter, not the particular embedding model.

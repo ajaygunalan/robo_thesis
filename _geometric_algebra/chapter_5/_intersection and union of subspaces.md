@@ -1,19 +1,29 @@
 # intersection and union of subspaces
 
-This chapter is where geometric algebra stops pretending everything is bilinear and well-behaved. "Intersection" and "union" of subspaces are incidence questions: tiny perturbations can flip the answer's dimension (two planes intersect in a line… until they coincide, and then the "intersection" should be the whole plane). That discontinuity forces a nonlinear story, and it also explains why these operations make sense for **blades** (subspaces) but not for arbitrary multivectors.
+In 3D you already know what “intersection” and “span” mean: two planes through the origin usually intersect in a line, but if the planes coincide the intersection should be the plane itself. This chapter is about making that kind of [[incidence (geometry)|incidence]] computation algebraic, without hard-coding a list of special cases. The tools are the **meet** ($\cap$) and **join** ($\cup$): incidence products on blades that represent the subspaces.
 
-The book packages that incidence logic into two blade-only products—meet and join—whose algebra is ultimately just controlled outer-factorization, plus an unavoidable scale/sign ambiguity that you either ignore (projective style) or manage consistently. The conceptual core lives in [[meet and join]].
+The price of that geometric faithfulness is that meet/join cannot behave like the products we used earlier. Unlike the outer product and [[Contraction (⌋)|contraction]], meet/join are **not bilinear**: an arbitrarily small perturbation can push a configuration across a degeneracy (containment, coincidence, rank loss), and the correct output grade can jump. That is why meet/join are restricted to blades (subspaces) rather than extended to arbitrary multivectors.
 
-Read this chapter as a small graph, not a linear exposition: [[meet and join]] introduces the factorization view of intersection/union; [[scalar ambiguity and attitude]] isolates the unavoidable weight/sign freedom; [[meet from join]] gives the fixed-join contraction formula and join-relative dual; [[computing complementary factors]] shows how to extract $A'$ and $B'$ consistently when you need them. The nonlinear behavior is localized in join changes ([[piecewise linearity and degeneracy]]), with its numerical consequences separated in [[computational stability]]. Once the join is normalized, meet carries quantitative attitude information ([[angle from meet magnitude]]) whose sign conventions are controlled by [[ordering and orientation sign]]. The structural invariance under invertible linear maps (and the “Euclidean scaffold” justification) lives in [[linear transformation invariance]], and the pointer to later embeddings for offset objects lives in [[offset models]].
+There is a second “this feels different” warning: the **intersection subspace is well defined, but its weight and orientation are not**. For incidence questions, only the attitude (which subspace) is intrinsic; a scalar can slide between factors without changing the represented geometry. Keep that explicit via [[scalar ambiguity and attitude]].
 
-That ambiguity is not a nuisance detail; it is the point where “intersection as a subspace” diverges from “intersection as a fully quantified blade.” What is intrinsic is the attitude, not an absolute scale/sign, and downstream constructions are designed to cancel that freedom (see [[scalar ambiguity and attitude]]).
+The algebraic structure rests on outer-product factorization. For blades $A$ and $B$, the meet $M = A \cap B$ is the largest common factor, and the join $J = A \cup B$ is the smallest blade containing both:
+$$
+A = A' \wedge M, \quad B = M \wedge B', \quad J = A' \wedge M \wedge B'.
+$$
+Grade bookkeeping: $j = a + b - m$, where lowercase letters denote grades. See [[meet and join]] for the full derivation.
 
-Once you accept that “the join picks the ambient subspace in which the incidence problem lives,” computation becomes practical. In most geometric setups you already know that ambient pseudoscalar (e.g., “these objects live in 3D space”), so you choose a join and compute the meet by contractions/duality relative to it (see [[meet from join]]). When you need the complementary factors explicitly (the parts “outside the meet”), extract them consistently via [[computing complementary factors]].
+The factorization leaves an unavoidable scalar ambiguity in $M$ and $J$; only the represented subspaces (attitudes) are intrinsic. See [[scalar ambiguity and attitude]].
 
-But the join is also the chapter’s landmine: hold it fixed and everything looks linear; cross into a degenerate configuration and the correct join abruptly changes. That “mostly linear” thesis, the operational rule-of-thumb (“a zero result is your degeneracy alarm”), and the piecewise regime-switching view live in [[piecewise linearity and degeneracy]]. The numerical fallout of those switches is summarized in [[computational stability]].
+Once a join $J$ is fixed, the meet becomes a [[Contraction (⌋)|contraction]] computation:
+$$
+M = (B \rfloor J^{-1}) \rfloor A.
+$$
+This is linear in $A$ and $B$ as long as the correct join stays fixed. See [[meet from join]] for the join-relative dual form, and [[computing complementary factors]] for extracting $A'$ and $B'$.
 
-The moment you normalize the join, meet stops being “just an incidence operator” and starts carrying a quantitative signal: its magnitude behaves like a sine measure of relative attitude between subspaces. That interpretation is in [[angle from meet magnitude]]. The sign conventions—join orientation and the grade-dependent symmetry/antisymmetry under swapping arguments—are separated out in [[ordering and orientation sign]].
+The nonlinearity is localized: cross into a degenerate configuration and the correct join abruptly changes. That piecewise-linear structure and the "zero meet = degeneracy alarm" diagnostic live in [[piecewise linearity and degeneracy]], with numerical consequences in [[computational stability]].
 
-Finally, the chapter resolves a seeming paradox: meet is computed with contractions and inverses (metric-looking machinery), yet meet/join are actually **nonmetric** incidence constructions and transform cleanly under invertible linear maps—provided you dualize relative to the transformed join, not the old one. That structural invariance (and why you can temporarily assume a Euclidean metric to make inverses exist) is in [[linear transformation invariance]].
+When the join is normalized, meet magnitude carries quantitative information—a sine measure of relative attitude between subspaces. See [[angle from meet magnitude]]. Sign conventions under argument swapping follow a grade-dependent parity rule in [[ordering and orientation sign]].
 
-The chapter closes by pointing out that all of this is just the “through-the-origin” warm-up: offset subspaces and objects like circles/spheres get handled later by embedding the geometry in models where the same meet/join ideas apply operationally (see [[offset models]]).
+Meet and join are nonmetric incidence constructions that transform cleanly under invertible linear maps (provided you dualize relative to the transformed join). See [[linear transformation invariance]].
+
+All of this assumes subspaces through the origin. Offset objects (parallel planes, circles, spheres) require embedding in homogeneous or conformal models where meet/join apply operationally. See [[offset models]].

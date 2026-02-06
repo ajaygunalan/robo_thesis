@@ -1,23 +1,11 @@
----
-title: "Determinant"
-tags: [determinant, pseudoscalar, volume]
----
+# determinant
 
-The determinant becomes almost embarrassingly geometric once you remember: the space of $n$-blades in an $n$-D space is 1-dimensional. Any pseudoscalar is a scalar multiple of any other.
+Fix an oriented unit [[pseudoscalar]] $I_n$. An [[outermorphism]] preserves grade, so the image of $I_n$ must be another pseudoscalar and therefore a scalar multiple of $I_n$.
+$$
+f[I_n] = \det(f) \, I_n.
+$$
+This defines $\det(f)$ coordinate-free as the signed scale factor of oriented $n$-volume.
 
-So when a linear map $f$ (extended as an outermorphism) acts on a pseudoscalar $I_n$, the result must be:
-$$f(I_n) = \det(f) I_n$$
+Standard identities follow directly from this definition. Composition gives $\det(g \circ f) = \det(g)\det(f)$ because applying $f$ then $g$ to $I_n$ pulls out both scalars. A rotation preserves oriented volume, so $\det = +1$. A point reflection negates every vector, so an $n$-blade picks up $(-1)^n$ and orientation flips in odd dimensions. A nontrivial projection collapses at least one direction, so the $n$-volume vanishes and $\det = 0$.
 
-That's not a computational trick—it's the *definition* of $\det(f)$ as signed hypervolume scaling: magnitude change × orientation flip.
-
-## Fast consequences
-- Rotation: preserves the rotation plane's pseudoscalar, and leaves perpendicular directions fixed, so $\det=+1$.
-- Point reflection: $\det = (-1)^n$.
-- Projection onto a line: $\det=0$ for $n>1$.
-
-## Composition law (falls out instantly)
-For $g \circ f$:
-$$(g \circ f)(I_n) = g(f(I_n)) = g(\det(f) I_n) = \det(f) g(I_n) = \det(g)\det(f) I_n$$
-so $\det(g \circ f)=\det(g)\det(f)$.
-
-This definition is coordinate-free; matrices enter later as one possible basis-bound implementation.
+The determinant reappears in the [[inverse via pseudoscalar|coordinate-free inverse formula]] as the normalization factor, and in [[dual representations]] where it scales the transformation law for duals.
