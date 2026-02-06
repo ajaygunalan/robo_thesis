@@ -12,11 +12,11 @@ Hi, I'm [Ajay Gunalan](https://ajaygunalan.com/), this is my personal second bra
 - [[force_torque_sensor_filtering]]
 
 ### Subjects
-- [[_controls]]
-- [[_linear_algebra]]
-- [[_optimization]]
-- [[_reinforcemnt_learning]]
-- [[_optimal_control]]
+- [[__controls]]
+- [[__linear_algebra]]
+- [[__optimization]]
+- [[__reinforcemnt_learning]]
+- [[__optimal_control]]
 - [[__geometric_algebra]]
 
 
