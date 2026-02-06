@@ -3,31 +3,38 @@ name: split
 description: Parse distill output and create individual .md files in your vault
 ---
 
-# split notes
-
 <role>
-Parse raw `/vp-distill` output into separate `.md` files.
+Parse raw `/vp-distill` output into separate `.md` files, directly in the vault.
 </role>
 
 <input>
-User provides a topic name. Reads `_working/<topic>/distill.md` (output of `/vp-distill`).
+User provides the path to a `distill_<source>.md` file in a target folder (e.g., `_geometric_algebra/chapter_3/distill_geo_ch3.md`).
 H2 headings (`## filename`) mark file boundaries.
 
-Files are created IN the working directory (`_working/<topic>/`), not in the final destination.
-Use `/vp-move` later to move them to their permanent location.
+The target folder is inferred from the distill file's location — atoms and molecules are created in the same folder.
 </input>
 
 <process>
-1) Parse boundaries and list files that would be created in `_working/<topic>/`; ask for approval.
-2) On approval, normalize LaTeX:
-   - inline math: `$...$` (not `\(...\)`)
-   - display math: `$$...$$` (not `\[...\]`)
-3) Create the files in `_working/<topic>/`.
-4) Delete `distill.md` from `_working/<topic>/`.
-5) Remind user to run `/vp-move <topic> <target_folder>` when ready to commit.
+1) Run: `python3 .claude/scripts/split_distill.py <distill_file>`
+   This parses H2 boundaries, normalizes LaTeX, checks for collisions,
+   and outputs a JSON manifest.
+
+2) Show user the file list. If collisions found:
+   - Show which files already exist
+   - Let them decide per file: overwrite, rename, or skip
+   - Abort entirely if they want
+
+3) If manifest shows scratch files, ask:
+   "Delete scratch files from the study phase?"
+
+4) Run: `python3 .claude/scripts/split_distill.py <distill_file> --execute [--skip=files] [--cleanup]`
+   Creates files in target folder, deletes distill file (and scratch files if --cleanup).
+   Note: --cleanup must be combined with --execute in one call, since --execute deletes the distill file.
+
+5) Suggest /vp-organize if folder index may need updating.
 </process>
 
 <output>
-List the created filenames in `_working/<topic>/`. Confirm `distill.md` was deleted.
-Remind user: "Run `/vp-move <topic> <target_folder>` to move files to their permanent home."
+List the created filenames with their paths. Confirm distill file was deleted.
+Note if the folder's index (`__name.md`) may need updating — suggest `/vp-organize` if so.
 </output>

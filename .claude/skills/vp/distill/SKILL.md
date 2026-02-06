@@ -17,9 +17,10 @@ The user provides:
 - A source to distill:
   - PDF: research paper, lecture slides, book chapter
   - Markdown: notes, documentation, any text
-  - `_working/<topic>/learn.md`: output of `/vp-learn`
+  - `learn_<source>.md` in the target folder: output of `/vp-learn`
+- A target folder where the material belongs (e.g., `_geometric_algebra/chapter_3/`)
 
-Output goes to `_working/<topic>/distill.md`. Create the directory if it doesn't exist.
+Output goes to `distill_<source>.md` in the target folder.
 </input>
 
 <goal>
@@ -62,7 +63,7 @@ Test: Could someone learn this concept thoroughly from this atom alone?
 2. Draft the molecule as synthesis—what does this source teach? Embed [[wikilinks]] for concepts where a reader might want depth.
 3. Review your wikilinks: these are your atom candidates. Aim for 4–6. If more, your molecule may be covering too much territory (split into sub-molecules). If fewer, check whether the concepts are truly distinct.
 4. Write atoms in the order they appear in the molecule. Each atom should be readable in isolation, months later.
-5. Write the output to `_working/<topic>/distill.md` and ask for feedback.
+5. Write the output to `distill_<source>.md` in the target folder and ask for feedback.
 6. Iterate until satisfied:
    - User reviews distill.md and provides feedback (e.g., "split atom X", "molecule narrative is unclear", "merge these two atoms")
    - Revise and update distill.md
@@ -85,7 +86,7 @@ The core insight of backpropagation is that we can compute gradients efficiently
 </example>
 
 <output>
-Write to `_working/<topic>/distill.md`. Each note starts with `## filename` as H2 heading.
+Write to `distill_<source>.md` in the target folder. Each note starts with `## filename` as H2 heading.
 
 Molecule filenames: `_lowercase_name`
 Atom filenames: `lowercase_name`
