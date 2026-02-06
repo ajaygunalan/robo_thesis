@@ -1,17 +1,5 @@
 # Zettelkasten++ (Vegapunk)
 
-## Install
-
-From your Obsidian vault root (the folder that contains your `.obsidian/`):
-
-```bash
-curl -sL https://raw.githubusercontent.com/ajaygunalan/vegapunk/main/install.sh | bash
-```
-
-Then open Claude Code in your vault and the `/vp-*` commands are ready.
-
----
-
 Building a "second brain" in Obsidian breaks at scale. The maintenance is manual and fragile: you keep splitting notes, rewriting for clarity, deciding what belongs where, maintaining cross-links, and preventing the same idea from being rewritten in multiple places and diverging over time.
 
 Vegapunk fixes this by using AI to distill sources into atoms (one concept per file) and generate higher-level structure — molecules that group and connect related atoms, plus index notes that map collections of molecules — all linked via `[[wikilinks]]` under a single-source-of-truth rule: each idea lives exactly once, everything else links to it. The test is simple: after months away from a topic, reading a molecule should restore your understanding without returning to the original source. If you have to re-read the textbook, the molecule failed.
@@ -152,3 +140,15 @@ Vegapunk was designed after studying 9 open-source Obsidian + Claude Code reposi
 - **Script layer** — deterministic I/O (graph building, file splitting, parallel search) offloaded to Python. Claude only reasons.
 - **Quiz** — no equivalent exists in any surveyed repository. Socratic revision grounded in your own atoms, not Claude's training data.
 - **Single-source-of-truth enforcement** — every concept lives in exactly one atom. Duplicate checking before creation, periodic audits after.
+
+---
+
+## Install
+
+From your Obsidian vault root (the folder that contains your `.obsidian/`):
+
+```bash
+curl -sL https://raw.githubusercontent.com/ajaygunalan/vegapunk/main/install.sh | bash
+```
+
+Then open Claude Code in your vault and the `/vp-*` commands are ready.
