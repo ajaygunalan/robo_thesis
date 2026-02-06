@@ -8,26 +8,36 @@ The knowledge isn't static. Creation is unconstrained — entropy accumulates na
 
 ---
 
-## Structure
+## Workflow
 
-| Type | Pattern | Purpose |
-|------|---------|---------|
-| Atom | `lowercase_name.md` | One concept, one file. Complete, standalone. Single source of truth. |
-| Molecule | `_lowercase_name.md` | Groups and connects related atoms into a narrative. 2-3 min read that restores understanding. |
-| Index | `__lowercase_name.md` | Maps molecules within a folder. Navigation entry point. |
+```
+  Source (PDF, slides, chapter)
+    |
+    |----> /vp-learn ----> learn_*.md        [optional: skip if you already understand]
+    |                        |
+    v                        v
+  /vp-distill ----------> distill_*.md
+    |
+    v
+  /vp-split ------------> atoms + molecules in vault
+    |
+    ================ vault =================
+    |
+    |-- /vp-refine       improve individual files
+    |-- /vp-organize     folder-level health audit
+    |-- /vp-weave        cross-folder connections
+    |
+    |-- /vp-find         search by concept
+    '-- /vp-quiz         test retention
+```
 
-Wikilinks (`[[concept]]`) are the connections. They always point to the single source of truth. When you need depth, you follow the link. When you don't, you skip it.
+**Learn** is the only optional step. If you already understand the source material, go straight to distill. Learn creates scratch files (`learn_*.md`, `progress_*.md`) that track Q&A sessions and multi-session progress.
 
-**Scratch files** live alongside atoms and molecules in the target folder:
+**Distill + Split** always run together. Distill drafts molecules and atoms in a single `distill_*.md` file. You iterate — review, give feedback, refine — until satisfied. Then split parses the distill file into individual `.md` files, normalizes LaTeX delimiters, checks for filename collisions, and deletes the distill file.
 
-| Scratch file | Created by | Purpose |
-|--------------|------------|---------|
-| `learn_<source>.md` | `/vp-learn` | Q&A session artifact |
-| `progress_<source>.md` | `/vp-learn` | Multi-session progress tracker |
-| `distill_<source>.md` | `/vp-distill` | Molecules + atoms draft |
-| `quiz_<source>.md` | `/vp-quiz` | Revision session artifact |
+**Maintain** runs periodically. Refine improves individual files after they're in the vault. Organize audits an entire folder for structural health. Weave discovers connections across folders that you wouldn't find manually.
 
-Scratch files are temporary. `/vp-split` deletes the distill file and offers to clean up learn/progress files.
+**Use** is ongoing. Find searches the vault by concept using the wikilink graph and content matching. Quiz tests retention through Socratic questioning grounded in your atoms — it cites what your vault says, not what it knows.
 
 ---
 
@@ -60,36 +70,26 @@ All commands use the `vp-` prefix.
 
 ---
 
-## Workflow
+## Structure
 
-```
-  Source (PDF, slides, chapter)
-    |
-    |----> /vp-learn ----> learn_*.md        [optional: skip if you already understand]
-    |                        |
-    v                        v
-  /vp-distill ----------> distill_*.md
-    |
-    v
-  /vp-split ------------> atoms + molecules in vault
-    |
-    ================ vault =================
-    |
-    |-- /vp-refine       improve individual files
-    |-- /vp-organize     folder-level health audit
-    |-- /vp-weave        cross-folder connections
-    |
-    |-- /vp-find         search by concept
-    '-- /vp-quiz         test retention
-```
+| Type | Pattern | Purpose |
+|------|---------|---------|
+| Atom | `lowercase_name.md` | One concept, one file. Complete, standalone. Single source of truth. |
+| Molecule | `_lowercase_name.md` | Groups and connects related atoms into a narrative. 2-3 min read that restores understanding. |
+| Index | `__lowercase_name.md` | Maps molecules within a folder. Navigation entry point. |
 
-**Learn** is the only optional step. If you already understand the source material, go straight to distill. Learn creates scratch files (`learn_*.md`, `progress_*.md`) that track Q&A sessions and multi-session progress.
+Wikilinks (`[[concept]]`) are the connections. They always point to the single source of truth. When you need depth, you follow the link. When you don't, you skip it.
 
-**Distill + Split** always run together. Distill drafts molecules and atoms in a single `distill_*.md` file. You iterate — review, give feedback, refine — until satisfied. Then split parses the distill file into individual `.md` files, normalizes LaTeX delimiters, checks for filename collisions, and deletes the distill file.
+**Scratch files** live alongside atoms and molecules in the target folder:
 
-**Maintain** runs periodically. Refine improves individual files after they're in the vault. Organize audits an entire folder for structural health. Weave discovers connections across folders that you wouldn't find manually.
+| Scratch file | Created by | Purpose |
+|--------------|------------|---------|
+| `learn_<source>.md` | `/vp-learn` | Q&A session artifact |
+| `progress_<source>.md` | `/vp-learn` | Multi-session progress tracker |
+| `distill_<source>.md` | `/vp-distill` | Molecules + atoms draft |
+| `quiz_<source>.md` | `/vp-quiz` | Revision session artifact |
 
-**Use** is ongoing. Find searches the vault by concept using the wikilink graph and content matching. Quiz tests retention through Socratic questioning grounded in your atoms — it cites what your vault says, not what it knows.
+Scratch files are temporary. `/vp-split` deletes the distill file and offers to clean up learn/progress files.
 
 ---
 
