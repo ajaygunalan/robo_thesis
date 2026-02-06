@@ -113,26 +113,26 @@ Vegapunk was designed after studying 9 open-source Obsidian + Claude Code reposi
 
 | Source | What It Is |
 |--------|-----------|
-| kepano/obsidian-skills | Official Obsidian markdown/canvas/bases skills by Obsidian's CEO |
-| ZanderRuss/obsidian-claude | 31 commands, 27 agents, 19 skills — the ecosystem ceiling |
-| huytieu/COG-second-brain | Self-evolving brain with weekly consolidation cycle |
-| ballred/obsidian-claude-pkm | Hooks, path-specific rules, session automation |
-| ashish141199/obsidian-claude-code | Clean slash commands, networked thinking, git automation |
-| heyitsnoah/claudesidian | PARA template, Firecrawl web archiving, setup wizard |
-| disler/claude-code-hooks-mastery | Reference implementation of all 13 hook events |
-| nikhilmaddirala/gtd-cc | Plugin marketplace pattern, content extraction skill |
-| gapmiss/obsidian-plugin-skill | Obsidian plugin development skill |
-| Corti.com CI/CD blog | Treats vault as production software with automated pipelines |
-| Noah Brier (Every.to) | "Reading > writing" — Claude as thinking partner on 1,500 notes |
-| Axton Liu roundup | Community workflow patterns aggregated in one place |
+| [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) | Obsidian markdown/canvas/bases skills by Obsidian's CEO |
+| [ZanderRuss/obsidian-claude](https://github.com/ZanderRuss/obsidian-claude) | 45 commands, 48 agents, 19 skills — the largest Obsidian + Claude Code project surveyed |
+| [huytieu/COG-second-brain](https://github.com/huytieu/COG-second-brain) | Self-evolving brain with weekly consolidation cycle |
+| [ballred/obsidian-claude-pkm](https://github.com/ballred/obsidian-claude-pkm) | Hooks, path-specific rules, session automation |
+| [ashish141199/obsidian-claude-code](https://github.com/ashish141199/obsidian-claude-code) | Clean slash commands, networked thinking, git automation |
+| [heyitsnoah/claudesidian](https://github.com/heyitsnoah/claudesidian) | PARA template, Firecrawl web archiving, setup wizard |
+| [disler/claude-code-hooks-mastery](https://github.com/disler/claude-code-hooks-mastery) | Reference implementation of all 13 hook events |
+| [nikhilmaddirala/gtd-cc](https://github.com/nikhilmaddirala/gtd-cc) | Plugin marketplace pattern, content extraction skill |
+| [gapmiss/obsidian-plugin-skill](https://github.com/gapmiss/obsidian-plugin-skill) | Obsidian plugin development skill |
+| [Corti.com CI/CD blog](https://corti.com/building-an-ai-powered-knowledge-management-system-automating-obsidian-with-claude-code-and-ci-cd-pipelines/) | Treats vault as production software with automated pipelines |
+| [Noah Brier (Every.to)](https://every.to/podcast/how-to-use-claude-code-as-a-thinking-partner) | "Reading > writing" — Claude as thinking partner on 1,500 notes |
+| [Axton Liu roundup](https://www.axtonliu.ai/newsletters/ai-2/posts/obsidian-claude-code-workflows) | Community workflow patterns aggregated in one place |
 
 **What we adopted:**
-- **kepano/obsidian-skills** — Obsidian markdown syntax rules (LaTeX, callouts, wikilinks) integrated into skill prompts
-- **ZanderRuss/obsidian-claude** — Research orchestration patterns, citation enforcement ideas
-- **COG-second-brain** — Consolidation/synthesis concept that informed `/vp-weave`
-- **ballred/obsidian-claude-pkm** — Hooks and session automation patterns that informed the SessionStart hook
-- **Corti.com CI/CD blog** — "Treat vault as production software" principle that drove `vault_graph.py` and automated health auditing
-- **Noah Brier** — "Reading over writing" philosophy — Claude reads your vault, not just generates content
+- **[kepano/obsidian-skills](https://github.com/kepano/obsidian-skills)** — Obsidian markdown syntax rules (LaTeX, callouts, wikilinks) integrated into skill prompts
+- **[ZanderRuss/obsidian-claude](https://github.com/ZanderRuss/obsidian-claude)** — Research orchestration patterns, citation enforcement ideas
+- **[COG-second-brain](https://github.com/huytieu/COG-second-brain)** — Periodic cross-domain pattern discovery concept that informed `/vp-weave`
+- **[ballred/obsidian-claude-pkm](https://github.com/ballred/obsidian-claude-pkm)** — Hooks and session automation patterns that informed the SessionStart hook
+- **[Corti.com CI/CD blog](https://corti.com/building-an-ai-powered-knowledge-management-system-automating-obsidian-with-claude-code-and-ci-cd-pipelines/)** — "Treat vault as production software" principle that drove `vault_graph.py` and automated health auditing
+- **[Noah Brier](https://every.to/podcast/how-to-use-claude-code-as-a-thinking-partner)** — "Reading over writing" philosophy — Claude reads your vault, not just generates content
 
 **What makes Vegapunk different:**
 - **Zettelkasten-native** — atoms/molecules/indexes vs PARA or flat structure. The hierarchy encodes granularity, not categories.
