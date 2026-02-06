@@ -1,0 +1,5808 @@
+{
+  "generated": "2026-02-06T10:25:29.365279+00:00",
+  "nodes": [
+    {
+      "path": "why-jujutsu-matters.md",
+      "name": "why-jujutsu-matters",
+      "type": "atom",
+      "folder": ".",
+      "words": 2485
+    },
+    {
+      "path": "CLAUDE.md",
+      "name": "CLAUDE",
+      "type": "atom",
+      "folder": ".",
+      "words": 342
+    },
+    {
+      "path": "algorithm-template-final.md",
+      "name": "algorithm-template-final",
+      "type": "atom",
+      "folder": ".",
+      "words": 667
+    },
+    {
+      "path": "Task Managment.md",
+      "name": "Task Managment",
+      "type": "atom",
+      "folder": ".",
+      "words": 43
+    },
+    {
+      "path": "streamed-plotting-wilkes.md",
+      "name": "streamed-plotting-wilkes",
+      "type": "atom",
+      "folder": ".",
+      "words": 1126
+    },
+    {
+      "path": "README.md",
+      "name": "README",
+      "type": "atom",
+      "folder": ".",
+      "words": 58
+    },
+    {
+      "path": "_reinforcement_learning/_model_based_planning.md",
+      "name": "_model_based_planning",
+      "type": "molecule",
+      "folder": "_reinforcement_learning",
+      "words": 1387
+    },
+    {
+      "path": "_reinforcement_learning/maximum_likelihood.md",
+      "name": "maximum_likelihood",
+      "type": "atom",
+      "folder": "_reinforcement_learning",
+      "words": 277
+    },
+    {
+      "path": "_reinforcement_learning/MDP.md",
+      "name": "MDP",
+      "type": "atom",
+      "folder": "_reinforcement_learning",
+      "words": 151
+    },
+    {
+      "path": "_reinforcement_learning/_policy_gradients.md",
+      "name": "_policy_gradients",
+      "type": "molecule",
+      "folder": "_reinforcement_learning",
+      "words": 1326
+    },
+    {
+      "path": "_reinforcement_learning/_bitter_lesson.md",
+      "name": "_bitter_lesson",
+      "type": "molecule",
+      "folder": "_reinforcement_learning",
+      "words": 3247
+    },
+    {
+      "path": "_reinforcement_learning/value function.md",
+      "name": "value function",
+      "type": "atom",
+      "folder": "_reinforcement_learning",
+      "words": 286
+    },
+    {
+      "path": "_reinforcement_learning/temporal_difference.md",
+      "name": "temporal_difference",
+      "type": "atom",
+      "folder": "_reinforcement_learning",
+      "words": 316
+    },
+    {
+      "path": "_reinforcement_learning/_actor_critic.md",
+      "name": "_actor_critic",
+      "type": "molecule",
+      "folder": "_reinforcement_learning",
+      "words": 2030
+    },
+    {
+      "path": "_reinforcement_learning/_reinforcement_learning_paradigms.md",
+      "name": "_reinforcement_learning_paradigms",
+      "type": "molecule",
+      "folder": "_reinforcement_learning",
+      "words": 382
+    },
+    {
+      "path": "_reinforcement_learning/_supervised_learning_of_behaviors.md",
+      "name": "_supervised_learning_of_behaviors",
+      "type": "molecule",
+      "folder": "_reinforcement_learning",
+      "words": 6319
+    },
+    {
+      "path": "_reinforcement_learning/_reinforcement_learning_basics.md",
+      "name": "_reinforcement_learning_basics",
+      "type": "molecule",
+      "folder": "_reinforcement_learning",
+      "words": 6078
+    },
+    {
+      "path": "_reinforcement_learning/_model_learning.md",
+      "name": "_model_learning",
+      "type": "molecule",
+      "folder": "_reinforcement_learning",
+      "words": 1307
+    },
+    {
+      "path": "_reinforcement_learning/_imitation_learning.md",
+      "name": "_imitation_learning",
+      "type": "molecule",
+      "folder": "_reinforcement_learning",
+      "words": 302
+    },
+    {
+      "path": "_reinforcement_learning/replay_buffer.md",
+      "name": "replay_buffer",
+      "type": "atom",
+      "folder": "_reinforcement_learning",
+      "words": 256
+    },
+    {
+      "path": "_reinforcement_learning/target_network.md",
+      "name": "target_network",
+      "type": "atom",
+      "folder": "_reinforcement_learning",
+      "words": 295
+    },
+    {
+      "path": "_reinforcement_learning/n_step_returns.md",
+      "name": "n_step_returns",
+      "type": "atom",
+      "folder": "_reinforcement_learning",
+      "words": 283
+    },
+    {
+      "path": "_reinforcement_learning/_value_learning.md",
+      "name": "_value_learning",
+      "type": "molecule",
+      "folder": "_reinforcement_learning",
+      "words": 961
+    },
+    {
+      "path": "_reinforcement_learning/_deep_q.md",
+      "name": "_deep_q",
+      "type": "molecule",
+      "folder": "_reinforcement_learning",
+      "words": 827
+    },
+    {
+      "path": "_reinforcement_learning/__reinforcement_learning.md",
+      "name": "__reinforcement_learning",
+      "type": "index",
+      "folder": "_reinforcement_learning",
+      "words": 48
+    },
+    {
+      "path": "_reinforcement_learning/_advanced_policy_gradients.md",
+      "name": "_advanced_policy_gradients",
+      "type": "molecule",
+      "folder": "_reinforcement_learning",
+      "words": 711
+    },
+    {
+      "path": "_reinforcement_learning/_neural_simulator.md",
+      "name": "_neural_simulator",
+      "type": "molecule",
+      "folder": "_reinforcement_learning",
+      "words": 1257
+    },
+    {
+      "path": "_linear_algebra/procrustes_problem.md",
+      "name": "procrustes_problem",
+      "type": "atom",
+      "folder": "_linear_algebra",
+      "words": 424
+    },
+    {
+      "path": "_linear_algebra/rayleigh_quotient.md",
+      "name": "rayleigh_quotient",
+      "type": "atom",
+      "folder": "_linear_algebra",
+      "words": 478
+    },
+    {
+      "path": "_linear_algebra/__linear_algebra.md",
+      "name": "__linear_algebra",
+      "type": "index",
+      "folder": "_linear_algebra",
+      "words": 24
+    },
+    {
+      "path": "_linear_algebra/svd.md",
+      "name": "svd",
+      "type": "atom",
+      "folder": "_linear_algebra",
+      "words": 315
+    },
+    {
+      "path": "_linear_algebra/eigenvalues_and_diagonalization.md",
+      "name": "eigenvalues_and_diagonalization",
+      "type": "atom",
+      "folder": "_linear_algebra",
+      "words": 179
+    },
+    {
+      "path": "_linear_algebra/least_squares.md",
+      "name": "least_squares",
+      "type": "atom",
+      "folder": "_linear_algebra",
+      "words": 302
+    },
+    {
+      "path": "_linear_algebra/pseudoinverse.md",
+      "name": "pseudoinverse",
+      "type": "atom",
+      "folder": "_linear_algebra",
+      "words": 252
+    },
+    {
+      "path": "_linear_algebra/four_fundamental_subspaces.md",
+      "name": "four_fundamental_subspaces",
+      "type": "atom",
+      "folder": "_linear_algebra",
+      "words": 864
+    },
+    {
+      "path": "_linear_algebra/matrix_decompositions.md",
+      "name": "matrix_decompositions",
+      "type": "atom",
+      "folder": "_linear_algebra",
+      "words": 145
+    },
+    {
+      "path": "_linear_algebra/solution_for_ax_b.md",
+      "name": "solution_for_ax_b",
+      "type": "atom",
+      "folder": "_linear_algebra",
+      "words": 350
+    },
+    {
+      "path": "_linear_algebra/same_eigenvalues_different_eigenvectors.md",
+      "name": "same_eigenvalues_different_eigenvectors",
+      "type": "atom",
+      "folder": "_linear_algebra",
+      "words": 255
+    },
+    {
+      "path": "_linear_algebra/orthogonal_projections.md",
+      "name": "orthogonal_projections",
+      "type": "atom",
+      "folder": "_linear_algebra",
+      "words": 792
+    },
+    {
+      "path": "_linear_algebra/positive_definite_matrices.md",
+      "name": "positive_definite_matrices",
+      "type": "atom",
+      "folder": "_linear_algebra",
+      "words": 106
+    },
+    {
+      "path": "_manipulation/force_torque_sensor_filtering.md",
+      "name": "force_torque_sensor_filtering",
+      "type": "atom",
+      "folder": "_manipulation",
+      "words": 204
+    },
+    {
+      "path": "_manipulation/force_torque_sensor_calibration.md",
+      "name": "force_torque_sensor_calibration",
+      "type": "atom",
+      "folder": "_manipulation",
+      "words": 1780
+    },
+    {
+      "path": "_manipulation/camera_calibration.md",
+      "name": "camera_calibration",
+      "type": "atom",
+      "folder": "_manipulation",
+      "words": 471
+    },
+    {
+      "path": "_manipulation/hybrid_force_motion_control.md",
+      "name": "hybrid_force_motion_control",
+      "type": "atom",
+      "folder": "_manipulation",
+      "words": 1167
+    },
+    {
+      "path": "_manipulation/__manipulation.md",
+      "name": "__manipulation",
+      "type": "index",
+      "folder": "_manipulation",
+      "words": 1
+    },
+    {
+      "path": "_manipulation/multi_body_dynamics.md",
+      "name": "multi_body_dynamics",
+      "type": "atom",
+      "folder": "_manipulation",
+      "words": 1
+    },
+    {
+      "path": "_manipulation/admittance_controller.md",
+      "name": "admittance_controller",
+      "type": "atom",
+      "folder": "_manipulation",
+      "words": 410
+    },
+    {
+      "path": "_manipulation/motion_planning.md",
+      "name": "motion_planning",
+      "type": "atom",
+      "folder": "_manipulation",
+      "words": 791
+    },
+    {
+      "path": "_manipulation/pivotik_memetic_ik.md",
+      "name": "pivotik_memetic_ik",
+      "type": "atom",
+      "folder": "_manipulation",
+      "words": 782
+    },
+    {
+      "path": "_manipulation/concurrent_ik_surgical_robots.md",
+      "name": "concurrent_ik_surgical_robots",
+      "type": "atom",
+      "folder": "_manipulation",
+      "words": 972
+    },
+    {
+      "path": "_manipulation/passive_convex_control_rmis.md",
+      "name": "passive_convex_control_rmis",
+      "type": "atom",
+      "folder": "_manipulation",
+      "words": 902
+    },
+    {
+      "path": "_manipulation/rcm.md",
+      "name": "rcm",
+      "type": "atom",
+      "folder": "_manipulation",
+      "words": 11
+    },
+    {
+      "path": "_manipulation/rcm_constrained_kinematic_control.md",
+      "name": "rcm_constrained_kinematic_control",
+      "type": "atom",
+      "folder": "_manipulation",
+      "words": 875
+    },
+    {
+      "path": "_manipulation/rcm_qp_control.md",
+      "name": "rcm_qp_control",
+      "type": "atom",
+      "folder": "_manipulation",
+      "words": 2056
+    },
+    {
+      "path": "_manipulation/admittance.md",
+      "name": "admittance",
+      "type": "atom",
+      "folder": "_manipulation",
+      "words": 52
+    },
+    {
+      "path": "docs/plan/sequential-soaring-stonebraker.md",
+      "name": "sequential-soaring-stonebraker",
+      "type": "atom",
+      "folder": "docs/plan",
+      "words": 2592
+    },
+    {
+      "path": "_controls/filter.md",
+      "name": "filter",
+      "type": "atom",
+      "folder": "_controls",
+      "words": 374
+    },
+    {
+      "path": "_controls/__controls.md",
+      "name": "__controls",
+      "type": "index",
+      "folder": "_controls",
+      "words": 1
+    },
+    {
+      "path": "_optimization/frobenius_norm.md",
+      "name": "frobenius_norm",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 224
+    },
+    {
+      "path": "_optimization/__optimization.md",
+      "name": "__optimization",
+      "type": "index",
+      "folder": "_optimization",
+      "words": 100
+    },
+    {
+      "path": "_optimization/line_search_techniques.md",
+      "name": "line_search_techniques",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 27
+    },
+    {
+      "path": "_optimization/stopping_condition.md",
+      "name": "stopping_condition",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 42
+    },
+    {
+      "path": "_optimization/step_length.md",
+      "name": "step_length",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 7
+    },
+    {
+      "path": "_optimization/inexact_line_search.md",
+      "name": "inexact_line_search",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 25
+    },
+    {
+      "path": "_optimization/exact_line_search.md",
+      "name": "exact_line_search",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 22
+    },
+    {
+      "path": "_optimization/backtracking.md",
+      "name": "backtracking",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 71
+    },
+    {
+      "path": "_optimization/global_convergence_theorem.md",
+      "name": "global_convergence_theorem",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 28
+    },
+    {
+      "path": "_optimization/steepest_descent_method.md",
+      "name": "steepest_descent_method",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 33
+    },
+    {
+      "path": "_optimization/ellipse_into_circular_contour.md",
+      "name": "ellipse_into_circular_contour",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 41
+    },
+    {
+      "path": "_optimization/classical_newton_method.md",
+      "name": "classical_newton_method",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 138
+    },
+    {
+      "path": "_optimization/modified_newton_method.md",
+      "name": "modified_newton_method",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 132
+    },
+    {
+      "path": "_optimization/modified_newton_method_trust_region_.md",
+      "name": "modified_newton_method_trust_region_",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 86
+    },
+    {
+      "path": "_optimization/quasi_newton_methods.md",
+      "name": "quasi_newton_methods",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 67
+    },
+    {
+      "path": "_optimization/rank_one_method.md",
+      "name": "rank_one_method",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 44
+    },
+    {
+      "path": "_optimization/rank_two_methods.md",
+      "name": "rank_two_methods",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 50
+    },
+    {
+      "path": "_optimization/dual.md",
+      "name": "dual",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 34
+    },
+    {
+      "path": "_optimization/broyden_family.md",
+      "name": "broyden_family",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 91
+    },
+    {
+      "path": "_optimization/std_algo_1.md",
+      "name": "std_algo_1",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 71
+    },
+    {
+      "path": "_optimization/armijo.md",
+      "name": "armijo",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 9
+    },
+    {
+      "path": "_optimization/how_to_find_descent_direction.md",
+      "name": "how_to_find_descent_direction",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 55
+    },
+    {
+      "path": "_optimization/wolfe.md",
+      "name": "wolfe",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 16
+    },
+    {
+      "path": "_optimization/goldstein.md",
+      "name": "goldstein",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 10
+    },
+    {
+      "path": "_optimization/cholesky.md",
+      "name": "cholesky",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 20
+    },
+    {
+      "path": "_optimization/convergence_for_steepest_descent.md",
+      "name": "convergence_for_steepest_descent",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 45
+    },
+    {
+      "path": "_optimization/bfs_davidon_fletcher_powell_.md",
+      "name": "bfs_davidon_fletcher_powell_",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 18
+    },
+    {
+      "path": "_optimization/bgfs_broyden_fletcher_goldfarb_shanno_.md",
+      "name": "bgfs_broyden_fletcher_goldfarb_shanno_",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 20
+    },
+    {
+      "path": "_optimization/converge.md",
+      "name": "converge",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 87
+    },
+    {
+      "path": "_optimization/lipchitz_continuous.md",
+      "name": "lipchitz_continuous",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 211
+    },
+    {
+      "path": "_optimization/condition_number.md",
+      "name": "condition_number",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 131
+    },
+    {
+      "path": "_optimization/coordinate_descent.md",
+      "name": "coordinate_descent",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 81
+    },
+    {
+      "path": "_optimization/conjugate_directions.md",
+      "name": "conjugate_directions",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 302
+    },
+    {
+      "path": "_optimization/conjugate_vs_quasi_newton.md",
+      "name": "conjugate_vs_quasi_newton",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 55
+    },
+    {
+      "path": "_optimization/constrained_optimization_local_and_global_solutions_conceptual_algorithm.md",
+      "name": "constrained_optimization_local_and_global_solutions_conceptual_algorithm",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 218
+    },
+    {
+      "path": "_optimization/feasible_and_descent_directions.md",
+      "name": "feasible_and_descent_directions",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 284
+    },
+    {
+      "path": "_optimization/first_order_kkt_conditions.md",
+      "name": "first_order_kkt_conditions",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 346
+    },
+    {
+      "path": "_optimization/interpretation_of_lagrange_multipliers.md",
+      "name": "interpretation_of_lagrange_multipliers",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 191
+    },
+    {
+      "path": "_optimization/slater_s_constraint_qualification.md",
+      "name": "slater_s_constraint_qualification",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 131
+    },
+    {
+      "path": "_optimization/existence_and_uniqueness_of_lagrange_multipliers.md",
+      "name": "existence_and_uniqueness_of_lagrange_multipliers",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 271
+    },
+    {
+      "path": "_optimization/second_order_kkt.md",
+      "name": "second_order_kkt",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 214
+    },
+    {
+      "path": "_optimization/weak_and_strong_duality.md",
+      "name": "weak_and_strong_duality",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 154
+    },
+    {
+      "path": "_optimization/primal_dual_problem.md",
+      "name": "primal_dual_problem",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 287
+    },
+    {
+      "path": "_optimization/wolfe_dual.md",
+      "name": "wolfe_dual",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 152
+    },
+    {
+      "path": "_optimization/linear_programming.md",
+      "name": "linear_programming",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 168
+    },
+    {
+      "path": "_optimization/basic_and_non_basic_variable.md",
+      "name": "basic_and_non_basic_variable",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 241
+    },
+    {
+      "path": "_optimization/simplex.md",
+      "name": "simplex",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 7
+    },
+    {
+      "path": "_optimization/two_phase_method.md",
+      "name": "two_phase_method",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 160
+    },
+    {
+      "path": "_optimization/interior_point.md",
+      "name": "interior_point",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 44
+    },
+    {
+      "path": "_optimization/affine_scaling.md",
+      "name": "affine_scaling",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 132
+    },
+    {
+      "path": "_optimization/karmarkars_method.md",
+      "name": "karmarkars_method",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 132
+    },
+    {
+      "path": "_optimization/lagrange_methods.md",
+      "name": "lagrange_methods",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 220
+    },
+    {
+      "path": "_optimization/active_set.md",
+      "name": "active_set",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 605
+    },
+    {
+      "path": "_optimization/barrier_and_penalty_methods.md",
+      "name": "barrier_and_penalty_methods",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 147
+    },
+    {
+      "path": "_optimization/penalty_method.md",
+      "name": "penalty_method",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 303
+    },
+    {
+      "path": "_optimization/augmented_lagrangian_method.md",
+      "name": "augmented_lagrangian_method",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 624
+    },
+    {
+      "path": "_optimization/cutting_plane_methods.md",
+      "name": "cutting_plane_methods",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 387
+    },
+    {
+      "path": "_optimization/barrier_methods.md",
+      "name": "barrier_methods",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 91
+    },
+    {
+      "path": "_optimization/project_the_steepest_direction.md",
+      "name": "project_the_steepest_direction",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 5
+    },
+    {
+      "path": "_optimization/stopping_condition_for_affine_scaling.md",
+      "name": "stopping_condition_for_affine_scaling",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 71
+    },
+    {
+      "path": "_optimization/how_you_get_μ.md",
+      "name": "how_you_get_μ",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 32
+    },
+    {
+      "path": "_optimization/extreme_points.md",
+      "name": "extreme_points",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 44
+    },
+    {
+      "path": "_optimization/transform_into_y_space.md",
+      "name": "transform_into_y_space",
+      "type": "atom",
+      "folder": "_optimization",
+      "words": 147
+    },
+    {
+      "path": "optimal_control/dynamics_stability.md",
+      "name": "dynamics_stability",
+      "type": "atom",
+      "folder": "optimal_control",
+      "words": 987
+    },
+    {
+      "path": "optimal_control/lqr-vs-mpc.md",
+      "name": "lqr-vs-mpc",
+      "type": "atom",
+      "folder": "optimal_control",
+      "words": 1600
+    },
+    {
+      "path": "optimal_control/null_space_control_for_redundant_robots_a_deep_di.md",
+      "name": "null_space_control_for_redundant_robots_a_deep_di",
+      "type": "atom",
+      "folder": "optimal_control",
+      "words": 712
+    },
+    {
+      "path": "optimal_control/why_mpc_s_receding_horizon_genius_matters_the_dee.md",
+      "name": "why_mpc_s_receding_horizon_genius_matters_the_dee",
+      "type": "atom",
+      "folder": "optimal_control",
+      "words": 1000
+    },
+    {
+      "path": "optimal_control/from_lqr_to_modern_trajectory_optimization_a_jour.md",
+      "name": "from_lqr_to_modern_trajectory_optimization_a_jour",
+      "type": "atom",
+      "folder": "optimal_control",
+      "words": 1699
+    },
+    {
+      "path": "optimal_control/mpc_qp.md",
+      "name": "mpc_qp",
+      "type": "atom",
+      "folder": "optimal_control",
+      "words": 123
+    },
+    {
+      "path": "optimal_control/lqr_in_3_ways.md",
+      "name": "lqr_in_3_ways",
+      "type": "atom",
+      "folder": "optimal_control",
+      "words": 712
+    },
+    {
+      "path": "optimal_control/double_pendulum_dynamics_and_energy.md",
+      "name": "double_pendulum_dynamics_and_energy",
+      "type": "atom",
+      "folder": "optimal_control",
+      "words": 285
+    },
+    {
+      "path": "optimal_control/__optimal_control.md",
+      "name": "__optimal_control",
+      "type": "index",
+      "folder": "optimal_control",
+      "words": 87
+    },
+    {
+      "path": "optimal_control/optimization_intro.md",
+      "name": "optimization_intro",
+      "type": "atom",
+      "folder": "optimal_control",
+      "words": 1455
+    },
+    {
+      "path": "optimal_control/regularization_merit_functions.md",
+      "name": "regularization_merit_functions",
+      "type": "atom",
+      "folder": "optimal_control",
+      "words": 634
+    },
+    {
+      "path": "optimal_control/solution_methods.md",
+      "name": "solution_methods",
+      "type": "atom",
+      "folder": "optimal_control",
+      "words": 805
+    },
+    {
+      "path": "optimal_control/pontryagin_shooting_methods.md",
+      "name": "pontryagin_shooting_methods",
+      "type": "atom",
+      "folder": "optimal_control",
+      "words": 1051
+    },
+    {
+      "path": "optimal_control/dynamic_programming.md",
+      "name": "dynamic_programming",
+      "type": "atom",
+      "folder": "optimal_control",
+      "words": 1221
+    },
+    {
+      "path": "optimal_control/mpc.md",
+      "name": "mpc",
+      "type": "atom",
+      "folder": "optimal_control",
+      "words": 1220
+    },
+    {
+      "path": "optimal_control/ddp.md",
+      "name": "ddp",
+      "type": "atom",
+      "folder": "optimal_control",
+      "words": 881
+    },
+    {
+      "path": "optimal_control/ddp_extra.md",
+      "name": "ddp_extra",
+      "type": "atom",
+      "folder": "optimal_control",
+      "words": 584
+    },
+    {
+      "path": "optimal_control/direct_method.md",
+      "name": "direct_method",
+      "type": "atom",
+      "folder": "optimal_control",
+      "words": 870
+    },
+    {
+      "path": "optimal_control/lec_14.md",
+      "name": "lec_14",
+      "type": "atom",
+      "folder": "optimal_control",
+      "words": 872
+    },
+    {
+      "path": "optimal_control/combined_optimal_control.md",
+      "name": "combined_optimal_control",
+      "type": "atom",
+      "folder": "optimal_control",
+      "words": 6536
+    },
+    {
+      "path": "_geometric_algebra/reversion.md",
+      "name": "reversion",
+      "type": "atom",
+      "folder": "_geometric_algebra",
+      "words": 49
+    },
+    {
+      "path": "_geometric_algebra/ch3_exercises.md",
+      "name": "ch3_exercises",
+      "type": "atom",
+      "folder": "_geometric_algebra",
+      "words": 2072
+    },
+    {
+      "path": "_geometric_algebra/chapter5_questions.md",
+      "name": "chapter5_questions",
+      "type": "atom",
+      "folder": "_geometric_algebra",
+      "words": 564
+    },
+    {
+      "path": "_geometric_algebra/chapter6_questions.md",
+      "name": "chapter6_questions",
+      "type": "atom",
+      "folder": "_geometric_algebra",
+      "words": 397
+    },
+    {
+      "path": "_geometric_algebra/chapter3_questions.md",
+      "name": "chapter3_questions",
+      "type": "atom",
+      "folder": "_geometric_algebra",
+      "words": 504
+    },
+    {
+      "path": "_geometric_algebra/Intersection and Union.md",
+      "name": "Intersection and Union",
+      "type": "atom",
+      "folder": "_geometric_algebra",
+      "words": 1820
+    },
+    {
+      "path": "_geometric_algebra/Metric Products of Subspaces.md",
+      "name": "Metric Products of Subspaces",
+      "type": "atom",
+      "folder": "_geometric_algebra",
+      "words": 2343
+    },
+    {
+      "path": "_geometric_algebra/Orthogonal Transformations.md",
+      "name": "Orthogonal Transformations",
+      "type": "atom",
+      "folder": "_geometric_algebra",
+      "words": 2575
+    },
+    {
+      "path": "_geometric_algebra/blade inverse.md",
+      "name": "blade inverse",
+      "type": "atom",
+      "folder": "_geometric_algebra",
+      "words": 83
+    },
+    {
+      "path": "_geometric_algebra/Linear Transformations.md",
+      "name": "Linear Transformations",
+      "type": "atom",
+      "folder": "_geometric_algebra",
+      "words": 1625
+    },
+    {
+      "path": "_geometric_algebra/Spanning Oriented Subspaces.md",
+      "name": "Spanning Oriented Subspaces",
+      "type": "atom",
+      "folder": "_geometric_algebra",
+      "words": 2389
+    },
+    {
+      "path": "_geometric_algebra/ch2_exercises.md",
+      "name": "ch2_exercises",
+      "type": "atom",
+      "folder": "_geometric_algebra",
+      "words": 1845
+    },
+    {
+      "path": "_geometric_algebra/ch5_exercises.md",
+      "name": "ch5_exercises",
+      "type": "atom",
+      "folder": "_geometric_algebra",
+      "words": 1501
+    },
+    {
+      "path": "_geometric_algebra/__geometric_algebra.md",
+      "name": "__geometric_algebra",
+      "type": "index",
+      "folder": "_geometric_algebra",
+      "words": 804
+    },
+    {
+      "path": "_geometric_algebra/ch4_exercises.md",
+      "name": "ch4_exercises",
+      "type": "atom",
+      "folder": "_geometric_algebra",
+      "words": 1507
+    },
+    {
+      "path": "_geometric_algebra/chapter4_questions.md",
+      "name": "chapter4_questions",
+      "type": "atom",
+      "folder": "_geometric_algebra",
+      "words": 352
+    },
+    {
+      "path": "_geometric_algebra/chapter_12/_applications of the homogeneous model.md",
+      "name": "_applications of the homogeneous model",
+      "type": "molecule",
+      "folder": "_geometric_algebra/chapter_12",
+      "words": 545
+    },
+    {
+      "path": "_geometric_algebra/chapter_12/plucker line coordinates from the outer product.md",
+      "name": "plucker line coordinates from the outer product",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_12",
+      "words": 435
+    },
+    {
+      "path": "_geometric_algebra/chapter_12/homogeneous points and planes.md",
+      "name": "homogeneous points and planes",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_12",
+      "words": 382
+    },
+    {
+      "path": "_geometric_algebra/chapter_12/meet join and distance recipes.md",
+      "name": "meet join and distance recipes",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_12",
+      "words": 515
+    },
+    {
+      "path": "_geometric_algebra/chapter_12/affine matrices in plucker space.md",
+      "name": "affine matrices in plucker space",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_12",
+      "words": 525
+    },
+    {
+      "path": "_geometric_algebra/chapter_12/pinhole projection as a meet.md",
+      "name": "pinhole projection as a meet",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_12",
+      "words": 535
+    },
+    {
+      "path": "_geometric_algebra/chapter_12/epipolar and trifocal constraints.md",
+      "name": "epipolar and trifocal constraints",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_12",
+      "words": 819
+    },
+    {
+      "path": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "name": "Ch12_Applications_of_the_Homogeneous_Model",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_12",
+      "words": 10127
+    },
+    {
+      "path": "_geometric_algebra/chapter_5/offset models.md",
+      "name": "offset models",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_5",
+      "words": 156
+    },
+    {
+      "path": "_geometric_algebra/chapter_5/meet from join.md",
+      "name": "meet from join",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_5",
+      "words": 206
+    },
+    {
+      "path": "_geometric_algebra/chapter_5/scalar ambiguity and attitude.md",
+      "name": "scalar ambiguity and attitude",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_5",
+      "words": 195
+    },
+    {
+      "path": "_geometric_algebra/chapter_5/angle from meet magnitude.md",
+      "name": "angle from meet magnitude",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_5",
+      "words": 228
+    },
+    {
+      "path": "_geometric_algebra/chapter_5/meet and join.md",
+      "name": "meet and join",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_5",
+      "words": 208
+    },
+    {
+      "path": "_geometric_algebra/chapter_5/incidence (geometry).md",
+      "name": "incidence (geometry)",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_5",
+      "words": 198
+    },
+    {
+      "path": "_geometric_algebra/chapter_5/piecewise linearity and degeneracy.md",
+      "name": "piecewise linearity and degeneracy",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_5",
+      "words": 284
+    },
+    {
+      "path": "_geometric_algebra/chapter_5/linear transformation invariance.md",
+      "name": "linear transformation invariance",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_5",
+      "words": 202
+    },
+    {
+      "path": "_geometric_algebra/chapter_5/computing complementary factors.md",
+      "name": "computing complementary factors",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_5",
+      "words": 138
+    },
+    {
+      "path": "_geometric_algebra/chapter_5/_intersection and union of subspaces.md",
+      "name": "_intersection and union of subspaces",
+      "type": "molecule",
+      "folder": "_geometric_algebra/chapter_5",
+      "words": 477
+    },
+    {
+      "path": "_geometric_algebra/chapter_5/computational stability.md",
+      "name": "computational stability",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_5",
+      "words": 167
+    },
+    {
+      "path": "_geometric_algebra/chapter_5/ordering and orientation sign.md",
+      "name": "ordering and orientation sign",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_5",
+      "words": 180
+    },
+    {
+      "path": "_geometric_algebra/chapter_6/clifford axioms and polarization identity.md",
+      "name": "clifford axioms and polarization identity",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_6",
+      "words": 285
+    },
+    {
+      "path": "_geometric_algebra/chapter_6/geometric product for vectors.md",
+      "name": "geometric product for vectors",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_6",
+      "words": 351
+    },
+    {
+      "path": "_geometric_algebra/chapter_6/grade mixing in the geometric product.md",
+      "name": "grade mixing in the geometric product",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_6",
+      "words": 246
+    },
+    {
+      "path": "_geometric_algebra/chapter_6/vector ratios as coordinate-free operators.md",
+      "name": "vector ratios as coordinate-free operators",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_6",
+      "words": 242
+    },
+    {
+      "path": "_geometric_algebra/chapter_6/projection-rejection-reflection-and-ga-gram-schmidt.md",
+      "name": "projection-rejection-reflection-and-ga-gram-schmidt",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_6",
+      "words": 357
+    },
+    {
+      "path": "_geometric_algebra/chapter_6/geometric division - inverses of vectors and blades.md",
+      "name": "geometric division - inverses of vectors and blades",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_6",
+      "words": 232
+    },
+    {
+      "path": "_geometric_algebra/chapter_6/_the fundamental product of geometric algebra.md",
+      "name": "_the fundamental product of geometric algebra",
+      "type": "molecule",
+      "folder": "_geometric_algebra/chapter_6",
+      "words": 461
+    },
+    {
+      "path": "_geometric_algebra/chapter_6/recovering subspace products from the geometric product.md",
+      "name": "recovering subspace products from the geometric product",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_6",
+      "words": 269
+    },
+    {
+      "path": "_geometric_algebra/chapter_6/Ch06_The_Fundamental_Product_of_Geometric_Algebra.md",
+      "name": "Ch06_The_Fundamental_Product_of_Geometric_Algebra",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_6",
+      "words": 8986
+    },
+    {
+      "path": "_geometric_algebra/chapter_3/_metric products of subspaces.md",
+      "name": "_metric products of subspaces",
+      "type": "molecule",
+      "folder": "_geometric_algebra/chapter_3",
+      "words": 472
+    },
+    {
+      "path": "_geometric_algebra/chapter_3/null and nonnull blades.md",
+      "name": "null and nonnull blades",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_3",
+      "words": 94
+    },
+    {
+      "path": "_geometric_algebra/chapter_3/the 3-d cross product.md",
+      "name": "the 3-d cross product",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_3",
+      "words": 104
+    },
+    {
+      "path": "_geometric_algebra/chapter_3/duality and orthogonality.md",
+      "name": "duality and orthogonality",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_3",
+      "words": 138
+    },
+    {
+      "path": "_geometric_algebra/chapter_3/scalar product.md",
+      "name": "scalar product",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_3",
+      "words": 126
+    },
+    {
+      "path": "_geometric_algebra/chapter_3/contraction (⌋).md",
+      "name": "contraction (⌋)",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_3",
+      "words": 183
+    },
+    {
+      "path": "_geometric_algebra/chapter_3/geometric operations.md",
+      "name": "geometric operations",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_3",
+      "words": 173
+    },
+    {
+      "path": "_geometric_algebra/chapter_7/_orthogonal transformations as versors.md",
+      "name": "_orthogonal transformations as versors",
+      "type": "molecule",
+      "folder": "_geometric_algebra/chapter_7",
+      "words": 408
+    },
+    {
+      "path": "_geometric_algebra/chapter_7/sandwich reflections.md",
+      "name": "sandwich reflections",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_7",
+      "words": 528
+    },
+    {
+      "path": "_geometric_algebra/chapter_7/rotor sandwiching.md",
+      "name": "rotor sandwiching",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_7",
+      "words": 529
+    },
+    {
+      "path": "_geometric_algebra/chapter_7/rotor composition.md",
+      "name": "rotor composition",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_7",
+      "words": 601
+    },
+    {
+      "path": "_geometric_algebra/chapter_7/bivector exponentials.md",
+      "name": "bivector exponentials",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_7",
+      "words": 511
+    },
+    {
+      "path": "_geometric_algebra/chapter_7/versors preserve structure.md",
+      "name": "versors preserve structure",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_7",
+      "words": 471
+    },
+    {
+      "path": "_geometric_algebra/chapter_7/multiplicative principle and cost.md",
+      "name": "multiplicative principle and cost",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_7",
+      "words": 571
+    },
+    {
+      "path": "_geometric_algebra/chapter_7/Ch07_Orthogonal_Transformations_as_Versors.md",
+      "name": "Ch07_Orthogonal_Transformations_as_Versors",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_7",
+      "words": 16679
+    },
+    {
+      "path": "_geometric_algebra/chapter_8/_geometric differentiation.md",
+      "name": "_geometric differentiation",
+      "type": "molecule",
+      "folder": "_geometric_algebra/chapter_8",
+      "words": 495
+    },
+    {
+      "path": "_geometric_algebra/chapter_8/directional derivative in geometric algebra.md",
+      "name": "directional derivative in geometric algebra",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_8",
+      "words": 464
+    },
+    {
+      "path": "_geometric_algebra/chapter_8/multivector derivative and rotor optimization.md",
+      "name": "multivector derivative and rotor optimization",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_8",
+      "words": 589
+    },
+    {
+      "path": "_geometric_algebra/chapter_8/versor perturbation propagation.md",
+      "name": "versor perturbation propagation",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_8",
+      "words": 612
+    },
+    {
+      "path": "_geometric_algebra/chapter_8/planar curvature via wedge and dual.md",
+      "name": "planar curvature via wedge and dual",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_8",
+      "words": 520
+    },
+    {
+      "path": "_geometric_algebra/chapter_8/vector derivative and geometric gradient.md",
+      "name": "vector derivative and geometric gradient",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_8",
+      "words": 655
+    },
+    {
+      "path": "_geometric_algebra/chapter_8/commutator product and rotor calculus.md",
+      "name": "commutator product and rotor calculus",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_8",
+      "words": 557
+    },
+    {
+      "path": "_geometric_algebra/chapter_8/Ch08_Geometric_Differentiation.md",
+      "name": "Ch08_Geometric_Differentiation",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_8",
+      "words": 10970
+    },
+    {
+      "path": "_geometric_algebra/chapter_4/inverse via pseudoscalar.md",
+      "name": "inverse via pseudoscalar",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_4",
+      "words": 175
+    },
+    {
+      "path": "_geometric_algebra/chapter_4/outermorphism.md",
+      "name": "outermorphism",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_4",
+      "words": 555
+    },
+    {
+      "path": "_geometric_algebra/chapter_4/adjoint.md",
+      "name": "adjoint",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_4",
+      "words": 382
+    },
+    {
+      "path": "_geometric_algebra/chapter_4/dual representations.md",
+      "name": "dual representations",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_4",
+      "words": 212
+    },
+    {
+      "path": "_geometric_algebra/chapter_4/pseudoscalar.md",
+      "name": "pseudoscalar",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_4",
+      "words": 178
+    },
+    {
+      "path": "_geometric_algebra/chapter_4/outermorphism matrices.md",
+      "name": "outermorphism matrices",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_4",
+      "words": 148
+    },
+    {
+      "path": "_geometric_algebra/chapter_4/determinant.md",
+      "name": "determinant",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_4",
+      "words": 141
+    },
+    {
+      "path": "_geometric_algebra/chapter_4/_linear transformations of subspaces.md",
+      "name": "_linear transformations of subspaces",
+      "type": "molecule",
+      "folder": "_geometric_algebra/chapter_4",
+      "words": 271
+    },
+    {
+      "path": "_geometric_algebra/chapter_13/_the conformal model operational euclidean geometry.md",
+      "name": "_the conformal model operational euclidean geometry",
+      "type": "molecule",
+      "folder": "_geometric_algebra/chapter_13",
+      "words": 586
+    },
+    {
+      "path": "_geometric_algebra/chapter_13/conformal representational space.md",
+      "name": "conformal representational space",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_13",
+      "words": 785
+    },
+    {
+      "path": "_geometric_algebra/chapter_13/euclidean transformations as versors.md",
+      "name": "euclidean transformations as versors",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_13",
+      "words": 517
+    },
+    {
+      "path": "_geometric_algebra/chapter_13/flats and directions.md",
+      "name": "flats and directions",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_13",
+      "words": 508
+    },
+    {
+      "path": "_geometric_algebra/chapter_13/general planar reflection.md",
+      "name": "general planar reflection",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_13",
+      "words": 491
+    },
+    {
+      "path": "_geometric_algebra/chapter_13/screw motions and rigid body motion logarithm.md",
+      "name": "screw motions and rigid body motion logarithm",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_13",
+      "words": 574
+    },
+    {
+      "path": "_geometric_algebra/chapter_13/Ch13_The_Conformal_Model.md",
+      "name": "Ch13_The_Conformal_Model",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_13",
+      "words": 16201
+    },
+    {
+      "path": "_geometric_algebra/chapter_10/_the vector space model.md",
+      "name": "_the vector space model",
+      "type": "molecule",
+      "folder": "_geometric_algebra/chapter_10",
+      "words": 385
+    },
+    {
+      "path": "_geometric_algebra/chapter_10/vector space model for directions.md",
+      "name": "vector space model for directions",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_10",
+      "words": 402
+    },
+    {
+      "path": "_geometric_algebra/chapter_10/planar triangles with rotors.md",
+      "name": "planar triangles with rotors",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_10",
+      "words": 390
+    },
+    {
+      "path": "_geometric_algebra/chapter_10/angles in 3d and spherical triangles.md",
+      "name": "angles in 3d and spherical triangles",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_10",
+      "words": 567
+    },
+    {
+      "path": "_geometric_algebra/chapter_10/point groups via reflections and rotors.md",
+      "name": "point groups via reflections and rotors",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_10",
+      "words": 559
+    },
+    {
+      "path": "_geometric_algebra/chapter_10/computing 3d rotors.md",
+      "name": "computing 3d rotors",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_10",
+      "words": 626
+    },
+    {
+      "path": "_geometric_algebra/chapter_10/estimation and camera calibration in the vector space model.md",
+      "name": "estimation and camera calibration in the vector space model",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_10",
+      "words": 773
+    },
+    {
+      "path": "_geometric_algebra/chapter_10/Ch10_The_Vector_Space_Model.md",
+      "name": "Ch10_The_Vector_Space_Model",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_10",
+      "words": 7919
+    },
+    {
+      "path": "_geometric_algebra/chapter_14/_new primitives for euclidean geometry.md",
+      "name": "_new primitives for euclidean geometry",
+      "type": "molecule",
+      "folder": "_geometric_algebra/chapter_14",
+      "words": 446
+    },
+    {
+      "path": "_geometric_algebra/chapter_14/dual rounds.md",
+      "name": "dual rounds",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_14",
+      "words": 452
+    },
+    {
+      "path": "_geometric_algebra/chapter_14/direct rounds and orientation.md",
+      "name": "direct rounds and orientation",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_14",
+      "words": 469
+    },
+    {
+      "path": "_geometric_algebra/chapter_14/tangents.md",
+      "name": "tangents",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_14",
+      "words": 401
+    },
+    {
+      "path": "_geometric_algebra/chapter_14/from blades to parameters.md",
+      "name": "from blades to parameters",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_14",
+      "words": 561
+    },
+    {
+      "path": "_geometric_algebra/chapter_14/paraboloid intuition for rounds.md",
+      "name": "paraboloid intuition for rounds",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_14",
+      "words": 445
+    },
+    {
+      "path": "_geometric_algebra/chapter_14/applications of conformal primitives.md",
+      "name": "applications of conformal primitives",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_14",
+      "words": 701
+    },
+    {
+      "path": "_geometric_algebra/chapter_14/Ch14_New_Primitives_for_Euclidean_Geometry.md",
+      "name": "Ch14_New_Primitives_for_Euclidean_Geometry",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_14",
+      "words": 14100
+    },
+    {
+      "path": "_geometric_algebra/chapter_11/_the homogeneous model.md",
+      "name": "_the homogeneous model",
+      "type": "molecule",
+      "folder": "_geometric_algebra/chapter_11",
+      "words": 595
+    },
+    {
+      "path": "_geometric_algebra/chapter_11/embedding and points in the homogeneous model.md",
+      "name": "embedding and points in the homogeneous model",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_11",
+      "words": 558
+    },
+    {
+      "path": "_geometric_algebra/chapter_11/flats as blades lines planes k-flats.md",
+      "name": "flats as blades lines planes k-flats",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_11",
+      "words": 743
+    },
+    {
+      "path": "_geometric_algebra/chapter_11/dual flats and hyperplanes.md",
+      "name": "dual flats and hyperplanes",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_11",
+      "words": 453
+    },
+    {
+      "path": "_geometric_algebra/chapter_11/incidence meet join and projective invariants.md",
+      "name": "incidence meet join and projective invariants",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_11",
+      "words": 670
+    },
+    {
+      "path": "_geometric_algebra/chapter_11/motions translation rotation affine projective.md",
+      "name": "motions translation rotation affine projective",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_11",
+      "words": 585
+    },
+    {
+      "path": "_geometric_algebra/chapter_11/metric pitfalls of the homogeneous model.md",
+      "name": "metric pitfalls of the homogeneous model",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_11",
+      "words": 638
+    },
+    {
+      "path": "_geometric_algebra/chapter_15/_constructions in euclidean geometry.md",
+      "name": "_constructions in euclidean geometry",
+      "type": "molecule",
+      "folder": "_geometric_algebra/chapter_15",
+      "words": 417
+    },
+    {
+      "path": "_geometric_algebra/chapter_15/meet and plunge.md",
+      "name": "meet and plunge",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_15",
+      "words": 664
+    },
+    {
+      "path": "_geometric_algebra/chapter_15/tangents carriers surrounds and affine combinations.md",
+      "name": "tangents carriers surrounds and affine combinations",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_15",
+      "words": 552
+    },
+    {
+      "path": "_geometric_algebra/chapter_15/euclidean projections.md",
+      "name": "euclidean projections",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_15",
+      "words": 320
+    },
+    {
+      "path": "_geometric_algebra/chapter_15/vector types in cga.md",
+      "name": "vector types in cga",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_15",
+      "words": 552
+    },
+    {
+      "path": "_geometric_algebra/chapter_15/voronoi edge from four points.md",
+      "name": "voronoi edge from four points",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_15",
+      "words": 566
+    },
+    {
+      "path": "_geometric_algebra/chapter_15/Ch15_Constructions_in_Euclidean_Geometry.md",
+      "name": "Ch15_Constructions_in_Euclidean_Geometry",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_15",
+      "words": 10382
+    },
+    {
+      "path": "_geometric_algebra/chapter_16/_conformal operators.md",
+      "name": "_conformal operators",
+      "type": "molecule",
+      "folder": "_geometric_algebra/chapter_16",
+      "words": 563
+    },
+    {
+      "path": "_geometric_algebra/chapter_16/spherical inversion and reflections.md",
+      "name": "spherical inversion and reflections",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_16",
+      "words": 658
+    },
+    {
+      "path": "_geometric_algebra/chapter_16/scaling rotor.md",
+      "name": "scaling rotor",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_16",
+      "words": 599
+    },
+    {
+      "path": "_geometric_algebra/chapter_16/scaled rigid body motions and interpolation.md",
+      "name": "scaled rigid body motions and interpolation",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_16",
+      "words": 574
+    },
+    {
+      "path": "_geometric_algebra/chapter_16/transversion.md",
+      "name": "transversion",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_16",
+      "words": 268
+    },
+    {
+      "path": "_geometric_algebra/chapter_16/general conformal transformations.md",
+      "name": "general conformal transformations",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_16",
+      "words": 476
+    },
+    {
+      "path": "_geometric_algebra/chapter_16/non-euclidean geometries in the conformal model.md",
+      "name": "non-euclidean geometries in the conformal model",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_16",
+      "words": 453
+    },
+    {
+      "path": "_geometric_algebra/chapter_16/Ch16_Conformal_Operators.md",
+      "name": "Ch16_Conformal_Operators",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_16",
+      "words": 7814
+    },
+    {
+      "path": "_geometric_algebra/chapter_20/_the linear products and operations.md",
+      "name": "_the linear products and operations",
+      "type": "molecule",
+      "folder": "_geometric_algebra/chapter_20",
+      "words": 455
+    },
+    {
+      "path": "_geometric_algebra/chapter_20/basis encoding of multivectors.md",
+      "name": "basis encoding of multivectors",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_20",
+      "words": 277
+    },
+    {
+      "path": "_geometric_algebra/chapter_20/unary linear operators as diagonal matrices.md",
+      "name": "unary linear operators as diagonal matrices",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_20",
+      "words": 401
+    },
+    {
+      "path": "_geometric_algebra/chapter_20/geometric product matrix from structure coefficients.md",
+      "name": "geometric product matrix from structure coefficients",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_20",
+      "words": 459
+    },
+    {
+      "path": "_geometric_algebra/chapter_20/outer product and contraction matrices as selections.md",
+      "name": "outer product and contraction matrices as selections",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_20",
+      "words": 685
+    },
+    {
+      "path": "_geometric_algebra/chapter_20/basis-blade list implementation and sparsity.md",
+      "name": "basis-blade list implementation and sparsity",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_20",
+      "words": 414
+    },
+    {
+      "path": "_geometric_algebra/chapter_20/Ch20_The_Linear_Products_and_Operations.md",
+      "name": "Ch20_The_Linear_Products_and_Operations",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_20",
+      "words": 2395
+    },
+    {
+      "path": "_geometric_algebra/chapter_19/_basis blades and operations.md",
+      "name": "_basis blades and operations",
+      "type": "molecule",
+      "folder": "_geometric_algebra/chapter_19",
+      "words": 387
+    },
+    {
+      "path": "_geometric_algebra/chapter_19/bitmap basis blades.md",
+      "name": "bitmap basis blades",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_19",
+      "words": 343
+    },
+    {
+      "path": "_geometric_algebra/chapter_19/canonical reordering sign.md",
+      "name": "canonical reordering sign",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_19",
+      "words": 331
+    },
+    {
+      "path": "_geometric_algebra/chapter_19/orthogonal blade products.md",
+      "name": "orthogonal blade products",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_19",
+      "words": 482
+    },
+    {
+      "path": "_geometric_algebra/chapter_19/nonorthogonal metrics via eigenbasis.md",
+      "name": "nonorthogonal metrics via eigenbasis",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_19",
+      "words": 392
+    },
+    {
+      "path": "_geometric_algebra/chapter_19/grade-derived operations.md",
+      "name": "grade-derived operations",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_19",
+      "words": 477
+    },
+    {
+      "path": "_geometric_algebra/chapter_19/Ch19_Basis_Blades_and_Operations.md",
+      "name": "Ch19_Basis_Blades_and_Operations",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_19",
+      "words": 3047
+    },
+    {
+      "path": "_geometric_algebra/chapter_21/_specializing the structure for efficiency.md",
+      "name": "_specializing the structure for efficiency",
+      "type": "molecule",
+      "folder": "_geometric_algebra/chapter_21",
+      "words": 633
+    },
+    {
+      "path": "_geometric_algebra/chapter_21/why geometric algebra code gets slow.md",
+      "name": "why geometric algebra code gets slow",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_21",
+      "words": 462
+    },
+    {
+      "path": "_geometric_algebra/chapter_21/generative programming for geometric algebra.md",
+      "name": "generative programming for geometric algebra",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_21",
+      "words": 364
+    },
+    {
+      "path": "_geometric_algebra/chapter_21/specifying an algebra for specialization.md",
+      "name": "specifying an algebra for specialization",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_21",
+      "words": 489
+    },
+    {
+      "path": "_geometric_algebra/chapter_21/multivector representations and compression.md",
+      "name": "multivector representations and compression",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_21",
+      "words": 455
+    },
+    {
+      "path": "_geometric_algebra/chapter_21/generating optimized algebra functions.md",
+      "name": "generating optimized algebra functions",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_21",
+      "words": 552
+    },
+    {
+      "path": "_geometric_algebra/chapter_21/outermorphisms nonlinear algorithms and performance benchmarks.md",
+      "name": "outermorphisms nonlinear algorithms and performance benchmarks",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_21",
+      "words": 655
+    },
+    {
+      "path": "_geometric_algebra/chapter_21/Ch21_Fundamental_Algorithms_for_Nonlinear_Products.md",
+      "name": "Ch21_Fundamental_Algorithms_for_Nonlinear_Products",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_21",
+      "words": 4581
+    },
+    {
+      "path": "_geometric_algebra/chapter_22/_fundamental algorithms for nonlinear products.md",
+      "name": "_fundamental algorithms for nonlinear products",
+      "type": "molecule",
+      "folder": "_geometric_algebra/chapter_22",
+      "words": 484
+    },
+    {
+      "path": "_geometric_algebra/chapter_22/versor inverse.md",
+      "name": "versor inverse",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_22",
+      "words": 336
+    },
+    {
+      "path": "_geometric_algebra/chapter_22/multivector inversion via geometric product matrix.md",
+      "name": "multivector inversion via geometric product matrix",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_22",
+      "words": 319
+    },
+    {
+      "path": "_geometric_algebra/chapter_22/exponential and scaling for multivectors.md",
+      "name": "exponential and scaling for multivectors",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_22",
+      "words": 355
+    },
+    {
+      "path": "_geometric_algebra/chapter_22/multivector classification blade vs versor.md",
+      "name": "multivector classification blade vs versor",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_22",
+      "words": 507
+    },
+    {
+      "path": "_geometric_algebra/chapter_22/blade factorization by projection.md",
+      "name": "blade factorization by projection",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_22",
+      "words": 492
+    },
+    {
+      "path": "_geometric_algebra/chapter_22/meet and join via delta product.md",
+      "name": "meet and join via delta product",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_22",
+      "words": 585
+    },
+    {
+      "path": "_geometric_algebra/chapter_22/Ch22_Specializing_the_Structure_for_Efficiency.md",
+      "name": "Ch22_Specializing_the_Structure_for_Efficiency",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_22",
+      "words": 6127
+    },
+    {
+      "path": "_geometric_algebra/chapter_23/_using the geometry in a ray-tracing application.md",
+      "name": "_using the geometry in a ray-tracing application",
+      "type": "molecule",
+      "folder": "_geometric_algebra/chapter_23",
+      "words": 572
+    },
+    {
+      "path": "_geometric_algebra/chapter_23/cga ray tracer overview.md",
+      "name": "cga ray tracer overview",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_23",
+      "words": 527
+    },
+    {
+      "path": "_geometric_algebra/chapter_23/mesh primitives for polygonal scenes.md",
+      "name": "mesh primitives for polygonal scenes",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_23",
+      "words": 547
+    },
+    {
+      "path": "_geometric_algebra/chapter_23/scene transformations and interactive modeling.md",
+      "name": "scene transformations and interactive modeling",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_23",
+      "words": 706
+    },
+    {
+      "path": "_geometric_algebra/chapter_23/ray representation and spawning.md",
+      "name": "ray representation and spawning",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_23",
+      "words": 613
+    },
+    {
+      "path": "_geometric_algebra/chapter_23/acceleration structures and ray-model intersection.md",
+      "name": "acceleration structures and ray-model intersection",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_23",
+      "words": 873
+    },
+    {
+      "path": "_geometric_algebra/chapter_23/reflection refraction and shading.md",
+      "name": "reflection refraction and shading",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_23",
+      "words": 471
+    },
+    {
+      "path": "_geometric_algebra/chapter_23/Ch23_Ray_Tracing_Application.md",
+      "name": "Ch23_Ray_Tracing_Application",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_23",
+      "words": 8645
+    },
+    {
+      "path": "_geometric_algebra/chapter_18/_implementation issues.md",
+      "name": "_implementation issues",
+      "type": "molecule",
+      "folder": "_geometric_algebra/chapter_18",
+      "words": 347
+    },
+    {
+      "path": "_geometric_algebra/chapter_18/numerical-first geometric algebra implementation.md",
+      "name": "numerical-first geometric algebra implementation",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_18",
+      "words": 184
+    },
+    {
+      "path": "_geometric_algebra/chapter_18/multivectors as coefficient vectors.md",
+      "name": "multivectors as coefficient vectors",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_18",
+      "words": 231
+    },
+    {
+      "path": "_geometric_algebra/chapter_18/four levels of geometric algebra implementation.md",
+      "name": "four levels of geometric algebra implementation",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_18",
+      "words": 301
+    },
+    {
+      "path": "_geometric_algebra/chapter_18/audience roadmap for implementation chapters.md",
+      "name": "audience roadmap for implementation chapters",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_18",
+      "words": 252
+    },
+    {
+      "path": "_geometric_algebra/chapter_18/matrix representations of clifford algebras.md",
+      "name": "matrix representations of clifford algebras",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_18",
+      "words": 339
+    },
+    {
+      "path": "_geometric_algebra/chapter_18/factored representations for blades and versors.md",
+      "name": "factored representations for blades and versors",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_18",
+      "words": 275
+    },
+    {
+      "path": "_geometric_algebra/chapter_18/Ch18_Implementation_Issues.md",
+      "name": "Ch18_Implementation_Issues",
+      "type": "atom",
+      "folder": "_geometric_algebra/chapter_18",
+      "words": 2694
+    }
+  ],
+  "edges": [
+    {
+      "source": "README.md",
+      "target": "dynamics_stability",
+      "resolved": "optimal_control/dynamics_stability.md"
+    },
+    {
+      "source": "README.md",
+      "target": "optimization_intro",
+      "resolved": "optimal_control/optimization_intro.md"
+    },
+    {
+      "source": "README.md",
+      "target": "task_space_compliant_control_and_6D_force_regulation",
+      "resolved": null
+    },
+    {
+      "source": "README.md",
+      "target": "force_torque_sensor_calibration",
+      "resolved": "_manipulation/force_torque_sensor_calibration.md"
+    },
+    {
+      "source": "README.md",
+      "target": "force_torque_sensor_filtering",
+      "resolved": "_manipulation/force_torque_sensor_filtering.md"
+    },
+    {
+      "source": "README.md",
+      "target": "__controls",
+      "resolved": "_controls/__controls.md"
+    },
+    {
+      "source": "README.md",
+      "target": "__linear_algebra",
+      "resolved": "_linear_algebra/__linear_algebra.md"
+    },
+    {
+      "source": "README.md",
+      "target": "__optimization",
+      "resolved": "_optimization/__optimization.md"
+    },
+    {
+      "source": "README.md",
+      "target": "__reinforcemnt_learning",
+      "resolved": null
+    },
+    {
+      "source": "README.md",
+      "target": "__optimal_control",
+      "resolved": "optimal_control/__optimal_control.md"
+    },
+    {
+      "source": "README.md",
+      "target": "__geometric_algebra",
+      "resolved": "_geometric_algebra/__geometric_algebra.md"
+    },
+    {
+      "source": "_reinforcement_learning/_actor_critic.md",
+      "target": "temporal_difference",
+      "resolved": "_reinforcement_learning/temporal_difference.md"
+    },
+    {
+      "source": "_reinforcement_learning/_actor_critic.md",
+      "target": "temporal_difference",
+      "resolved": "_reinforcement_learning/temporal_difference.md"
+    },
+    {
+      "source": "_reinforcement_learning/_actor_critic.md",
+      "target": "replay_buffer",
+      "resolved": "_reinforcement_learning/replay_buffer.md"
+    },
+    {
+      "source": "_reinforcement_learning/_actor_critic.md",
+      "target": "replay_buffer",
+      "resolved": "_reinforcement_learning/replay_buffer.md"
+    },
+    {
+      "source": "_reinforcement_learning/_actor_critic.md",
+      "target": "replay_buffer",
+      "resolved": "_reinforcement_learning/replay_buffer.md"
+    },
+    {
+      "source": "_reinforcement_learning/_actor_critic.md",
+      "target": "target_network",
+      "resolved": "_reinforcement_learning/target_network.md"
+    },
+    {
+      "source": "_reinforcement_learning/_actor_critic.md",
+      "target": "n_step_returns",
+      "resolved": "_reinforcement_learning/n_step_returns.md"
+    },
+    {
+      "source": "_reinforcement_learning/_actor_critic.md",
+      "target": "n_step_returns",
+      "resolved": "_reinforcement_learning/n_step_returns.md"
+    },
+    {
+      "source": "_reinforcement_learning/_actor_critic.md",
+      "target": "temporal_difference",
+      "resolved": "_reinforcement_learning/temporal_difference.md"
+    },
+    {
+      "source": "_reinforcement_learning/_actor_critic.md",
+      "target": "replay_buffer",
+      "resolved": "_reinforcement_learning/replay_buffer.md"
+    },
+    {
+      "source": "_reinforcement_learning/_actor_critic.md",
+      "target": "replay_buffer",
+      "resolved": "_reinforcement_learning/replay_buffer.md"
+    },
+    {
+      "source": "_reinforcement_learning/_actor_critic.md",
+      "target": "n_step_returns",
+      "resolved": "_reinforcement_learning/n_step_returns.md"
+    },
+    {
+      "source": "_reinforcement_learning/_reinforcement_learning_paradigms.md",
+      "target": "replay_buffer",
+      "resolved": "_reinforcement_learning/replay_buffer.md"
+    },
+    {
+      "source": "_reinforcement_learning/_reinforcement_learning_paradigms.md",
+      "target": "replay_buffer",
+      "resolved": "_reinforcement_learning/replay_buffer.md"
+    },
+    {
+      "source": "_reinforcement_learning/_reinforcement_learning_paradigms.md",
+      "target": "target_network",
+      "resolved": "_reinforcement_learning/target_network.md"
+    },
+    {
+      "source": "_reinforcement_learning/_value_learning.md",
+      "target": "temporal_difference",
+      "resolved": "_reinforcement_learning/temporal_difference.md"
+    },
+    {
+      "source": "_reinforcement_learning/_value_learning.md",
+      "target": "target_network",
+      "resolved": "_reinforcement_learning/target_network.md"
+    },
+    {
+      "source": "_reinforcement_learning/_value_learning.md",
+      "target": "replay_buffer",
+      "resolved": "_reinforcement_learning/replay_buffer.md"
+    },
+    {
+      "source": "_reinforcement_learning/_value_learning.md",
+      "target": "target_network",
+      "resolved": "_reinforcement_learning/target_network.md"
+    },
+    {
+      "source": "_reinforcement_learning/_deep_q.md",
+      "target": "replay_buffer",
+      "resolved": "_reinforcement_learning/replay_buffer.md"
+    },
+    {
+      "source": "_reinforcement_learning/_deep_q.md",
+      "target": "replay_buffer",
+      "resolved": "_reinforcement_learning/replay_buffer.md"
+    },
+    {
+      "source": "_reinforcement_learning/_deep_q.md",
+      "target": "replay_buffer",
+      "resolved": "_reinforcement_learning/replay_buffer.md"
+    },
+    {
+      "source": "_reinforcement_learning/_deep_q.md",
+      "target": "target_network",
+      "resolved": "_reinforcement_learning/target_network.md"
+    },
+    {
+      "source": "_reinforcement_learning/_deep_q.md",
+      "target": "target_network",
+      "resolved": "_reinforcement_learning/target_network.md"
+    },
+    {
+      "source": "_reinforcement_learning/_deep_q.md",
+      "target": "target_network",
+      "resolved": "_reinforcement_learning/target_network.md"
+    },
+    {
+      "source": "_reinforcement_learning/_deep_q.md",
+      "target": "n_step_returns",
+      "resolved": "_reinforcement_learning/n_step_returns.md"
+    },
+    {
+      "source": "_reinforcement_learning/_deep_q.md",
+      "target": "n_step_returns",
+      "resolved": "_reinforcement_learning/n_step_returns.md"
+    },
+    {
+      "source": "_reinforcement_learning/_deep_q.md",
+      "target": "temporal_difference",
+      "resolved": "_reinforcement_learning/temporal_difference.md"
+    },
+    {
+      "source": "_reinforcement_learning/_deep_q.md",
+      "target": "replay_buffer",
+      "resolved": "_reinforcement_learning/replay_buffer.md"
+    },
+    {
+      "source": "_reinforcement_learning/_deep_q.md",
+      "target": "target_network",
+      "resolved": "_reinforcement_learning/target_network.md"
+    },
+    {
+      "source": "_reinforcement_learning/_deep_q.md",
+      "target": "n_step_returns",
+      "resolved": "_reinforcement_learning/n_step_returns.md"
+    },
+    {
+      "source": "_reinforcement_learning/__reinforcement_learning.md",
+      "target": "_bitter_lesson",
+      "resolved": "_reinforcement_learning/_bitter_lesson.md"
+    },
+    {
+      "source": "_reinforcement_learning/__reinforcement_learning.md",
+      "target": "_supervised_learning_of_behaviors",
+      "resolved": "_reinforcement_learning/_supervised_learning_of_behaviors.md"
+    },
+    {
+      "source": "_reinforcement_learning/__reinforcement_learning.md",
+      "target": "_reinforcement_learning_basics",
+      "resolved": "_reinforcement_learning/_reinforcement_learning_basics.md"
+    },
+    {
+      "source": "_reinforcement_learning/__reinforcement_learning.md",
+      "target": "value function",
+      "resolved": "_reinforcement_learning/value function.md"
+    },
+    {
+      "source": "_reinforcement_learning/__reinforcement_learning.md",
+      "target": "_reinforcement_learning_paradigms",
+      "resolved": "_reinforcement_learning/_reinforcement_learning_paradigms.md"
+    },
+    {
+      "source": "_reinforcement_learning/__reinforcement_learning.md",
+      "target": "maximum_likelihood",
+      "resolved": "_reinforcement_learning/maximum_likelihood.md"
+    },
+    {
+      "source": "_reinforcement_learning/__reinforcement_learning.md",
+      "target": "_imitation_learning",
+      "resolved": "_reinforcement_learning/_imitation_learning.md"
+    },
+    {
+      "source": "_reinforcement_learning/__reinforcement_learning.md",
+      "target": "_policy_gradients",
+      "resolved": "_reinforcement_learning/_policy_gradients.md"
+    },
+    {
+      "source": "_reinforcement_learning/__reinforcement_learning.md",
+      "target": "_actor_critic",
+      "resolved": "_reinforcement_learning/_actor_critic.md"
+    },
+    {
+      "source": "_reinforcement_learning/__reinforcement_learning.md",
+      "target": "_value_learning",
+      "resolved": "_reinforcement_learning/_value_learning.md"
+    },
+    {
+      "source": "_reinforcement_learning/__reinforcement_learning.md",
+      "target": "_deep_q",
+      "resolved": "_reinforcement_learning/_deep_q.md"
+    },
+    {
+      "source": "_reinforcement_learning/__reinforcement_learning.md",
+      "target": "_advanced_policy_gradients",
+      "resolved": "_reinforcement_learning/_advanced_policy_gradients.md"
+    },
+    {
+      "source": "_reinforcement_learning/__reinforcement_learning.md",
+      "target": "_model_based_planning",
+      "resolved": "_reinforcement_learning/_model_based_planning.md"
+    },
+    {
+      "source": "_reinforcement_learning/__reinforcement_learning.md",
+      "target": "_model_learning",
+      "resolved": "_reinforcement_learning/_model_learning.md"
+    },
+    {
+      "source": "_reinforcement_learning/__reinforcement_learning.md",
+      "target": "_neural_simulator",
+      "resolved": "_reinforcement_learning/_neural_simulator.md"
+    },
+    {
+      "source": "_linear_algebra/procrustes_problem.md",
+      "target": "frobenius_norm",
+      "resolved": "_optimization/frobenius_norm.md"
+    },
+    {
+      "source": "_linear_algebra/procrustes_problem.md",
+      "target": "svd",
+      "resolved": "_linear_algebra/svd.md"
+    },
+    {
+      "source": "_linear_algebra/__linear_algebra.md",
+      "target": "solution_for_ax_b",
+      "resolved": "_linear_algebra/solution_for_ax_b.md"
+    },
+    {
+      "source": "_linear_algebra/__linear_algebra.md",
+      "target": "four_fundamental_subspaces",
+      "resolved": "_linear_algebra/four_fundamental_subspaces.md"
+    },
+    {
+      "source": "_linear_algebra/__linear_algebra.md",
+      "target": "orthogonal_projections",
+      "resolved": "_linear_algebra/orthogonal_projections.md"
+    },
+    {
+      "source": "_linear_algebra/__linear_algebra.md",
+      "target": "least_squares",
+      "resolved": "_linear_algebra/least_squares.md"
+    },
+    {
+      "source": "_linear_algebra/__linear_algebra.md",
+      "target": "eigenvalues_and_diagonalization",
+      "resolved": "_linear_algebra/eigenvalues_and_diagonalization.md"
+    },
+    {
+      "source": "_linear_algebra/__linear_algebra.md",
+      "target": "positive_definite_matrices",
+      "resolved": "_linear_algebra/positive_definite_matrices.md"
+    },
+    {
+      "source": "_linear_algebra/__linear_algebra.md",
+      "target": "rayleigh_quotient",
+      "resolved": "_linear_algebra/rayleigh_quotient.md"
+    },
+    {
+      "source": "_linear_algebra/__linear_algebra.md",
+      "target": "same_eigenvalues_different_eigenvectors",
+      "resolved": "_linear_algebra/same_eigenvalues_different_eigenvectors.md"
+    },
+    {
+      "source": "_linear_algebra/__linear_algebra.md",
+      "target": "svd",
+      "resolved": "_linear_algebra/svd.md"
+    },
+    {
+      "source": "_linear_algebra/__linear_algebra.md",
+      "target": "matrix_decompositions",
+      "resolved": "_linear_algebra/matrix_decompositions.md"
+    },
+    {
+      "source": "_linear_algebra/__linear_algebra.md",
+      "target": "pseudoinverse",
+      "resolved": "_linear_algebra/pseudoinverse.md"
+    },
+    {
+      "source": "_linear_algebra/__linear_algebra.md",
+      "target": "procrustes_problem",
+      "resolved": "_linear_algebra/procrustes_problem.md"
+    },
+    {
+      "source": "_linear_algebra/eigenvalues_and_diagonalization.md",
+      "target": "Spectral Theorem",
+      "resolved": null
+    },
+    {
+      "source": "_linear_algebra/eigenvalues_and_diagonalization.md",
+      "target": "svd",
+      "resolved": "_linear_algebra/svd.md"
+    },
+    {
+      "source": "_linear_algebra/pseudoinverse.md",
+      "target": "subjects/Linear Algebra/SVD",
+      "resolved": null
+    },
+    {
+      "source": "_linear_algebra/pseudoinverse.md",
+      "target": "Four Fundamental Subspaces",
+      "resolved": null
+    },
+    {
+      "source": "_linear_algebra/four_fundamental_subspaces.md",
+      "target": "four_subspaces.png",
+      "resolved": null
+    },
+    {
+      "source": "_linear_algebra/four_fundamental_subspaces.md",
+      "target": "SVD",
+      "resolved": "_linear_algebra/svd.md"
+    },
+    {
+      "source": "_linear_algebra/matrix_decompositions.md",
+      "target": "lu_decomposition",
+      "resolved": null
+    },
+    {
+      "source": "_linear_algebra/matrix_decompositions.md",
+      "target": "_linear_algebra/svd",
+      "resolved": null
+    },
+    {
+      "source": "_linear_algebra/orthogonal_projections.md",
+      "target": "orthogonal_projections",
+      "resolved": "_linear_algebra/orthogonal_projections.md"
+    },
+    {
+      "source": "_manipulation/force_torque_sensor_filtering.md",
+      "target": "filter",
+      "resolved": "_controls/filter.md"
+    },
+    {
+      "source": "_manipulation/force_torque_sensor_filtering.md",
+      "target": "force_torque_sensor_calibration",
+      "resolved": "_manipulation/force_torque_sensor_calibration.md"
+    },
+    {
+      "source": "_manipulation/force_torque_sensor_calibration.md",
+      "target": "orthogonal_projections#Projecting onto a null space",
+      "resolved": null
+    },
+    {
+      "source": "_manipulation/force_torque_sensor_calibration.md",
+      "target": "rayleigh_quotient",
+      "resolved": "_linear_algebra/rayleigh_quotient.md"
+    },
+    {
+      "source": "_manipulation/force_torque_sensor_calibration.md",
+      "target": "procrustes_problem",
+      "resolved": "_linear_algebra/procrustes_problem.md"
+    },
+    {
+      "source": "_manipulation/force_torque_sensor_calibration.md",
+      "target": "least_squares",
+      "resolved": "_linear_algebra/least_squares.md"
+    },
+    {
+      "source": "_manipulation/camera_calibration.md",
+      "target": "camera_calibration.jpeg",
+      "resolved": "_manipulation/camera_calibration.md"
+    },
+    {
+      "source": "_manipulation/__manipulation.md",
+      "target": "multi_body_dynamics",
+      "resolved": "_manipulation/multi_body_dynamics.md"
+    },
+    {
+      "source": "_manipulation/multi_body_dynamics.md",
+      "target": "multi_body_dynamics",
+      "resolved": "_manipulation/multi_body_dynamics.md"
+    },
+    {
+      "source": "_manipulation/pivotik_memetic_ik.md",
+      "target": "inverse_kinematics",
+      "resolved": null
+    },
+    {
+      "source": "_manipulation/pivotik_memetic_ik.md",
+      "target": "evolutionary_algorithms",
+      "resolved": null
+    },
+    {
+      "source": "_manipulation/pivotik_memetic_ik.md",
+      "target": "pseudo-inverse",
+      "resolved": null
+    },
+    {
+      "source": "_manipulation/passive_convex_control_rmis.md",
+      "target": "passivity_based_control",
+      "resolved": null
+    },
+    {
+      "source": "_manipulation/rcm.md",
+      "target": "rcm_constrained_kinematic_control",
+      "resolved": "_manipulation/rcm_constrained_kinematic_control.md"
+    },
+    {
+      "source": "_manipulation/rcm.md",
+      "target": "concurrent_ik_surgical_robots",
+      "resolved": "_manipulation/concurrent_ik_surgical_robots.md"
+    },
+    {
+      "source": "_manipulation/rcm.md",
+      "target": "pivotik_memetic_ik",
+      "resolved": "_manipulation/pivotik_memetic_ik.md"
+    },
+    {
+      "source": "_manipulation/rcm.md",
+      "target": "passive_convex_control_rmis",
+      "resolved": "_manipulation/passive_convex_control_rmis.md"
+    },
+    {
+      "source": "_manipulation/rcm.md",
+      "target": "rcm_qp_control",
+      "resolved": "_manipulation/rcm_qp_control.md"
+    },
+    {
+      "source": "docs/plan/sequential-soaring-stonebraker.md",
+      "target": "wikilinks",
+      "resolved": null
+    },
+    {
+      "source": "docs/plan/sequential-soaring-stonebraker.md",
+      "target": "contraction",
+      "resolved": null
+    },
+    {
+      "source": "docs/plan/sequential-soaring-stonebraker.md",
+      "target": "name",
+      "resolved": null
+    },
+    {
+      "source": "docs/plan/sequential-soaring-stonebraker.md",
+      "target": "name",
+      "resolved": null
+    },
+    {
+      "source": "docs/plan/sequential-soaring-stonebraker.md",
+      "target": "term",
+      "resolved": null
+    },
+    {
+      "source": "docs/plan/sequential-soaring-stonebraker.md",
+      "target": "term",
+      "resolved": null
+    },
+    {
+      "source": "docs/plan/sequential-soaring-stonebraker.md",
+      "target": "concept",
+      "resolved": null
+    },
+    {
+      "source": "docs/plan/sequential-soaring-stonebraker.md",
+      "target": "name",
+      "resolved": null
+    },
+    {
+      "source": "_controls/__controls.md",
+      "target": "filter",
+      "resolved": "_controls/filter.md"
+    },
+    {
+      "source": "_optimization/frobenius_norm.md",
+      "target": "same_eigenvalues_different_eigenvectors",
+      "resolved": "_linear_algebra/same_eigenvalues_different_eigenvectors.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "line_search_techniques",
+      "resolved": "_optimization/line_search_techniques.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "global_convergence_theorem",
+      "resolved": "_optimization/global_convergence_theorem.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "steepest_descent_method",
+      "resolved": "_optimization/steepest_descent_method.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "ellipse_into_circular_contour",
+      "resolved": "_optimization/ellipse_into_circular_contour.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "classical_newton_method",
+      "resolved": "_optimization/classical_newton_method.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "modified_newton_method",
+      "resolved": "_optimization/modified_newton_method.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "modified_newton_method_trust_region_",
+      "resolved": "_optimization/modified_newton_method_trust_region_.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "quasi_newton_methods",
+      "resolved": "_optimization/quasi_newton_methods.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "rank_one_method",
+      "resolved": "_optimization/rank_one_method.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "rank_two_methods",
+      "resolved": "_optimization/rank_two_methods.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "dual",
+      "resolved": "_optimization/dual.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "broyden_family",
+      "resolved": "_optimization/broyden_family.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "coordinate_descent",
+      "resolved": "_optimization/coordinate_descent.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "conjugate_directions",
+      "resolved": "_optimization/conjugate_directions.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "conjugate_vs_quasi_newton",
+      "resolved": "_optimization/conjugate_vs_quasi_newton.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "constrained_optimization_local_and_global_solutions_conceptual_algorithm",
+      "resolved": "_optimization/constrained_optimization_local_and_global_solutions_conceptual_algorithm.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "feasible_and_descent_directions",
+      "resolved": "_optimization/feasible_and_descent_directions.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "first_order_kkt_conditions",
+      "resolved": "_optimization/first_order_kkt_conditions.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "interpretation_of_lagrange_multipliers",
+      "resolved": "_optimization/interpretation_of_lagrange_multipliers.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "existence_and_uniqueness_of_lagrange_multipliers",
+      "resolved": "_optimization/existence_and_uniqueness_of_lagrange_multipliers.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "second_order_kkt",
+      "resolved": "_optimization/second_order_kkt.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "weak_and_strong_duality",
+      "resolved": "_optimization/weak_and_strong_duality.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "primal_dual_problem",
+      "resolved": "_optimization/primal_dual_problem.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "wolfe_dual",
+      "resolved": "_optimization/wolfe_dual.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "linear_programming",
+      "resolved": "_optimization/linear_programming.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "basic_and_non_basic_variable",
+      "resolved": "_optimization/basic_and_non_basic_variable.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "simplex",
+      "resolved": "_optimization/simplex.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "two_phase_method",
+      "resolved": "_optimization/two_phase_method.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "interior_point",
+      "resolved": "_optimization/interior_point.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "affine_scaling",
+      "resolved": "_optimization/affine_scaling.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "karmarkars_method",
+      "resolved": "_optimization/karmarkars_method.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "lagrange_methods",
+      "resolved": "_optimization/lagrange_methods.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "active_set",
+      "resolved": "_optimization/active_set.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "barrier_and_penalty_methods",
+      "resolved": "_optimization/barrier_and_penalty_methods.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "barrier_methods",
+      "resolved": "_optimization/barrier_methods.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "penalty_method",
+      "resolved": "_optimization/penalty_method.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "augmented_lagrangian_method",
+      "resolved": "_optimization/augmented_lagrangian_method.md"
+    },
+    {
+      "source": "_optimization/__optimization.md",
+      "target": "cutting_plane_methods",
+      "resolved": "_optimization/cutting_plane_methods.md"
+    },
+    {
+      "source": "_optimization/line_search_techniques.md",
+      "target": "stopping_condition",
+      "resolved": "_optimization/stopping_condition.md"
+    },
+    {
+      "source": "_optimization/line_search_techniques.md",
+      "target": "step_length",
+      "resolved": "_optimization/step_length.md"
+    },
+    {
+      "source": "_optimization/step_length.md",
+      "target": "exact_line_search",
+      "resolved": "_optimization/exact_line_search.md"
+    },
+    {
+      "source": "_optimization/step_length.md",
+      "target": "inexact_line_search",
+      "resolved": "_optimization/inexact_line_search.md"
+    },
+    {
+      "source": "_optimization/step_length.md",
+      "target": "backtracking",
+      "resolved": "_optimization/backtracking.md"
+    },
+    {
+      "source": "_optimization/inexact_line_search.md",
+      "target": "inexact_line_search.png",
+      "resolved": "_optimization/inexact_line_search.md"
+    },
+    {
+      "source": "_optimization/inexact_line_search.md",
+      "target": "armijo",
+      "resolved": "_optimization/armijo.md"
+    },
+    {
+      "source": "_optimization/inexact_line_search.md",
+      "target": "wolfe",
+      "resolved": "_optimization/wolfe.md"
+    },
+    {
+      "source": "_optimization/inexact_line_search.md",
+      "target": "armijo",
+      "resolved": "_optimization/armijo.md"
+    },
+    {
+      "source": "_optimization/inexact_line_search.md",
+      "target": "goldstein",
+      "resolved": "_optimization/goldstein.md"
+    },
+    {
+      "source": "_optimization/inexact_line_search.md",
+      "target": "armijo",
+      "resolved": "_optimization/armijo.md"
+    },
+    {
+      "source": "_optimization/inexact_line_search.md",
+      "target": "goldstein",
+      "resolved": "_optimization/goldstein.md"
+    },
+    {
+      "source": "_optimization/inexact_line_search.md",
+      "target": "wolfe",
+      "resolved": "_optimization/wolfe.md"
+    },
+    {
+      "source": "_optimization/backtracking.md",
+      "target": "armijo",
+      "resolved": "_optimization/armijo.md"
+    },
+    {
+      "source": "_optimization/backtracking.md",
+      "target": "wolfe",
+      "resolved": "_optimization/wolfe.md"
+    },
+    {
+      "source": "_optimization/backtracking.md",
+      "target": "backtracking",
+      "resolved": "_optimization/backtracking.md"
+    },
+    {
+      "source": "_optimization/backtracking.md",
+      "target": "armijo",
+      "resolved": "_optimization/armijo.md"
+    },
+    {
+      "source": "_optimization/global_convergence_theorem.md",
+      "target": "std_algo_1",
+      "resolved": "_optimization/std_algo_1.md"
+    },
+    {
+      "source": "_optimization/global_convergence_theorem.md",
+      "target": "converge",
+      "resolved": "_optimization/converge.md"
+    },
+    {
+      "source": "_optimization/global_convergence_theorem.md",
+      "target": "armijo",
+      "resolved": "_optimization/armijo.md"
+    },
+    {
+      "source": "_optimization/global_convergence_theorem.md",
+      "target": "wolfe",
+      "resolved": "_optimization/wolfe.md"
+    },
+    {
+      "source": "_optimization/global_convergence_theorem.md",
+      "target": "armijo",
+      "resolved": "_optimization/armijo.md"
+    },
+    {
+      "source": "_optimization/global_convergence_theorem.md",
+      "target": "goldstein",
+      "resolved": "_optimization/goldstein.md"
+    },
+    {
+      "source": "_optimization/global_convergence_theorem.md",
+      "target": "backtracking",
+      "resolved": "_optimization/backtracking.md"
+    },
+    {
+      "source": "_optimization/global_convergence_theorem.md",
+      "target": "how_to_find_descent_direction",
+      "resolved": "_optimization/how_to_find_descent_direction.md"
+    },
+    {
+      "source": "_optimization/global_convergence_theorem.md",
+      "target": "steepest_descent_method",
+      "resolved": "_optimization/steepest_descent_method.md"
+    },
+    {
+      "source": "_optimization/steepest_descent_method.md",
+      "target": "descnet_direction.png",
+      "resolved": null
+    },
+    {
+      "source": "_optimization/steepest_descent_method.md",
+      "target": "std_algo_1",
+      "resolved": "_optimization/std_algo_1.md"
+    },
+    {
+      "source": "_optimization/steepest_descent_method.md",
+      "target": "convergence_for_steepest_descent",
+      "resolved": "_optimization/convergence_for_steepest_descent.md"
+    },
+    {
+      "source": "_optimization/ellipse_into_circular_contour.md",
+      "target": "cholesky.png",
+      "resolved": "_optimization/cholesky.md"
+    },
+    {
+      "source": "_optimization/ellipse_into_circular_contour.md",
+      "target": "cholesky",
+      "resolved": "_optimization/cholesky.md"
+    },
+    {
+      "source": "_optimization/ellipse_into_circular_contour.md",
+      "target": "classical_newton_method",
+      "resolved": "_optimization/classical_newton_method.md"
+    },
+    {
+      "source": "_optimization/classical_newton_method.md",
+      "target": "ellipse_into_circular_contour",
+      "resolved": "_optimization/ellipse_into_circular_contour.md"
+    },
+    {
+      "source": "_optimization/classical_newton_method.md",
+      "target": "steepest_descent_method",
+      "resolved": "_optimization/steepest_descent_method.md"
+    },
+    {
+      "source": "_optimization/classical_newton_method.md",
+      "target": "singular",
+      "resolved": null
+    },
+    {
+      "source": "_optimization/modified_newton_method.md",
+      "target": "classical_newton_method",
+      "resolved": "_optimization/classical_newton_method.md"
+    },
+    {
+      "source": "_optimization/modified_newton_method.md",
+      "target": "classical_newton_method#^6dd2f7",
+      "resolved": null
+    },
+    {
+      "source": "_optimization/modified_newton_method.md",
+      "target": "line_search_techniques",
+      "resolved": "_optimization/line_search_techniques.md"
+    },
+    {
+      "source": "_optimization/modified_newton_method.md",
+      "target": "cholesky",
+      "resolved": "_optimization/cholesky.md"
+    },
+    {
+      "source": "_optimization/modified_newton_method.md",
+      "target": "cholesky",
+      "resolved": "_optimization/cholesky.md"
+    },
+    {
+      "source": "_optimization/modified_newton_method_trust_region_.md",
+      "target": "trust_region.png",
+      "resolved": null
+    },
+    {
+      "source": "_optimization/modified_newton_method_trust_region_.md",
+      "target": "modified_newton_method",
+      "resolved": "_optimization/modified_newton_method.md"
+    },
+    {
+      "source": "_optimization/quasi_newton_methods.md",
+      "target": "wolfe",
+      "resolved": "_optimization/wolfe.md"
+    },
+    {
+      "source": "_optimization/quasi_newton_methods.md",
+      "target": "rank_one_method",
+      "resolved": "_optimization/rank_one_method.md"
+    },
+    {
+      "source": "_optimization/quasi_newton_methods.md",
+      "target": "rank_two_methods",
+      "resolved": "_optimization/rank_two_methods.md"
+    },
+    {
+      "source": "_optimization/rank_two_methods.md",
+      "target": "rank_one_method#Difficulties in rank one",
+      "resolved": null
+    },
+    {
+      "source": "_optimization/rank_two_methods.md",
+      "target": "bfs_davidon_fletcher_powell_",
+      "resolved": "_optimization/bfs_davidon_fletcher_powell_.md"
+    },
+    {
+      "source": "_optimization/rank_two_methods.md",
+      "target": "bgfs_broyden_fletcher_goldfarb_shanno_",
+      "resolved": "_optimization/bgfs_broyden_fletcher_goldfarb_shanno_.md"
+    },
+    {
+      "source": "_optimization/dual.md",
+      "target": "quasi_newton_methods#^96ef25",
+      "resolved": null
+    },
+    {
+      "source": "_optimization/dual.md",
+      "target": "bfs_davidon_fletcher_powell_",
+      "resolved": "_optimization/bfs_davidon_fletcher_powell_.md"
+    },
+    {
+      "source": "_optimization/dual.md",
+      "target": "bgfs_broyden_fletcher_goldfarb_shanno_",
+      "resolved": "_optimization/bgfs_broyden_fletcher_goldfarb_shanno_.md"
+    },
+    {
+      "source": "_optimization/broyden_family.md",
+      "target": "bfs_davidon_fletcher_powell_",
+      "resolved": "_optimization/bfs_davidon_fletcher_powell_.md"
+    },
+    {
+      "source": "_optimization/broyden_family.md",
+      "target": "bgfs_broyden_fletcher_goldfarb_shanno_",
+      "resolved": "_optimization/bgfs_broyden_fletcher_goldfarb_shanno_.md"
+    },
+    {
+      "source": "_optimization/broyden_family.md",
+      "target": "stopping_condition",
+      "resolved": "_optimization/stopping_condition.md"
+    },
+    {
+      "source": "_optimization/broyden_family.md",
+      "target": "step_length",
+      "resolved": "_optimization/step_length.md"
+    },
+    {
+      "source": "_optimization/broyden_family.md",
+      "target": "armijo",
+      "resolved": "_optimization/armijo.md"
+    },
+    {
+      "source": "_optimization/broyden_family.md",
+      "target": "wolfe",
+      "resolved": "_optimization/wolfe.md"
+    },
+    {
+      "source": "_optimization/std_algo_1.md",
+      "target": "stopping_condition",
+      "resolved": "_optimization/stopping_condition.md"
+    },
+    {
+      "source": "_optimization/std_algo_1.md",
+      "target": "step_length",
+      "resolved": "_optimization/step_length.md"
+    },
+    {
+      "source": "_optimization/std_algo_1.md",
+      "target": "armijo",
+      "resolved": "_optimization/armijo.md"
+    },
+    {
+      "source": "_optimization/std_algo_1.md",
+      "target": "wolfe",
+      "resolved": "_optimization/wolfe.md"
+    },
+    {
+      "source": "_optimization/how_to_find_descent_direction.md",
+      "target": "descnet_direction.png",
+      "resolved": null
+    },
+    {
+      "source": "_optimization/goldstein.md",
+      "target": "step_length",
+      "resolved": "_optimization/step_length.md"
+    },
+    {
+      "source": "_optimization/convergence_for_steepest_descent.md",
+      "target": "condition_number",
+      "resolved": "_optimization/condition_number.md"
+    },
+    {
+      "source": "_optimization/convergence_for_steepest_descent.md",
+      "target": "steepest_descent_elliptical_convergence.png",
+      "resolved": null
+    },
+    {
+      "source": "_optimization/converge.md",
+      "target": "lipchitz_continuous",
+      "resolved": "_optimization/lipchitz_continuous.md"
+    },
+    {
+      "source": "_optimization/converge.md",
+      "target": "armijo",
+      "resolved": "_optimization/armijo.md"
+    },
+    {
+      "source": "_optimization/converge.md",
+      "target": "wolfe",
+      "resolved": "_optimization/wolfe.md"
+    },
+    {
+      "source": "_optimization/coordinate_descent.md",
+      "target": "stopping_condition",
+      "resolved": "_optimization/stopping_condition.md"
+    },
+    {
+      "source": "_optimization/conjugate_directions.md",
+      "target": "exact_line_search",
+      "resolved": "_optimization/exact_line_search.md"
+    },
+    {
+      "source": "_optimization/conjugate_directions.md",
+      "target": "exact_line_search",
+      "resolved": "_optimization/exact_line_search.md"
+    },
+    {
+      "source": "_optimization/conjugate_directions.md",
+      "target": "bgfs_broyden_fletcher_goldfarb_shanno_",
+      "resolved": "_optimization/bgfs_broyden_fletcher_goldfarb_shanno_.md"
+    },
+    {
+      "source": "_optimization/conjugate_directions.md",
+      "target": "bgfs_broyden_fletcher_goldfarb_shanno_",
+      "resolved": "_optimization/bgfs_broyden_fletcher_goldfarb_shanno_.md"
+    },
+    {
+      "source": "_optimization/conjugate_directions.md",
+      "target": "conjugate_directions",
+      "resolved": "_optimization/conjugate_directions.md"
+    },
+    {
+      "source": "_optimization/conjugate_vs_quasi_newton.md",
+      "target": "line_search_techniques",
+      "resolved": "_optimization/line_search_techniques.md"
+    },
+    {
+      "source": "_optimization/feasible_and_descent_directions.md",
+      "target": "constrained_optimization_local_and_global_solutions_conceptual_algorithm#Feasible Set",
+      "resolved": null
+    },
+    {
+      "source": "_optimization/first_order_kkt_conditions.md",
+      "target": "slater_s_constraint_qualification",
+      "resolved": "_optimization/slater_s_constraint_qualification.md"
+    },
+    {
+      "source": "_optimization/weak_and_strong_duality.md",
+      "target": "duality_geomtric.png",
+      "resolved": null
+    },
+    {
+      "source": "_optimization/weak_and_strong_duality.md",
+      "target": "duality_gap.png",
+      "resolved": null
+    },
+    {
+      "source": "_optimization/linear_programming.md",
+      "target": "extreme_points",
+      "resolved": "_optimization/extreme_points.md"
+    },
+    {
+      "source": "_optimization/linear_programming.md",
+      "target": "unbounded_feasible_region.png",
+      "resolved": null
+    },
+    {
+      "source": "_optimization/linear_programming.md",
+      "target": "extreme_points",
+      "resolved": "_optimization/extreme_points.md"
+    },
+    {
+      "source": "_optimization/simplex.md",
+      "target": "simplex_feasible_region.png",
+      "resolved": null
+    },
+    {
+      "source": "_optimization/simplex.md",
+      "target": "two_phase_method",
+      "resolved": "_optimization/two_phase_method.md"
+    },
+    {
+      "source": "_optimization/two_phase_method.md",
+      "target": "simplex",
+      "resolved": "_optimization/simplex.md"
+    },
+    {
+      "source": "_optimization/two_phase_method.md",
+      "target": "two_phase_method",
+      "resolved": "_optimization/two_phase_method.md"
+    },
+    {
+      "source": "_optimization/interior_point.md",
+      "target": "simplex",
+      "resolved": "_optimization/simplex.md"
+    },
+    {
+      "source": "_optimization/interior_point.md",
+      "target": "interior_points.png",
+      "resolved": null
+    },
+    {
+      "source": "_optimization/interior_point.md",
+      "target": "karmarkars_method",
+      "resolved": "_optimization/karmarkars_method.md"
+    },
+    {
+      "source": "_optimization/interior_point.md",
+      "target": "affine_scaling",
+      "resolved": "_optimization/affine_scaling.md"
+    },
+    {
+      "source": "_optimization/affine_scaling.md",
+      "target": "interior_point",
+      "resolved": "_optimization/interior_point.md"
+    },
+    {
+      "source": "_optimization/affine_scaling.md",
+      "target": "transform_into_y_space",
+      "resolved": "_optimization/transform_into_y_space.md"
+    },
+    {
+      "source": "_optimization/affine_scaling.md",
+      "target": "interior_points.png",
+      "resolved": null
+    },
+    {
+      "source": "_optimization/affine_scaling.md",
+      "target": "steepest_descent_method",
+      "resolved": "_optimization/steepest_descent_method.md"
+    },
+    {
+      "source": "_optimization/affine_scaling.md",
+      "target": "project_the_steepest_direction",
+      "resolved": "_optimization/project_the_steepest_direction.md"
+    },
+    {
+      "source": "_optimization/affine_scaling.md",
+      "target": "projection_onto_null_space.png",
+      "resolved": null
+    },
+    {
+      "source": "_optimization/affine_scaling.md",
+      "target": "stopping_condition_for_affine_scaling",
+      "resolved": "_optimization/stopping_condition_for_affine_scaling.md"
+    },
+    {
+      "source": "_optimization/affine_scaling.md",
+      "target": "steepest_descent_in_y_space.png",
+      "resolved": null
+    },
+    {
+      "source": "_optimization/barrier_and_penalty_methods.md",
+      "target": "penalty_barrier_func.png",
+      "resolved": null
+    },
+    {
+      "source": "_optimization/barrier_and_penalty_methods.md",
+      "target": "penalty_method",
+      "resolved": "_optimization/penalty_method.md"
+    },
+    {
+      "source": "_optimization/barrier_and_penalty_methods.md",
+      "target": "barrier_methods",
+      "resolved": "_optimization/barrier_methods.md"
+    },
+    {
+      "source": "_optimization/barrier_methods.md",
+      "target": "penalty_method",
+      "resolved": "_optimization/penalty_method.md"
+    },
+    {
+      "source": "_optimization/project_the_steepest_direction.md",
+      "target": "null_space.png",
+      "resolved": null
+    },
+    {
+      "source": "_optimization/stopping_condition_for_affine_scaling.md",
+      "target": "how_you_get_μ",
+      "resolved": "_optimization/how_you_get_μ.md"
+    },
+    {
+      "source": "_optimization/extreme_points.md",
+      "target": "extreme_point.png",
+      "resolved": null
+    },
+    {
+      "source": "_optimization/transform_into_y_space.md",
+      "target": "x_to_y_transformation.png",
+      "resolved": null
+    },
+    {
+      "source": "_optimization/transform_into_y_space.md",
+      "target": "y_to_x_transformation.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/dynamics_stability.md",
+      "target": "pendulum.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/dynamics_stability.md",
+      "target": "pendulum._equi.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/dynamics_stability.md",
+      "target": "pendulum._equi_new.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/dynamics_stability.md",
+      "target": "stability.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/dynamics_stability.md",
+      "target": "linear_approx.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/lqr-vs-mpc.md",
+      "target": "invariant-sets",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/lqr-vs-mpc.md",
+      "target": "robust-mpc",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/lqr-vs-mpc.md",
+      "target": "mpc-implementation",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/mpc_qp.md",
+      "target": "mpc",
+      "resolved": "optimal_control/mpc.md"
+    },
+    {
+      "source": "optimal_control/mpc_qp.md",
+      "target": "qp",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/lqr_in_3_ways.md",
+      "target": "double_integrator.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/lqr_in_3_ways.md",
+      "target": "lqr_structure.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/lqr_in_3_ways.md",
+      "target": "riccati_recursion.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/lqr_in_3_ways.md",
+      "target": "infinite_lqr.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/__optimal_control.md",
+      "target": "dynamics_stability",
+      "resolved": "optimal_control/dynamics_stability.md"
+    },
+    {
+      "source": "optimal_control/__optimal_control.md",
+      "target": "optimization_intro",
+      "resolved": "optimal_control/optimization_intro.md"
+    },
+    {
+      "source": "optimal_control/__optimal_control.md",
+      "target": "solution_methods",
+      "resolved": "optimal_control/solution_methods.md"
+    },
+    {
+      "source": "optimal_control/__optimal_control.md",
+      "target": "regularization_merit_functions",
+      "resolved": "optimal_control/regularization_merit_functions.md"
+    },
+    {
+      "source": "optimal_control/__optimal_control.md",
+      "target": "hw1",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/__optimal_control.md",
+      "target": "pontryagin_shooting_methods",
+      "resolved": "optimal_control/pontryagin_shooting_methods.md"
+    },
+    {
+      "source": "optimal_control/__optimal_control.md",
+      "target": "lqr_in_3_ways",
+      "resolved": "optimal_control/lqr_in_3_ways.md"
+    },
+    {
+      "source": "optimal_control/__optimal_control.md",
+      "target": "hw2",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/__optimal_control.md",
+      "target": "dynamic_programming",
+      "resolved": "optimal_control/dynamic_programming.md"
+    },
+    {
+      "source": "optimal_control/__optimal_control.md",
+      "target": "mpc",
+      "resolved": "optimal_control/mpc.md"
+    },
+    {
+      "source": "optimal_control/__optimal_control.md",
+      "target": "ddp",
+      "resolved": "optimal_control/ddp.md"
+    },
+    {
+      "source": "optimal_control/__optimal_control.md",
+      "target": "ddp_extra",
+      "resolved": "optimal_control/ddp_extra.md"
+    },
+    {
+      "source": "optimal_control/__optimal_control.md",
+      "target": "direct_method",
+      "resolved": "optimal_control/direct_method.md"
+    },
+    {
+      "source": "optimal_control/__optimal_control.md",
+      "target": "lec_14",
+      "resolved": "optimal_control/lec_14.md"
+    },
+    {
+      "source": "optimal_control/__optimal_control.md",
+      "target": "mpc_qp",
+      "resolved": "optimal_control/mpc_qp.md"
+    },
+    {
+      "source": "optimal_control/__optimal_control.md",
+      "target": "from_lqr_to_modern_trajectory_optimization_a_jour",
+      "resolved": "optimal_control/from_lqr_to_modern_trajectory_optimization_a_jour.md"
+    },
+    {
+      "source": "optimal_control/__optimal_control.md",
+      "target": "why_mpc_s_receding_horizon_genius_matters_the_dee",
+      "resolved": "optimal_control/why_mpc_s_receding_horizon_genius_matters_the_dee.md"
+    },
+    {
+      "source": "optimal_control/__optimal_control.md",
+      "target": "null_space_control_for_redundant_robots_a_deep_di",
+      "resolved": "optimal_control/null_space_control_for_redundant_robots_a_deep_di.md"
+    },
+    {
+      "source": "optimal_control/__optimal_control.md",
+      "target": "intro_to_nonlinear_trajectory_optimization",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/__optimal_control.md",
+      "target": "differential_dynamic_programming",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/__optimal_control.md",
+      "target": "ilqr",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/__optimal_control.md",
+      "target": "hw3",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/__optimal_control.md",
+      "target": "double_pendulum_dynamics_and_energy",
+      "resolved": "optimal_control/double_pendulum_dynamics_and_energy.md"
+    },
+    {
+      "source": "optimal_control/__optimal_control.md",
+      "target": "direct_trajectory_optimization",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/__optimal_control.md",
+      "target": "collocation",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/__optimal_control.md",
+      "target": "sqp",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/__optimal_control.md",
+      "target": "attitude_Intro_so3_and_quaternions",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/__optimal_control.md",
+      "target": "optimizing_with_attitude",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/__optimal_control.md",
+      "target": "hw4",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/optimization_intro.md",
+      "target": "armijo",
+      "resolved": "_optimization/armijo.md"
+    },
+    {
+      "source": "optimal_control/optimization_intro.md",
+      "target": "wolfe",
+      "resolved": "_optimization/wolfe.md"
+    },
+    {
+      "source": "optimal_control/optimization_intro.md",
+      "target": "grad_f_constraints.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/optimization_intro.md",
+      "target": "inequa_cons.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/regularization_merit_functions.md",
+      "target": "line_search_techniques",
+      "resolved": "_optimization/line_search_techniques.md"
+    },
+    {
+      "source": "optimal_control/solution_methods.md",
+      "target": "active_set",
+      "resolved": "_optimization/active_set.md"
+    },
+    {
+      "source": "optimal_control/solution_methods.md",
+      "target": "penalty_method",
+      "resolved": "_optimization/penalty_method.md"
+    },
+    {
+      "source": "optimal_control/solution_methods.md",
+      "target": "penalty_example.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/solution_methods.md",
+      "target": "condition_number",
+      "resolved": "_optimization/condition_number.md"
+    },
+    {
+      "source": "optimal_control/solution_methods.md",
+      "target": "condition_number",
+      "resolved": "_optimization/condition_number.md"
+    },
+    {
+      "source": "optimal_control/solution_methods.md",
+      "target": "augmented_lagrangian_method",
+      "resolved": "_optimization/augmented_lagrangian_method.md"
+    },
+    {
+      "source": "optimal_control/solution_methods.md",
+      "target": "ADMM",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/solution_methods.md",
+      "target": "interior_point",
+      "resolved": "_optimization/interior_point.md"
+    },
+    {
+      "source": "optimal_control/solution_methods.md",
+      "target": "barrier_methods",
+      "resolved": "_optimization/barrier_methods.md"
+    },
+    {
+      "source": "optimal_control/solution_methods.md",
+      "target": "barrier_example.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/solution_methods.md",
+      "target": "barrier_and_penalty_methods",
+      "resolved": "_optimization/barrier_and_penalty_methods.md"
+    },
+    {
+      "source": "optimal_control/pontryagin_shooting_methods.md",
+      "target": "control.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/pontryagin_shooting_methods.md",
+      "target": "shooting_method.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/dynamic_programming.md",
+      "target": "controllability.jpg",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/dynamic_programming.md",
+      "target": "underactuate_vs_fully_acutuated.jpg",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/dynamic_programming.md",
+      "target": "underactuate_vs_fully_acutuated_math.jpg",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/dynamic_programming.md",
+      "target": "Pseudo Inverse",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/dynamic_programming.md",
+      "target": "condition number",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/dynamic_programming.md",
+      "target": "subjects/Linear Algebra/SVD",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/dynamic_programming.md",
+      "target": "QR",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/dynamic_programming.md",
+      "target": "Gramian",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/dynamic_programming.md",
+      "target": "bellman_principle_optimality_trajectory.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/dynamic_programming.md",
+      "target": "dp.jpg",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/dynamic_programming.md",
+      "target": "largarnage_multipler.jpg",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/mpc.md",
+      "target": "convex_set.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/mpc.md",
+      "target": "convex_fucntion.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/mpc.md",
+      "target": "convex_mpc_block_digram.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/mpc.md",
+      "target": "mpc_traj.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/mpc.md",
+      "target": "quadrotor.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/ddp_extra.md",
+      "target": "torque_limits.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/direct_method.md",
+      "target": "collocation_pts.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/combined_optimal_control.md",
+      "target": "control.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/combined_optimal_control.md",
+      "target": "shooting_method.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/combined_optimal_control.md",
+      "target": "double_integrator.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/combined_optimal_control.md",
+      "target": "lqr_structure.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/combined_optimal_control.md",
+      "target": "riccati_recursion.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/combined_optimal_control.md",
+      "target": "infinite_lqr.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/combined_optimal_control.md",
+      "target": "controllability.jpg",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/combined_optimal_control.md",
+      "target": "underactuate_vs_fully_acutuated.jpg",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/combined_optimal_control.md",
+      "target": "underactuate_vs_fully_acutuated_math.jpg",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/combined_optimal_control.md",
+      "target": "Pseudo Inverse",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/combined_optimal_control.md",
+      "target": "condition number",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/combined_optimal_control.md",
+      "target": "subjects/Linear Algebra/SVD",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/combined_optimal_control.md",
+      "target": "QR",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/combined_optimal_control.md",
+      "target": "Gramian",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/combined_optimal_control.md",
+      "target": "bellman_principle_optimality_trajectory.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/combined_optimal_control.md",
+      "target": "dp.jpg",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/combined_optimal_control.md",
+      "target": "largarnage_multipler.jpg",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/combined_optimal_control.md",
+      "target": "convex_set.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/combined_optimal_control.md",
+      "target": "convex_fucntion.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/combined_optimal_control.md",
+      "target": "convex_mpc_block_digram.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/combined_optimal_control.md",
+      "target": "mpc_traj.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/combined_optimal_control.md",
+      "target": "quadrotor.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/combined_optimal_control.md",
+      "target": "torque_limits.png",
+      "resolved": null
+    },
+    {
+      "source": "optimal_control/combined_optimal_control.md",
+      "target": "collocation_pts.png",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/ch3_exercises.md",
+      "target": "abc",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/ch3_exercises.md",
+      "target": "abc",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/ch3_exercises.md",
+      "target": "abc",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/ch3_exercises.md",
+      "target": "abc",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/ch3_exercises.md",
+      "target": "abc",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/blade inverse.md",
+      "target": "null and nonnull blades",
+      "resolved": "_geometric_algebra/chapter_3/null and nonnull blades.md"
+    },
+    {
+      "source": "_geometric_algebra/blade inverse.md",
+      "target": "scalar product",
+      "resolved": "_geometric_algebra/chapter_3/scalar product.md"
+    },
+    {
+      "source": "_geometric_algebra/blade inverse.md",
+      "target": "reversion",
+      "resolved": "_geometric_algebra/reversion.md"
+    },
+    {
+      "source": "_geometric_algebra/blade inverse.md",
+      "target": "null and nonnull blades",
+      "resolved": "_geometric_algebra/chapter_3/null and nonnull blades.md"
+    },
+    {
+      "source": "_geometric_algebra/blade inverse.md",
+      "target": "contraction (⌋)",
+      "resolved": "_geometric_algebra/chapter_3/contraction (⌋).md"
+    },
+    {
+      "source": "_geometric_algebra/Spanning Oriented Subspaces.md",
+      "target": "fig_2_3_bivector_reshapeability.png",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/Spanning Oriented Subspaces.md",
+      "target": "fig_2_8_line_intersection_final.png",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/Spanning Oriented Subspaces.md",
+      "target": "ch2_exercises",
+      "resolved": "_geometric_algebra/ch2_exercises.md"
+    },
+    {
+      "source": "_geometric_algebra/__geometric_algebra.md",
+      "target": "Spanning Oriented Subspaces",
+      "resolved": "_geometric_algebra/Spanning Oriented Subspaces.md"
+    },
+    {
+      "source": "_geometric_algebra/__geometric_algebra.md",
+      "target": "_metric products of subspaces",
+      "resolved": "_geometric_algebra/chapter_3/_metric products of subspaces.md"
+    },
+    {
+      "source": "_geometric_algebra/__geometric_algebra.md",
+      "target": "_linear transformations of subspaces",
+      "resolved": "_geometric_algebra/chapter_4/_linear transformations of subspaces.md"
+    },
+    {
+      "source": "_geometric_algebra/__geometric_algebra.md",
+      "target": "_intersection and union of subspaces",
+      "resolved": "_geometric_algebra/chapter_5/_intersection and union of subspaces.md"
+    },
+    {
+      "source": "_geometric_algebra/__geometric_algebra.md",
+      "target": "_the fundamental product of geometric algebra",
+      "resolved": "_geometric_algebra/chapter_6/_the fundamental product of geometric algebra.md"
+    },
+    {
+      "source": "_geometric_algebra/__geometric_algebra.md",
+      "target": "_orthogonal transformations as versors",
+      "resolved": "_geometric_algebra/chapter_7/_orthogonal transformations as versors.md"
+    },
+    {
+      "source": "_geometric_algebra/__geometric_algebra.md",
+      "target": "_geometric differentiation",
+      "resolved": "_geometric_algebra/chapter_8/_geometric differentiation.md"
+    },
+    {
+      "source": "_geometric_algebra/__geometric_algebra.md",
+      "target": "_the vector space model",
+      "resolved": "_geometric_algebra/chapter_10/_the vector space model.md"
+    },
+    {
+      "source": "_geometric_algebra/__geometric_algebra.md",
+      "target": "_the homogeneous model",
+      "resolved": "_geometric_algebra/chapter_11/_the homogeneous model.md"
+    },
+    {
+      "source": "_geometric_algebra/__geometric_algebra.md",
+      "target": "_applications of the homogeneous model",
+      "resolved": "_geometric_algebra/chapter_12/_applications of the homogeneous model.md"
+    },
+    {
+      "source": "_geometric_algebra/__geometric_algebra.md",
+      "target": "_the conformal model operational euclidean geometry",
+      "resolved": "_geometric_algebra/chapter_13/_the conformal model operational euclidean geometry.md"
+    },
+    {
+      "source": "_geometric_algebra/__geometric_algebra.md",
+      "target": "_new primitives for euclidean geometry",
+      "resolved": "_geometric_algebra/chapter_14/_new primitives for euclidean geometry.md"
+    },
+    {
+      "source": "_geometric_algebra/__geometric_algebra.md",
+      "target": "_constructions in euclidean geometry",
+      "resolved": "_geometric_algebra/chapter_15/_constructions in euclidean geometry.md"
+    },
+    {
+      "source": "_geometric_algebra/__geometric_algebra.md",
+      "target": "_conformal operators",
+      "resolved": "_geometric_algebra/chapter_16/_conformal operators.md"
+    },
+    {
+      "source": "_geometric_algebra/__geometric_algebra.md",
+      "target": "_implementation issues",
+      "resolved": "_geometric_algebra/chapter_18/_implementation issues.md"
+    },
+    {
+      "source": "_geometric_algebra/__geometric_algebra.md",
+      "target": "_basis blades and operations",
+      "resolved": "_geometric_algebra/chapter_19/_basis blades and operations.md"
+    },
+    {
+      "source": "_geometric_algebra/__geometric_algebra.md",
+      "target": "_the linear products and operations",
+      "resolved": "_geometric_algebra/chapter_20/_the linear products and operations.md"
+    },
+    {
+      "source": "_geometric_algebra/__geometric_algebra.md",
+      "target": "_fundamental algorithms for nonlinear products",
+      "resolved": "_geometric_algebra/chapter_22/_fundamental algorithms for nonlinear products.md"
+    },
+    {
+      "source": "_geometric_algebra/__geometric_algebra.md",
+      "target": "_specializing the structure for efficiency",
+      "resolved": "_geometric_algebra/chapter_21/_specializing the structure for efficiency.md"
+    },
+    {
+      "source": "_geometric_algebra/__geometric_algebra.md",
+      "target": "_ray tracing application",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/ch4_exercises.md",
+      "target": "f_s",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/ch4_exercises.md",
+      "target": "f_s",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/ch4_exercises.md",
+      "target": "f_s^*",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/ch4_exercises.md",
+      "target": "f",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/ch4_exercises.md",
+      "target": "f",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/ch4_exercises.md",
+      "target": "f",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/ch4_exercises.md",
+      "target": "f^*",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter4_questions.md",
+      "target": "\\mathsf{f}",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/_applications of the homogeneous model.md",
+      "target": "plucker line coordinates from the outer product",
+      "resolved": "_geometric_algebra/chapter_12/plucker line coordinates from the outer product.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/_applications of the homogeneous model.md",
+      "target": "homogeneous points and planes",
+      "resolved": "_geometric_algebra/chapter_12/homogeneous points and planes.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/_applications of the homogeneous model.md",
+      "target": "meet join and distance recipes",
+      "resolved": "_geometric_algebra/chapter_12/meet join and distance recipes.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/_applications of the homogeneous model.md",
+      "target": "affine matrices in plucker space",
+      "resolved": "_geometric_algebra/chapter_12/affine matrices in plucker space.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/_applications of the homogeneous model.md",
+      "target": "pinhole projection as a meet",
+      "resolved": "_geometric_algebra/chapter_12/pinhole projection as a meet.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/_applications of the homogeneous model.md",
+      "target": "epipolar and trifocal constraints",
+      "resolved": "_geometric_algebra/chapter_12/epipolar and trifocal constraints.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "**t**×",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "0",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "1",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "1",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "0",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "A_{11}",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "A_{12}",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "A_{21}",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "A_{22}",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "A_{22}",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "A_{21}",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "A_{12}",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "A_{11}",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "**t**×",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "**t**×",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "**x**",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "**t** × **x**",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "1",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "0",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "f",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "t",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "0",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "f",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "0",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "t×",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "f",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "f",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "f",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "0",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "t",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "f",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "1",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "t",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "0",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "1",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "0",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "t×",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "1",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "1",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "0",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "t",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "R",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "0",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "0",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "R",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "0",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "0",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "R",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "R",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "0",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "0",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "1",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "0",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "\\mathbf{f}^{-1}",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "0",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "\\mathbf{f}^{-1}×",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "0",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "1",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "0",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "\\mathbf{f}^{-1}",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "0",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "1",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "\\mathbf{x}_A",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "\\mathbf{t}_A^×",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "R_A^B",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "\\mathbf{x}_B",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "**t_A**×",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "E_A^B",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "**t_A**×",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "R_A^B",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "\\mathbf{m}_A",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "\\mathbf{m}_B",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "R_A^B",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "\\mathbf{t}_C",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "R_A^C",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "R_A^B",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "\\mathbf{t}_B",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "R_A^C",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "\\mathbf{m}_C",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "T",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "\\mathbf{m}_B",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_12/Ch12_Applications_of_the_Homogeneous_Model.md",
+      "target": "\\mathbf{m}_C",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/offset models.md",
+      "target": "meet from join",
+      "resolved": "_geometric_algebra/chapter_5/meet from join.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/offset models.md",
+      "target": "linear transformation invariance",
+      "resolved": "_geometric_algebra/chapter_5/linear transformation invariance.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/meet from join.md",
+      "target": "piecewise linearity and degeneracy",
+      "resolved": "_geometric_algebra/chapter_5/piecewise linearity and degeneracy.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/meet from join.md",
+      "target": "linear transformation invariance",
+      "resolved": "_geometric_algebra/chapter_5/linear transformation invariance.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/scalar ambiguity and attitude.md",
+      "target": "angle from meet magnitude",
+      "resolved": "_geometric_algebra/chapter_5/angle from meet magnitude.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/scalar ambiguity and attitude.md",
+      "target": "ordering and orientation sign",
+      "resolved": "_geometric_algebra/chapter_5/ordering and orientation sign.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/angle from meet magnitude.md",
+      "target": "scalar ambiguity and attitude",
+      "resolved": "_geometric_algebra/chapter_5/scalar ambiguity and attitude.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/angle from meet magnitude.md",
+      "target": "ordering and orientation sign",
+      "resolved": "_geometric_algebra/chapter_5/ordering and orientation sign.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/meet and join.md",
+      "target": "scalar ambiguity and attitude",
+      "resolved": "_geometric_algebra/chapter_5/scalar ambiguity and attitude.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/meet and join.md",
+      "target": "meet from join",
+      "resolved": "_geometric_algebra/chapter_5/meet from join.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/meet and join.md",
+      "target": "piecewise linearity and degeneracy",
+      "resolved": "_geometric_algebra/chapter_5/piecewise linearity and degeneracy.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/incidence (geometry).md",
+      "target": "meet and join",
+      "resolved": "_geometric_algebra/chapter_5/meet and join.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/incidence (geometry).md",
+      "target": "piecewise linearity and degeneracy",
+      "resolved": "_geometric_algebra/chapter_5/piecewise linearity and degeneracy.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/incidence (geometry).md",
+      "target": "meet and join",
+      "resolved": "_geometric_algebra/chapter_5/meet and join.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/incidence (geometry).md",
+      "target": "meet from join",
+      "resolved": "_geometric_algebra/chapter_5/meet from join.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/incidence (geometry).md",
+      "target": "piecewise linearity and degeneracy",
+      "resolved": "_geometric_algebra/chapter_5/piecewise linearity and degeneracy.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/piecewise linearity and degeneracy.md",
+      "target": "computational stability",
+      "resolved": "_geometric_algebra/chapter_5/computational stability.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/computing complementary factors.md",
+      "target": "linear transformation invariance",
+      "resolved": "_geometric_algebra/chapter_5/linear transformation invariance.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/_intersection and union of subspaces.md",
+      "target": "incidence (geometry)",
+      "resolved": "_geometric_algebra/chapter_5/incidence (geometry).md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/_intersection and union of subspaces.md",
+      "target": "Contraction (⌋)",
+      "resolved": "_geometric_algebra/chapter_3/contraction (⌋).md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/_intersection and union of subspaces.md",
+      "target": "scalar ambiguity and attitude",
+      "resolved": "_geometric_algebra/chapter_5/scalar ambiguity and attitude.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/_intersection and union of subspaces.md",
+      "target": "meet and join",
+      "resolved": "_geometric_algebra/chapter_5/meet and join.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/_intersection and union of subspaces.md",
+      "target": "scalar ambiguity and attitude",
+      "resolved": "_geometric_algebra/chapter_5/scalar ambiguity and attitude.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/_intersection and union of subspaces.md",
+      "target": "Contraction (⌋)",
+      "resolved": "_geometric_algebra/chapter_3/contraction (⌋).md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/_intersection and union of subspaces.md",
+      "target": "meet from join",
+      "resolved": "_geometric_algebra/chapter_5/meet from join.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/_intersection and union of subspaces.md",
+      "target": "computing complementary factors",
+      "resolved": "_geometric_algebra/chapter_5/computing complementary factors.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/_intersection and union of subspaces.md",
+      "target": "piecewise linearity and degeneracy",
+      "resolved": "_geometric_algebra/chapter_5/piecewise linearity and degeneracy.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/_intersection and union of subspaces.md",
+      "target": "computational stability",
+      "resolved": "_geometric_algebra/chapter_5/computational stability.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/_intersection and union of subspaces.md",
+      "target": "angle from meet magnitude",
+      "resolved": "_geometric_algebra/chapter_5/angle from meet magnitude.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/_intersection and union of subspaces.md",
+      "target": "ordering and orientation sign",
+      "resolved": "_geometric_algebra/chapter_5/ordering and orientation sign.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/_intersection and union of subspaces.md",
+      "target": "linear transformation invariance",
+      "resolved": "_geometric_algebra/chapter_5/linear transformation invariance.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/_intersection and union of subspaces.md",
+      "target": "offset models",
+      "resolved": "_geometric_algebra/chapter_5/offset models.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/computational stability.md",
+      "target": "meet from join",
+      "resolved": "_geometric_algebra/chapter_5/meet from join.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_5/computational stability.md",
+      "target": "piecewise linearity and degeneracy",
+      "resolved": "_geometric_algebra/chapter_5/piecewise linearity and degeneracy.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_6/_the fundamental product of geometric algebra.md",
+      "target": "geometric product for vectors",
+      "resolved": "_geometric_algebra/chapter_6/geometric product for vectors.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_6/_the fundamental product of geometric algebra.md",
+      "target": "vector ratios as coordinate-free operators",
+      "resolved": "_geometric_algebra/chapter_6/vector ratios as coordinate-free operators.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_6/_the fundamental product of geometric algebra.md",
+      "target": "clifford axioms and polarization identity",
+      "resolved": "_geometric_algebra/chapter_6/clifford axioms and polarization identity.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_6/_the fundamental product of geometric algebra.md",
+      "target": "grade mixing in the geometric product",
+      "resolved": "_geometric_algebra/chapter_6/grade mixing in the geometric product.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_6/_the fundamental product of geometric algebra.md",
+      "target": "recovering subspace products from the geometric product",
+      "resolved": "_geometric_algebra/chapter_6/recovering subspace products from the geometric product.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_6/_the fundamental product of geometric algebra.md",
+      "target": "geometric division - inverses of vectors and blades",
+      "resolved": "_geometric_algebra/chapter_6/geometric division - inverses of vectors and blades.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_6/_the fundamental product of geometric algebra.md",
+      "target": "projection-rejection-reflection-and-ga-gram-schmidt",
+      "resolved": "_geometric_algebra/chapter_6/projection-rejection-reflection-and-ga-gram-schmidt.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_3/_metric products of subspaces.md",
+      "target": "scalar product",
+      "resolved": "_geometric_algebra/chapter_3/scalar product.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_3/_metric products of subspaces.md",
+      "target": "contraction (⌋)",
+      "resolved": "_geometric_algebra/chapter_3/contraction (⌋).md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_3/_metric products of subspaces.md",
+      "target": "null and nonnull blades",
+      "resolved": "_geometric_algebra/chapter_3/null and nonnull blades.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_3/_metric products of subspaces.md",
+      "target": "blade inverse",
+      "resolved": "_geometric_algebra/blade inverse.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_3/_metric products of subspaces.md",
+      "target": "pseudoscalar",
+      "resolved": "_geometric_algebra/chapter_4/pseudoscalar.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_3/_metric products of subspaces.md",
+      "target": "duality and orthogonality",
+      "resolved": "_geometric_algebra/chapter_3/duality and orthogonality.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_3/_metric products of subspaces.md",
+      "target": "null and nonnull blades",
+      "resolved": "_geometric_algebra/chapter_3/null and nonnull blades.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_3/_metric products of subspaces.md",
+      "target": "pseudoscalar",
+      "resolved": "_geometric_algebra/chapter_4/pseudoscalar.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_3/_metric products of subspaces.md",
+      "target": "geometric operations",
+      "resolved": "_geometric_algebra/chapter_3/geometric operations.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_3/_metric products of subspaces.md",
+      "target": "geometric operations",
+      "resolved": "_geometric_algebra/chapter_3/geometric operations.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_3/_metric products of subspaces.md",
+      "target": "the 3-d cross product",
+      "resolved": "_geometric_algebra/chapter_3/the 3-d cross product.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_3/null and nonnull blades.md",
+      "target": "scalar product",
+      "resolved": "_geometric_algebra/chapter_3/scalar product.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_3/null and nonnull blades.md",
+      "target": "reversion",
+      "resolved": "_geometric_algebra/reversion.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_3/null and nonnull blades.md",
+      "target": "blade inverse",
+      "resolved": "_geometric_algebra/blade inverse.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_3/the 3-d cross product.md",
+      "target": "duality and orthogonality",
+      "resolved": "_geometric_algebra/chapter_3/duality and orthogonality.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_3/duality and orthogonality.md",
+      "target": "pseudoscalar",
+      "resolved": "_geometric_algebra/chapter_4/pseudoscalar.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_3/duality and orthogonality.md",
+      "target": "contraction (⌋)",
+      "resolved": "_geometric_algebra/chapter_3/contraction (⌋).md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_3/duality and orthogonality.md",
+      "target": "null and nonnull blades",
+      "resolved": "_geometric_algebra/chapter_3/null and nonnull blades.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_3/duality and orthogonality.md",
+      "target": "blade inverse",
+      "resolved": "_geometric_algebra/blade inverse.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_3/scalar product.md",
+      "target": "reversion",
+      "resolved": "_geometric_algebra/reversion.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_3/scalar product.md",
+      "target": "contraction (⌋)",
+      "resolved": "_geometric_algebra/chapter_3/contraction (⌋).md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_3/contraction (⌋).md",
+      "target": "scalar product",
+      "resolved": "_geometric_algebra/chapter_3/scalar product.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_3/geometric operations.md",
+      "target": "null and nonnull blades",
+      "resolved": "_geometric_algebra/chapter_3/null and nonnull blades.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_3/geometric operations.md",
+      "target": "null and nonnull blades",
+      "resolved": "_geometric_algebra/chapter_3/null and nonnull blades.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_3/geometric operations.md",
+      "target": "pseudoscalar",
+      "resolved": "_geometric_algebra/chapter_4/pseudoscalar.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_7/_orthogonal transformations as versors.md",
+      "target": "sandwich reflections",
+      "resolved": "_geometric_algebra/chapter_7/sandwich reflections.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_7/_orthogonal transformations as versors.md",
+      "target": "rotor sandwiching",
+      "resolved": "_geometric_algebra/chapter_7/rotor sandwiching.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_7/_orthogonal transformations as versors.md",
+      "target": "rotor composition",
+      "resolved": "_geometric_algebra/chapter_7/rotor composition.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_7/_orthogonal transformations as versors.md",
+      "target": "bivector exponentials",
+      "resolved": "_geometric_algebra/chapter_7/bivector exponentials.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_7/_orthogonal transformations as versors.md",
+      "target": "versors preserve structure",
+      "resolved": "_geometric_algebra/chapter_7/versors preserve structure.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_7/_orthogonal transformations as versors.md",
+      "target": "multiplicative principle and cost",
+      "resolved": "_geometric_algebra/chapter_7/multiplicative principle and cost.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_7/Ch07_Orthogonal_Transformations_as_Versors.md",
+      "target": "R",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_7/Ch07_Orthogonal_Transformations_as_Versors.md",
+      "target": "R",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_7/Ch07_Orthogonal_Transformations_as_Versors.md",
+      "target": "\\mathbf{a}",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_7/Ch07_Orthogonal_Transformations_as_Versors.md",
+      "target": "\\mathbf{a}",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_7/Ch07_Orthogonal_Transformations_as_Versors.md",
+      "target": "1",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_7/Ch07_Orthogonal_Transformations_as_Versors.md",
+      "target": "\\mathbf{a}",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_7/Ch07_Orthogonal_Transformations_as_Versors.md",
+      "target": "\\mathbf{a}",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_7/Ch07_Orthogonal_Transformations_as_Versors.md",
+      "target": "\\mathbf{a}\\times",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_7/Ch07_Orthogonal_Transformations_as_Versors.md",
+      "target": "**a**×",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_7/Ch07_Orthogonal_Transformations_as_Versors.md",
+      "target": "R₂",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_7/Ch07_Orthogonal_Transformations_as_Versors.md",
+      "target": "R₁",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_7/Ch07_Orthogonal_Transformations_as_Versors.md",
+      "target": "R₂",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_7/Ch07_Orthogonal_Transformations_as_Versors.md",
+      "target": "R₁",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_7/Ch07_Orthogonal_Transformations_as_Versors.md",
+      "target": "R₂",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_7/Ch07_Orthogonal_Transformations_as_Versors.md",
+      "target": "R",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_7/Ch07_Orthogonal_Transformations_as_Versors.md",
+      "target": "**x**",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_7/Ch07_Orthogonal_Transformations_as_Versors.md",
+      "target": "R",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_8/_geometric differentiation.md",
+      "target": "commutator product and rotor calculus",
+      "resolved": "_geometric_algebra/chapter_8/commutator product and rotor calculus.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_8/_geometric differentiation.md",
+      "target": "versor perturbation propagation",
+      "resolved": "_geometric_algebra/chapter_8/versor perturbation propagation.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_8/_geometric differentiation.md",
+      "target": "directional derivative in geometric algebra",
+      "resolved": "_geometric_algebra/chapter_8/directional derivative in geometric algebra.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_8/_geometric differentiation.md",
+      "target": "vector derivative and geometric gradient",
+      "resolved": "_geometric_algebra/chapter_8/vector derivative and geometric gradient.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_8/_geometric differentiation.md",
+      "target": "multivector derivative and rotor optimization",
+      "resolved": "_geometric_algebra/chapter_8/multivector derivative and rotor optimization.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_8/_geometric differentiation.md",
+      "target": "planar curvature via wedge and dual",
+      "resolved": "_geometric_algebra/chapter_8/planar curvature via wedge and dual.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_8/multivector derivative and rotor optimization.md",
+      "target": "f",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_8/Ch08_Geometric_Differentiation.md",
+      "target": "f",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_8/Ch08_Geometric_Differentiation.md",
+      "target": "U",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_8/Ch08_Geometric_Differentiation.md",
+      "target": "S",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_8/Ch08_Geometric_Differentiation.md",
+      "target": "V",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_8/Ch08_Geometric_Differentiation.md",
+      "target": "U",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_8/Ch08_Geometric_Differentiation.md",
+      "target": "V",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_8/Ch08_Geometric_Differentiation.md",
+      "target": "V",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_8/Ch08_Geometric_Differentiation.md",
+      "target": "S",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_8/Ch08_Geometric_Differentiation.md",
+      "target": "V",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_8/Ch08_Geometric_Differentiation.md",
+      "target": "V",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_8/Ch08_Geometric_Differentiation.md",
+      "target": "U",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_8/Ch08_Geometric_Differentiation.md",
+      "target": "U",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_8/Ch08_Geometric_Differentiation.md",
+      "target": "V",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_8/Ch08_Geometric_Differentiation.md",
+      "target": "f",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_8/Ch08_Geometric_Differentiation.md",
+      "target": "uᵢ",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_8/Ch08_Geometric_Differentiation.md",
+      "target": "vᵢ",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/inverse via pseudoscalar.md",
+      "target": "pseudoscalar",
+      "resolved": "_geometric_algebra/chapter_4/pseudoscalar.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/inverse via pseudoscalar.md",
+      "target": "duality and orthogonality",
+      "resolved": "_geometric_algebra/chapter_3/duality and orthogonality.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/inverse via pseudoscalar.md",
+      "target": "adjoint",
+      "resolved": "_geometric_algebra/chapter_4/adjoint.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/inverse via pseudoscalar.md",
+      "target": "determinant",
+      "resolved": "_geometric_algebra/chapter_4/determinant.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/inverse via pseudoscalar.md",
+      "target": "duality and orthogonality",
+      "resolved": "_geometric_algebra/chapter_3/duality and orthogonality.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/outermorphism.md",
+      "target": "geometric operations",
+      "resolved": "_geometric_algebra/chapter_3/geometric operations.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/outermorphism.md",
+      "target": "adjoint",
+      "resolved": "_geometric_algebra/chapter_4/adjoint.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/outermorphism.md",
+      "target": "pseudoscalar",
+      "resolved": "_geometric_algebra/chapter_4/pseudoscalar.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/outermorphism.md",
+      "target": "determinant",
+      "resolved": "_geometric_algebra/chapter_4/determinant.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/outermorphism.md",
+      "target": "outermorphism matrices",
+      "resolved": "_geometric_algebra/chapter_4/outermorphism matrices.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/adjoint.md",
+      "target": "outermorphism",
+      "resolved": "_geometric_algebra/chapter_4/outermorphism.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/adjoint.md",
+      "target": "contraction (⌋)",
+      "resolved": "_geometric_algebra/chapter_3/contraction (⌋).md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/dual representations.md",
+      "target": "pseudoscalar",
+      "resolved": "_geometric_algebra/chapter_4/pseudoscalar.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/dual representations.md",
+      "target": "duality and orthogonality",
+      "resolved": "_geometric_algebra/chapter_3/duality and orthogonality.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/dual representations.md",
+      "target": "outermorphism",
+      "resolved": "_geometric_algebra/chapter_4/outermorphism.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/dual representations.md",
+      "target": "adjoint",
+      "resolved": "_geometric_algebra/chapter_4/adjoint.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/dual representations.md",
+      "target": "determinant",
+      "resolved": "_geometric_algebra/chapter_4/determinant.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/dual representations.md",
+      "target": "the 3-d cross product",
+      "resolved": "_geometric_algebra/chapter_3/the 3-d cross product.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/pseudoscalar.md",
+      "target": "outermorphism",
+      "resolved": "_geometric_algebra/chapter_4/outermorphism.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/pseudoscalar.md",
+      "target": "determinant",
+      "resolved": "_geometric_algebra/chapter_4/determinant.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/pseudoscalar.md",
+      "target": "duality and orthogonality",
+      "resolved": "_geometric_algebra/chapter_3/duality and orthogonality.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/pseudoscalar.md",
+      "target": "null and nonnull blades",
+      "resolved": "_geometric_algebra/chapter_3/null and nonnull blades.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/pseudoscalar.md",
+      "target": "geometric operations",
+      "resolved": "_geometric_algebra/chapter_3/geometric operations.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/pseudoscalar.md",
+      "target": "blade inverse",
+      "resolved": "_geometric_algebra/blade inverse.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/outermorphism matrices.md",
+      "target": "outermorphism",
+      "resolved": "_geometric_algebra/chapter_4/outermorphism.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/determinant.md",
+      "target": "pseudoscalar",
+      "resolved": "_geometric_algebra/chapter_4/pseudoscalar.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/determinant.md",
+      "target": "outermorphism",
+      "resolved": "_geometric_algebra/chapter_4/outermorphism.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/determinant.md",
+      "target": "inverse via pseudoscalar",
+      "resolved": "_geometric_algebra/chapter_4/inverse via pseudoscalar.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/determinant.md",
+      "target": "dual representations",
+      "resolved": "_geometric_algebra/chapter_4/dual representations.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/_linear transformations of subspaces.md",
+      "target": "outermorphism",
+      "resolved": "_geometric_algebra/chapter_4/outermorphism.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/_linear transformations of subspaces.md",
+      "target": "adjoint",
+      "resolved": "_geometric_algebra/chapter_4/adjoint.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/_linear transformations of subspaces.md",
+      "target": "pseudoscalar",
+      "resolved": "_geometric_algebra/chapter_4/pseudoscalar.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/_linear transformations of subspaces.md",
+      "target": "determinant",
+      "resolved": "_geometric_algebra/chapter_4/determinant.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/_linear transformations of subspaces.md",
+      "target": "inverse via pseudoscalar",
+      "resolved": "_geometric_algebra/chapter_4/inverse via pseudoscalar.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/_linear transformations of subspaces.md",
+      "target": "dual representations",
+      "resolved": "_geometric_algebra/chapter_4/dual representations.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_4/_linear transformations of subspaces.md",
+      "target": "outermorphism matrices",
+      "resolved": "_geometric_algebra/chapter_4/outermorphism matrices.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_13/_the conformal model operational euclidean geometry.md",
+      "target": "conformal representational space",
+      "resolved": "_geometric_algebra/chapter_13/conformal representational space.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_13/_the conformal model operational euclidean geometry.md",
+      "target": "euclidean transformations as versors",
+      "resolved": "_geometric_algebra/chapter_13/euclidean transformations as versors.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_13/_the conformal model operational euclidean geometry.md",
+      "target": "conformal representational space",
+      "resolved": "_geometric_algebra/chapter_13/conformal representational space.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_13/_the conformal model operational euclidean geometry.md",
+      "target": "flats and directions",
+      "resolved": "_geometric_algebra/chapter_13/flats and directions.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_13/_the conformal model operational euclidean geometry.md",
+      "target": "general planar reflection",
+      "resolved": "_geometric_algebra/chapter_13/general planar reflection.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_13/_the conformal model operational euclidean geometry.md",
+      "target": "screw motions and rigid body motion logarithm",
+      "resolved": "_geometric_algebra/chapter_13/screw motions and rigid body motion logarithm.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_10/_the vector space model.md",
+      "target": "planar triangles with rotors",
+      "resolved": "_geometric_algebra/chapter_10/planar triangles with rotors.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_10/_the vector space model.md",
+      "target": "angles in 3d and spherical triangles",
+      "resolved": "_geometric_algebra/chapter_10/angles in 3d and spherical triangles.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_10/_the vector space model.md",
+      "target": "point groups via reflections and rotors",
+      "resolved": "_geometric_algebra/chapter_10/point groups via reflections and rotors.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_10/_the vector space model.md",
+      "target": "computing 3d rotors",
+      "resolved": "_geometric_algebra/chapter_10/computing 3d rotors.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_10/_the vector space model.md",
+      "target": "estimation and camera calibration in the vector space model",
+      "resolved": "_geometric_algebra/chapter_10/estimation and camera calibration in the vector space model.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_14/_new primitives for euclidean geometry.md",
+      "target": "dual rounds",
+      "resolved": "_geometric_algebra/chapter_14/dual rounds.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_14/_new primitives for euclidean geometry.md",
+      "target": "direct rounds and orientation",
+      "resolved": "_geometric_algebra/chapter_14/direct rounds and orientation.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_14/_new primitives for euclidean geometry.md",
+      "target": "tangents",
+      "resolved": "_geometric_algebra/chapter_14/tangents.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_14/_new primitives for euclidean geometry.md",
+      "target": "from blades to parameters",
+      "resolved": "_geometric_algebra/chapter_14/from blades to parameters.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_14/_new primitives for euclidean geometry.md",
+      "target": "paraboloid intuition for rounds",
+      "resolved": "_geometric_algebra/chapter_14/paraboloid intuition for rounds.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_14/_new primitives for euclidean geometry.md",
+      "target": "applications of conformal primitives",
+      "resolved": "_geometric_algebra/chapter_14/applications of conformal primitives.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_11/_the homogeneous model.md",
+      "target": "embedding and points in the homogeneous model",
+      "resolved": "_geometric_algebra/chapter_11/embedding and points in the homogeneous model.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_11/_the homogeneous model.md",
+      "target": "flats as blades lines planes k-flats",
+      "resolved": "_geometric_algebra/chapter_11/flats as blades lines planes k-flats.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_11/_the homogeneous model.md",
+      "target": "dual flats and hyperplanes",
+      "resolved": "_geometric_algebra/chapter_11/dual flats and hyperplanes.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_11/_the homogeneous model.md",
+      "target": "incidence meet join and projective invariants",
+      "resolved": "_geometric_algebra/chapter_11/incidence meet join and projective invariants.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_11/_the homogeneous model.md",
+      "target": "motions translation rotation affine projective",
+      "resolved": "_geometric_algebra/chapter_11/motions translation rotation affine projective.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_11/_the homogeneous model.md",
+      "target": "metric pitfalls of the homogeneous model",
+      "resolved": "_geometric_algebra/chapter_11/metric pitfalls of the homogeneous model.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_15/_constructions in euclidean geometry.md",
+      "target": "meet and plunge",
+      "resolved": "_geometric_algebra/chapter_15/meet and plunge.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_15/_constructions in euclidean geometry.md",
+      "target": "tangents carriers surrounds and affine combinations",
+      "resolved": "_geometric_algebra/chapter_15/tangents carriers surrounds and affine combinations.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_15/_constructions in euclidean geometry.md",
+      "target": "euclidean projections",
+      "resolved": "_geometric_algebra/chapter_15/euclidean projections.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_15/_constructions in euclidean geometry.md",
+      "target": "vector types in cga",
+      "resolved": "_geometric_algebra/chapter_15/vector types in cga.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_15/_constructions in euclidean geometry.md",
+      "target": "voronoi edge from four points",
+      "resolved": "_geometric_algebra/chapter_15/voronoi edge from four points.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_16/_conformal operators.md",
+      "target": "spherical inversion and reflections",
+      "resolved": "_geometric_algebra/chapter_16/spherical inversion and reflections.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_16/_conformal operators.md",
+      "target": "scaling rotor",
+      "resolved": "_geometric_algebra/chapter_16/scaling rotor.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_16/_conformal operators.md",
+      "target": "scaled rigid body motions and interpolation",
+      "resolved": "_geometric_algebra/chapter_16/scaled rigid body motions and interpolation.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_16/_conformal operators.md",
+      "target": "transversion",
+      "resolved": "_geometric_algebra/chapter_16/transversion.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_16/_conformal operators.md",
+      "target": "general conformal transformations",
+      "resolved": "_geometric_algebra/chapter_16/general conformal transformations.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_16/_conformal operators.md",
+      "target": "non-euclidean geometries in the conformal model",
+      "resolved": "_geometric_algebra/chapter_16/non-euclidean geometries in the conformal model.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_20/_the linear products and operations.md",
+      "target": "basis encoding of multivectors",
+      "resolved": "_geometric_algebra/chapter_20/basis encoding of multivectors.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_20/_the linear products and operations.md",
+      "target": "unary linear operators as diagonal matrices",
+      "resolved": "_geometric_algebra/chapter_20/unary linear operators as diagonal matrices.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_20/_the linear products and operations.md",
+      "target": "geometric product matrix from structure coefficients",
+      "resolved": "_geometric_algebra/chapter_20/geometric product matrix from structure coefficients.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_20/_the linear products and operations.md",
+      "target": "outer product and contraction matrices as selections",
+      "resolved": "_geometric_algebra/chapter_20/outer product and contraction matrices as selections.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_20/_the linear products and operations.md",
+      "target": "basis-blade list implementation and sparsity",
+      "resolved": "_geometric_algebra/chapter_20/basis-blade list implementation and sparsity.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_19/_basis blades and operations.md",
+      "target": "bitmap basis blades",
+      "resolved": "_geometric_algebra/chapter_19/bitmap basis blades.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_19/_basis blades and operations.md",
+      "target": "canonical reordering sign",
+      "resolved": "_geometric_algebra/chapter_19/canonical reordering sign.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_19/_basis blades and operations.md",
+      "target": "orthogonal blade products",
+      "resolved": "_geometric_algebra/chapter_19/orthogonal blade products.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_19/_basis blades and operations.md",
+      "target": "nonorthogonal metrics via eigenbasis",
+      "resolved": "_geometric_algebra/chapter_19/nonorthogonal metrics via eigenbasis.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_19/_basis blades and operations.md",
+      "target": "grade-derived operations",
+      "resolved": "_geometric_algebra/chapter_19/grade-derived operations.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_21/_specializing the structure for efficiency.md",
+      "target": "why geometric algebra code gets slow",
+      "resolved": "_geometric_algebra/chapter_21/why geometric algebra code gets slow.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_21/_specializing the structure for efficiency.md",
+      "target": "generative programming for geometric algebra",
+      "resolved": "_geometric_algebra/chapter_21/generative programming for geometric algebra.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_21/_specializing the structure for efficiency.md",
+      "target": "specifying an algebra for specialization",
+      "resolved": "_geometric_algebra/chapter_21/specifying an algebra for specialization.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_21/_specializing the structure for efficiency.md",
+      "target": "multivector representations and compression",
+      "resolved": "_geometric_algebra/chapter_21/multivector representations and compression.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_21/_specializing the structure for efficiency.md",
+      "target": "generating optimized algebra functions",
+      "resolved": "_geometric_algebra/chapter_21/generating optimized algebra functions.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_21/_specializing the structure for efficiency.md",
+      "target": "outermorphisms nonlinear algorithms and performance benchmarks",
+      "resolved": "_geometric_algebra/chapter_21/outermorphisms nonlinear algorithms and performance benchmarks.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_22/_fundamental algorithms for nonlinear products.md",
+      "target": "versor inverse",
+      "resolved": "_geometric_algebra/chapter_22/versor inverse.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_22/_fundamental algorithms for nonlinear products.md",
+      "target": "multivector inversion via geometric product matrix",
+      "resolved": "_geometric_algebra/chapter_22/multivector inversion via geometric product matrix.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_22/_fundamental algorithms for nonlinear products.md",
+      "target": "exponential and scaling for multivectors",
+      "resolved": "_geometric_algebra/chapter_22/exponential and scaling for multivectors.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_22/_fundamental algorithms for nonlinear products.md",
+      "target": "multivector classification blade vs versor",
+      "resolved": "_geometric_algebra/chapter_22/multivector classification blade vs versor.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_22/_fundamental algorithms for nonlinear products.md",
+      "target": "blade factorization by projection",
+      "resolved": "_geometric_algebra/chapter_22/blade factorization by projection.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_22/_fundamental algorithms for nonlinear products.md",
+      "target": "meet and join via delta product",
+      "resolved": "_geometric_algebra/chapter_22/meet and join via delta product.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_22/multivector inversion via geometric product matrix.md",
+      "target": "AB",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_22/multivector inversion via geometric product matrix.md",
+      "target": "A_G",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_22/multivector inversion via geometric product matrix.md",
+      "target": "B",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_22/multivector inversion via geometric product matrix.md",
+      "target": "A_G",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_22/multivector inversion via geometric product matrix.md",
+      "target": "B",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_22/multivector inversion via geometric product matrix.md",
+      "target": "A_G",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_22/multivector inversion via geometric product matrix.md",
+      "target": "A^{-1}_G",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_22/multivector inversion via geometric product matrix.md",
+      "target": "A_G",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_22/multivector inversion via geometric product matrix.md",
+      "target": "A_G",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_22/multivector inversion via geometric product matrix.md",
+      "target": "A",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_22/multivector inversion via geometric product matrix.md",
+      "target": "A^{-1}_G",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_22/multivector inversion via geometric product matrix.md",
+      "target": "A^{-1}",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_22/multivector inversion via geometric product matrix.md",
+      "target": "A^{-1}_G",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_22/multivector inversion via geometric product matrix.md",
+      "target": "A_G",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_22/multivector inversion via geometric product matrix.md",
+      "target": "A_G",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_22/multivector inversion via geometric product matrix.md",
+      "target": "A_G",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_22/multivector inversion via geometric product matrix.md",
+      "target": "A^{-1}",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_22/multivector inversion via geometric product matrix.md",
+      "target": "A_G",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_23/_using the geometry in a ray-tracing application.md",
+      "target": "cga ray tracer overview",
+      "resolved": "_geometric_algebra/chapter_23/cga ray tracer overview.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_23/_using the geometry in a ray-tracing application.md",
+      "target": "mesh primitives for polygonal scenes",
+      "resolved": "_geometric_algebra/chapter_23/mesh primitives for polygonal scenes.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_23/_using the geometry in a ray-tracing application.md",
+      "target": "scene transformations and interactive modeling",
+      "resolved": "_geometric_algebra/chapter_23/scene transformations and interactive modeling.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_23/_using the geometry in a ray-tracing application.md",
+      "target": "ray representation and spawning",
+      "resolved": "_geometric_algebra/chapter_23/ray representation and spawning.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_23/_using the geometry in a ray-tracing application.md",
+      "target": "acceleration structures and ray-model intersection",
+      "resolved": "_geometric_algebra/chapter_23/acceleration structures and ray-model intersection.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_23/_using the geometry in a ray-tracing application.md",
+      "target": "reflection refraction and shading",
+      "resolved": "_geometric_algebra/chapter_23/reflection refraction and shading.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_18/_implementation issues.md",
+      "target": "numerical-first geometric algebra implementation",
+      "resolved": "_geometric_algebra/chapter_18/numerical-first geometric algebra implementation.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_18/_implementation issues.md",
+      "target": "multivectors as coefficient vectors",
+      "resolved": "_geometric_algebra/chapter_18/multivectors as coefficient vectors.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_18/_implementation issues.md",
+      "target": "four levels of geometric algebra implementation",
+      "resolved": "_geometric_algebra/chapter_18/four levels of geometric algebra implementation.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_18/_implementation issues.md",
+      "target": "audience roadmap for implementation chapters",
+      "resolved": "_geometric_algebra/chapter_18/audience roadmap for implementation chapters.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_18/_implementation issues.md",
+      "target": "matrix representations of clifford algebras",
+      "resolved": "_geometric_algebra/chapter_18/matrix representations of clifford algebras.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_18/_implementation issues.md",
+      "target": "factored representations for blades and versors",
+      "resolved": "_geometric_algebra/chapter_18/factored representations for blades and versors.md"
+    },
+    {
+      "source": "_geometric_algebra/chapter_18/multivectors as coefficient vectors.md",
+      "target": "A",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_18/multivectors as coefficient vectors.md",
+      "target": "A",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_18/multivectors as coefficient vectors.md",
+      "target": "A",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_18/Ch18_Implementation_Issues.md",
+      "target": "\\mathbf{A}",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_18/Ch18_Implementation_Issues.md",
+      "target": "1, \\mathbf{e}_1, \\mathbf{e}_2, \\mathbf{e}_3, \\mathbf{e}_1 \\wedge \\mathbf{e}_2, \\mathbf{e}_2 \\wedge \\mathbf{e}_3, \\mathbf{e}_1 \\wedge \\mathbf{e}_3, \\mathbf{e}_1 \\wedge \\mathbf{e}_2 \\wedge \\mathbf{e}_3",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_18/Ch18_Implementation_Issues.md",
+      "target": "\\mathbf{A}",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_18/Ch18_Implementation_Issues.md",
+      "target": "\\mathbf{A}",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_18/Ch18_Implementation_Issues.md",
+      "target": "\\mathbf{x}",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_18/Ch18_Implementation_Issues.md",
+      "target": "\\mathbf{x}",
+      "resolved": null
+    },
+    {
+      "source": "_geometric_algebra/chapter_18/Ch18_Implementation_Issues.md",
+      "target": "\\mathbf{x}",
+      "resolved": null
+    }
+  ]
+}
