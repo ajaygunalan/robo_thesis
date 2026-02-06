@@ -9,3 +9,6 @@
 # Copilot
 .copilot/
 copilot/
+
+# Python
+__pycache__/

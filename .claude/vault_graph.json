@@ -1,5 +1,5 @@
 {
-  "generated": "2026-02-06T10:25:29.365279+00:00",
+  "generated": "2026-02-06T11:05:28.418401+00:00",
   "nodes": [
     {
       "path": "why-jujutsu-matters.md",
@@ -28,13 +28,6 @@
       "type": "atom",
       "folder": ".",
       "words": 43
-    },
-    {
-      "path": "streamed-plotting-wilkes.md",
-      "name": "streamed-plotting-wilkes",
-      "type": "atom",
-      "folder": ".",
-      "words": 1126
     },
     {
       "path": "README.md",
@@ -385,13 +378,6 @@
       "type": "atom",
       "folder": "_manipulation",
       "words": 52
-    },
-    {
-      "path": "docs/plan/sequential-soaring-stonebraker.md",
-      "name": "sequential-soaring-stonebraker",
-      "type": "atom",
-      "folder": "docs/plan",
-      "words": 2592
     },
     {
       "path": "_controls/filter.md",
@@ -2648,46 +2634,6 @@
       "source": "_manipulation/rcm.md",
       "target": "rcm_qp_control",
       "resolved": "_manipulation/rcm_qp_control.md"
-    },
-    {
-      "source": "docs/plan/sequential-soaring-stonebraker.md",
-      "target": "wikilinks",
-      "resolved": null
-    },
-    {
-      "source": "docs/plan/sequential-soaring-stonebraker.md",
-      "target": "contraction",
-      "resolved": null
-    },
-    {
-      "source": "docs/plan/sequential-soaring-stonebraker.md",
-      "target": "name",
-      "resolved": null
-    },
-    {
-      "source": "docs/plan/sequential-soaring-stonebraker.md",
-      "target": "name",
-      "resolved": null
-    },
-    {
-      "source": "docs/plan/sequential-soaring-stonebraker.md",
-      "target": "term",
-      "resolved": null
-    },
-    {
-      "source": "docs/plan/sequential-soaring-stonebraker.md",
-      "target": "term",
-      "resolved": null
-    },
-    {
-      "source": "docs/plan/sequential-soaring-stonebraker.md",
-      "target": "concept",
-      "resolved": null
-    },
-    {
-      "source": "docs/plan/sequential-soaring-stonebraker.md",
-      "target": "name",
-      "resolved": null
     },
     {
       "source": "_controls/__controls.md",
