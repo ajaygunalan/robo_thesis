@@ -5,7 +5,7 @@
 From your Obsidian vault root (the folder that contains your `.obsidian/`):
 
 ```bash
-git clone https://github.com/ajaygunalan/vegapunk /tmp/vegapunk && mkdir -p .claude/skills/vp .claude/scripts && cp -r /tmp/vegapunk/skills/* .claude/skills/vp/ && cp /tmp/vegapunk/scripts/* .claude/scripts/ && cp /tmp/vegapunk/settings.local.json .claude/settings.local.json && rm -rf /tmp/vegapunk && echo "Vegapunk installed."
+curl -sL https://raw.githubusercontent.com/ajaygunalan/vegapunk/main/install.sh | bash
 ```
 
 Then open Claude Code in your vault and the `/vp-*` commands are ready.
