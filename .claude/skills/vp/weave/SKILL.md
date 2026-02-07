@@ -5,14 +5,15 @@ description: Discover cross-folder semantic connections between atoms and molecu
 
 Discover semantic connections across folders that only emerge when you read content across disciplines. Weave adds links and suggests connections — it never creates, rewrites, or deletes files.
 
-<input>
+## Input
+
 The user provides:
 - No argument → scans entire vault (default)
 - Two or more folder paths → scans only those folders
 - A specific atom/molecule path → finds connections for that one note
-</input>
 
-<process>
+## Process
+
 PHASE 1 — INDEX (cheap)
 
 Read `.claude/vault_graph.json` (run `python3 .claude/scripts/vault_graph.py` if stale/missing). Extract cross-folder name overlaps, shared atoms, and wikilink density between folders.
@@ -34,4 +35,3 @@ Three types of connection:
 PHASE 4 — RESOLVE (interactive)
 
 Present discoveries grouped by type. User decides per discovery: link it, skip it, or hand off to another skill. Execute only approved link additions.
-</process>

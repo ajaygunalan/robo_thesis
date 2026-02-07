@@ -5,16 +5,17 @@ description: Diagnose and resolve structural issues within a folder or across th
 
 Scan a folder or the entire vault for structural problems and resolve them interactively.
 
-<input>
+## Input
+
 The user provides:
 - A folder path (e.g., `_reinforcement_learning`) — scans that folder only
 - OR "vault" — scans all folders, focusing on cross-folder issues
 - Optionally: "quick" (default) or "deep"
   - Quick: filename scan + wikilink extraction. Seconds.
   - Deep: also reads content. Catches semantic duplicates, overlapping molecules. Minutes.
-</input>
 
-<issue_categories>
+## Issue Categories
+
 Scan for these issues. Report only what exists.
 
 Quick pass catches: 3–10. Deep pass adds: 1, 2, 5. Vault scope extends 1, 2, 5, 7 across folders.
@@ -30,9 +31,9 @@ Deep pass also flags atoms >1500 words as split candidates (informational).
 8. UNCLASSIFIED FILES — don't follow naming conventions (`_` molecule, `__` index, none atom) → classify or flag
 9. STALE INDEX — `__name.md` doesn't reflect current folder contents → rebuild
 10. SUB-MOLECULE HIERARCHY — molecule links to other molecules → ensure hierarchy is clear in index
-</issue_categories>
 
-<process>
+## Process
+
 Do not start fixing before the user directs you.
 
 PHASE 1 — SCAN
@@ -56,10 +57,9 @@ Wait for user direction. They pick which issues to fix. For each:
 - Execute the minimum change
 - When renaming a file, also grep and update all wikilinks referencing the old name
 - Confirm what was done
-</process>
 
-<output>
+## Output
+
 - Output only changed or created files
 - For index rebuilds, produce full content
 - For atom stubs (from ghost links), produce a minimal skeleton
-</output>

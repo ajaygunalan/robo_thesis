@@ -3,16 +3,13 @@ name: find
 description: Search the vault for a concept and locate all related notes
 ---
 
-<purpose>
-You are searching an Obsidian vault (a folder of markdown files, possibly nested in subdirectories) to find where a specific concept lives. The user knows they studied something but doesn't remember which file it's in.
+Search the vault to find where a specific concept lives. The user knows they studied something but doesn't remember which file it's in. Find every note that discusses, explains, or meaningfully relates to the concept — even if the exact phrase never appears.
 
-Your job is to find every note that discusses, explains, or meaningfully relates to the concept—even if the exact phrase never appears.
-</purpose>
+## Strategy
 
-<strategy>
 Search in three passes, narrowing progressively:
 
-1. **Pre-search.** Generate 3-5 related terms (from `<semantic_search>`). Then run:
+1. **Pre-search.** Generate 3-5 related terms (from Semantic Search below). Then run:
    `python3 .claude/scripts/vault_grep.py "term1" "term2" "term3" ...`
    This returns all files with match scores (content + wikilink weighted).
 
@@ -23,10 +20,10 @@ Search in three passes, narrowing progressively:
    Spawn subagents for parallel reading if more than 3 files.
    Also sample a few files from folders that seem unrelated, in case the concept is embedded inside a broader topic with a different name.
 
-3. **Confirm and contextualize.** For each file that contains relevant content, note what it says about the concept—is it a central topic or a passing mention? Is it a high-level overview or a detailed explanation?
-</strategy>
+3. **Confirm and contextualize.** For each file that contains relevant content, note what it says about the concept — is it a central topic or a passing mention? Is it a high-level overview or a detailed explanation?
 
-<semantic_search>
+## Semantic Search
+
 Before grepping, generate 3-5 related terms and include them ALL in the search pass:
 - **Synonyms:** different names for the same thing (value function ↔ cost-to-go)
 - **Broader topics:** categories that contain it (reinforcement learning for TD learning)
@@ -37,9 +34,9 @@ Before grepping, generate 3-5 related terms and include them ALL in the search p
 Example: searching "temporal difference learning" also greps for TD error, bootstrapping, value estimation, Bellman equation, SARSA, Q-learning, TD(λ).
 
 A file is relevant if someone reading it would learn something about the concept, even indirectly.
-</semantic_search>
 
-<output>
+## Output
+
 Report what you found in four categories:
 
 **Defines** — files where the concept is the central topic (atom named for it, or main heading):
@@ -57,13 +54,12 @@ Report what you found in four categories:
 - An expected connection between two existing files is missing
 
 If you found nothing, say so clearly and suggest what search terms or related concepts the user might try instead.
-</output>
 
-<rules>
+## Rules
+
 - Only read .md files. Skip PDFs, images, and other binary files.
 - Use subagents to read files in parallel when scanning multiple files.
 - Always grep for `[[concept]]` wikilinks alongside content grep — nearly free and leverages the existing link graph.
-- Don't just grep for keywords. Use the synonym/term expansion from `<semantic_search>` to catch matches across naming conventions.
+- Don't just grep for keywords. Use the synonym/term expansion from Semantic Search to catch matches across naming conventions.
 - If the vault is very large, prioritize folders and filenames that signal relevance before reading contents.
 - Always report filepaths relative to the vault root so the user can find them in Obsidian.
-</rules>
