@@ -2,9 +2,9 @@
 
 Building a "second brain" in Obsidian breaks at scale. The maintenance is manual and fragile: you keep splitting notes, rewriting for clarity, deciding what belongs where, maintaining cross-links, and preventing the same idea from being rewritten in multiple places and diverging over time.
 
-Vegapunk fixes this by using AI to distill sources into atoms (one concept per file) and generate higher-level structure — molecules that group and connect related atoms, plus index notes that map collections of molecules — all linked via `[[wikilinks]]` under a single-source-of-truth rule: each idea lives exactly once, everything else links to it. The test is simple: after months away from a topic, reading a molecule should restore your understanding without returning to the original source. If you have to re-read the textbook, the molecule failed.
+Vegapunk fixes this by using AI to distill sources into atoms (one concept per file) and compose them into molecules — standalone narratives that capture what a chapter, lecture, or video teaches. Atoms provide progressive disclosure: instead of explaining every concept inline, the molecule links to atoms via `[[wikilinks]]` for depth. Each concept lives in exactly one atom — no duplicates, everything else links to it.
 
-The knowledge isn't static. Creation is unconstrained — entropy accumulates naturally as you learn and distill. Organize and weave restore coherence periodically. Let the garden grow, then prune. Every skill checks what exists before creating, cites what exists when testing, and reports what's missing when searching. The vault knows more than you think.
+Knowledge evolves. Molecules break apart when inline depth needs its own atom (fission). Atoms combine into new molecules when patterns emerge across sources (fusion). Molecules connect across folders when concepts bridge disciplines. Creation is unconstrained — organize and weave restore coherence periodically. Every skill checks what exists before creating, cites what exists when testing, and reports what's missing when searching.
 
 ---
 
@@ -74,11 +74,11 @@ All commands use the `vp-` prefix.
 
 | Type | Pattern | Purpose |
 |------|---------|---------|
-| Atom | `lowercase_name.md` | One concept, one file. Complete, standalone. Single source of truth. |
-| Molecule | `_lowercase_name.md` | Groups and connects related atoms into a narrative. 2-3 min read that restores understanding. |
+| Atom | `lowercase_name.md` | One concept, fully explained. Provides progressive disclosure for molecules. |
+| Molecule | `_lowercase_name.md` | Captures one source (chapter, lecture, video) as a standalone 2–3 min narrative. |
 | Index | `__lowercase_name.md` | Maps molecules within a folder. Navigation entry point. |
 
-Wikilinks (`[[concept]]`) are the connections. They always point to the single source of truth. When you need depth, you follow the link. When you don't, you skip it.
+Molecules are the primary unit. Atoms keep molecules concise — the molecule tells the story, atoms hold the depth. `[[Wikilinks]]` connect them: follow the link when you need more, skip it when you don't.
 
 **Scratch files** live alongside atoms and molecules in the target folder:
 
