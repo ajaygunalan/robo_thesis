@@ -35,9 +35,9 @@ Knowledge evolves. Molecules break apart when inline depth needs its own atom (f
 
 **Distill + Split** always run together. Distill drafts molecules and atoms in a single `distill_*.md` file. You iterate — review, give feedback, refine — until satisfied. Then split parses the distill file into individual `.md` files, normalizes LaTeX delimiters, checks for filename collisions, and deletes the distill file.
 
-**Maintain** runs periodically. Refine improves individual files after they're in the vault. Organize audits an entire folder for structural health. Weave discovers connections across folders that you wouldn't find manually.
+**Curate** — Refine improves a molecule and its atoms through guided conversation. Organize audits a folder for structural issues (duplicates, orphans, broken links). Weave discovers connections across folders you wouldn't find manually.
 
-**Use** is ongoing. Find searches the vault by concept using the wikilink graph and content matching. Quiz tests retention through Socratic questioning grounded in your atoms — it cites what your vault says, not what it knows.
+**Review** — Find searches the vault by concept using the wikilink graph and content matching. Quiz tests retention through Socratic questioning grounded in your atoms — it cites what your vault says, not what it knows.
 
 ---
 
@@ -53,15 +53,15 @@ All commands use the `vp-` prefix.
 | `/vp-distill` | Transform source or learning file into molecules + atoms | `distill_*.md` in target folder |
 | `/vp-split` | Parse distill output into individual .md files | atoms + molecules in target folder |
 
-**Maintain**
+**Curate**
 
 | Command | Purpose | Output |
 |---------|---------|--------|
-| `/vp-refine` | Improve existing molecules/atoms | modifies existing files |
+| `/vp-refine` | Improve a molecule and its atoms through conversation | modifies existing files |
 | `/vp-organize` | Folder-level health: duplicates, orphans, broken links, stale indexes | terminal report |
 | `/vp-weave` | Discover cross-folder connections between atoms/molecules | adds wikilinks to existing files |
 
-**Use**
+**Review**
 
 | Command | Purpose | Output |
 |---------|---------|--------|
