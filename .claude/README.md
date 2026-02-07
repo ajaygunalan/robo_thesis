@@ -28,13 +28,11 @@ The knowledge isn't static. Creation is unconstrained — entropy accumulates na
     '-- /vp-quiz         test retention
 ```
 
-**Learn** is the only optional step. If you already understand the source material, go straight to distill. Learn creates scratch files (`learn_*.md`, `progress_*.md`) that track Q&A sessions and multi-session progress.
+**Create** — Learn is optional: skip it if you already understand the source. Otherwise it runs interactive Q&A sessions (`learn_*.md`, `progress_*.md`). Distill transforms the source (or learning file) into molecules and atoms in a single `distill_*.md` file. You iterate — review, give feedback, refine — until satisfied. Then `/vp-split` (a utility) parses the distill file into individual `.md` files and deletes the draft.
 
-**Distill** drafts molecules and atoms in a single `distill_*.md` file. You iterate — review, give feedback, refine — until satisfied. Then `/vp-split` (a utility) parses the distill file into individual `.md` files, normalizes LaTeX delimiters, checks for filename collisions, and deletes the distill file.
+**Curate** — runs periodically. Refine improves individual files after they're in the vault. Organize audits an entire folder for structural health. Weave discovers connections across folders that you wouldn't find manually.
 
-**Curate** runs periodically. Refine improves individual files after they're in the vault. Organize audits an entire folder for structural health. Weave discovers connections across folders that you wouldn't find manually.
-
-**Review** is ongoing. Find searches the vault by concept using the wikilink graph and content matching. Quiz tests retention through Socratic questioning grounded in your atoms — it cites what your vault says, not what it knows.
+**Review** — ongoing. Find searches the vault by concept using the wikilink graph and content matching. Quiz tests retention through Socratic questioning grounded in your atoms — it cites what your vault says, not what it knows.
 
 ---
 

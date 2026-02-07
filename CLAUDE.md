@@ -1,58 +1,42 @@
-# Vault Structure
+# Overview
 
-## Why This Exists
+This Obsidian vault uses VegaPunk — AI skills that decompose sources (textbooks, lectures, videos) into reusable knowledge. Each concept gets one atom, one place, one source of truth. Related atoms compose into molecules through `[[wikilinks]]`. The vault grows through unconstrained creation and stays coherent through periodic maintenance.
 
-After months away from a topic, reading a molecule should restore your understanding — without returning to the original source. That's the test. If you have to re-read the textbook or re-watch the lecture, the molecule failed.
-
-## What's What
+# Structure
 
 | Prefix | Type | Purpose |
 |--------|------|---------|
-| `__` | Index | Entry point for a discipline, lists molecules |
-| `_` | Molecule | Standalone narrative that teaches the topic. Links to atoms for optional depth. |
-| (none) | Atom | Single concept explained fully. Reusable across molecules. |
+| `__` | Index | Entry point for a discipline, maps its molecules |
+| `_` | Molecule | Captures one source as a standalone narrative |
+| (none) | Atom | One concept, fully explained |
 
-A molecule is complete on its own — you should understand the topic without clicking any links. Atoms exist for when you want to go deeper on a specific concept.
+Molecules are the primary unit — each one captures what a chapter, lecture, or video teaches as a 2–3 minute narrative. Atoms provide progressive disclosure: instead of explaining every concept inline, the molecule links to atoms via `[[wikilinks]]` for depth. This keeps molecules concise while the full explanation lives in the atom. Each concept lives in exactly one atom — no duplicates. Everything else links to it.
 
-## Two Kinds of Work
+# Content Standards
 
-**Folder-level**: Organizing molecules — naming, index structure, removing overlaps, creating missing atoms. Use when navigation is broken.
+**Atom** — a self-contained explanation of one concept:
+- Intuition: what problem does this solve?
+- Mechanism: how does it work?
+- Formalization: formulas, algorithms, diagrams
+- Test: readable in isolation with full understanding
+- Oversized: >1500 words → split candidate
 
-**Molecule-level**: Splitting large files, refining narrative flow, extracting atoms. Use `/vp-distill`. Don't split molecules during folder work.
+**Molecule** — the narrative essence of one source:
+- What problems the source addresses and why they matter
+- How the ideas connect and build from problem to solution
+- Links 4–6 atoms for progressive disclosure
+- Target: 2–3 minute standalone read
+- Test: understand what the source teaches without reading it or clicking any links
 
+# Knowledge Evolution
 
-<!-- How my Obsidian vault is organized
-My coding style preferences (like using Go’s any instead of interface{})
-Where to find specific types of information
-How to interact with my note-taking system
-Custom commands and workflows I’ve developed
- # Knowledge Vault Context for Claude Code
+Knowledge isn't static. Molecules break apart when inline depth needs its own atom (fission). Atoms combine into new molecules when patterns emerge across sources (fusion). Molecules connect across folders when concepts bridge disciplines. Every skill checks what exists before creating, cites what exists when testing, and reports what's missing when searching.
 
-## Project Overview
-Personal knowledge management system with automated CI/CD workflows.
+# Two Repos, One Disk
 
-## Vault Structure
-- `/Daily Notes/` - Timestamped captures and reflections
-- `/Projects/` - Active work with deliverables and timelines  
-- `/Areas/` - Ongoing responsibilities and interests
-- `/Resources/` - Reference materials and research
-- `/Archive/` - Completed or inactive content
+`.claude/` is a nested git repo pointing at `github.com/ajaygunalan/vegapunk`. The parent repo (`robo_thesis`) tracks everything including `.claude/` files. Push each independently:
 
-## Automation Goals
-1. Maintain high-quality, interconnected content
-2. Automate repetitive maintenance tasks  
-3. Generate insights through AI analysis
-4. Export knowledge in multiple formats
+- **robo_thesis** (vault + tooling): `cd /media/ajay/gdrive/_robo_thesis` — push here for vault content changes
+- **vegapunk** (tooling only): `cd /media/ajay/gdrive/_robo_thesis/.claude` — push here when skills, scripts, or settings change
 
-## Content Standards
-- Use descriptive, searchable titles
-- Include YAML frontmatter with tags and metadata
-- Maintain consistent linking patterns
-- Follow semantic markup conventions
-
-## AI Enhancement Tasks
-- Link validation and suggestion
-- Content quality assessment
-- Automatic tagging and categorization
-- Knowledge graph generation
-- Export automation -->
+When a change touches both vault files and `.claude/` files, commit and push from both directories.
