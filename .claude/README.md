@@ -16,10 +16,7 @@ The knowledge isn't static. Creation is unconstrained — entropy accumulates na
     |----> /vp-learn ----> learn_*.md        [optional: skip if you already understand]
     |                        |
     v                        v
-  /vp-distill ----------> distill_*.md
-    |
-    v
-  /vp-split ------------> atoms + molecules in vault
+  /vp-distill ----------> distill_*.md ──(/vp-split)──> atoms + molecules in vault
     |
     ================ vault =================
     |
@@ -33,11 +30,11 @@ The knowledge isn't static. Creation is unconstrained — entropy accumulates na
 
 **Learn** is the only optional step. If you already understand the source material, go straight to distill. Learn creates scratch files (`learn_*.md`, `progress_*.md`) that track Q&A sessions and multi-session progress.
 
-**Distill + Split** always run together. Distill drafts molecules and atoms in a single `distill_*.md` file. You iterate — review, give feedback, refine — until satisfied. Then split parses the distill file into individual `.md` files, normalizes LaTeX delimiters, checks for filename collisions, and deletes the distill file.
+**Distill** drafts molecules and atoms in a single `distill_*.md` file. You iterate — review, give feedback, refine — until satisfied. Then `/vp-split` (a utility) parses the distill file into individual `.md` files, normalizes LaTeX delimiters, checks for filename collisions, and deletes the distill file.
 
-**Maintain** runs periodically. Refine improves individual files after they're in the vault. Organize audits an entire folder for structural health. Weave discovers connections across folders that you wouldn't find manually.
+**Curate** runs periodically. Refine improves individual files after they're in the vault. Organize audits an entire folder for structural health. Weave discovers connections across folders that you wouldn't find manually.
 
-**Use** is ongoing. Find searches the vault by concept using the wikilink graph and content matching. Quiz tests retention through Socratic questioning grounded in your atoms — it cites what your vault says, not what it knows.
+**Review** is ongoing. Find searches the vault by concept using the wikilink graph and content matching. Quiz tests retention through Socratic questioning grounded in your atoms — it cites what your vault says, not what it knows.
 
 ---
 
@@ -51,9 +48,9 @@ All commands use the `vp-` prefix.
 |---------|---------|--------|
 | `/vp-learn` | Study source through interactive Q&A, track progress across sessions | `learn_*.md`, `progress_*.md` in target folder |
 | `/vp-distill` | Transform source or learning file into molecules + atoms | `distill_*.md` in target folder |
-| `/vp-split` | Parse distill output into individual .md files | atoms + molecules in target folder |
+| `/vp-split` (utility) | Parse distill output into individual .md files | atoms + molecules in target folder |
 
-**Maintain**
+**Curate**
 
 | Command | Purpose | Output |
 |---------|---------|--------|
@@ -61,7 +58,7 @@ All commands use the `vp-` prefix.
 | `/vp-organize` | Folder-level health: duplicates, orphans, broken links, stale indexes | terminal report |
 | `/vp-weave` | Discover cross-folder connections between atoms/molecules | adds wikilinks to existing files |
 
-**Use**
+**Review**
 
 | Command | Purpose | Output |
 |---------|---------|--------|
